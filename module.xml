@@ -1,0 +1,19 @@
+<module>
+	<rawname>customappsreg</rawname>
+	<name>Custom Applications</name>
+	<version>0.8.0</version>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>
+		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
+	</description>
+	<menuitems>
+		<customextens>Custom Extensions</customextens>
+		<customdests>Custom Destinations</customdests>
+	</menuitems>
+	<changelog>
+		*0.8.0* First release of module
+	</changelog>
+	<location>release/2.4/customappsreg-0.8.0tgz</location>
+	<md5sum>b05759ac4981e263fd4b8606283c7a8a</md5sum>
+</module>
