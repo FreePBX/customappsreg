@@ -1,7 +1,7 @@
 <module>
 	<rawname>customappsreg</rawname>
 	<name>Custom Applications</name>
-	<version>0.8.0</version>
+	<version>2.4.0</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
@@ -12,8 +12,8 @@
 		<customdests>Custom Destinations</customdests>
 	</menuitems>
 	<changelog>
-		*0.8.0* First release of module
+		*2.4.0* First release of module
 	</changelog>
-	<location>release/2.4/customappsreg-0.8.0.tgz</location>
-	<md5sum>0513fe7897d083b2a56fd84567a8524d</md5sum>
+	<location>release/2.4/customappsreg-2.4.0.tgz</location>
+	<md5sum>66e0fd76b64353ba448d74846117d2d7</md5sum>
 </module>
