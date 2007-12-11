@@ -17,11 +17,12 @@ if(DB::IsError($check)) {
 
 
 $sql = "
-	CREATE TABLE IF NOT EXISTS `custom_extensions` (
+	CREATE TABLE IF NOT EXISTS `custom_extensions` 
+	(
 		`custom_exten` varchar(80) NOT NULL default '',
 		`description` varchar(40) NOT NULL default '',
 		`notes` varchar(255) NOT NULL default '',
-		PRIMARY KEY  (`extension`)
+		PRIMARY KEY  (`custom_exten`)
 	)";
 
 $check = $db->query($sql);
