@@ -16,6 +16,6 @@
 		*2.4.0.1* Fix typo in install script, non-existent primary key
 		*2.4.0* First release of module
 	</changelog>
-	<location>release/2.4/customappsreg-2.4.0.1.tgz</location>
-	<md5sum>350d1b5afbced322f80f77309b4dcf9a</md5sum>
+	<location>release/2.4/customappsreg-2.4.0.2.tgz</location>
+	<md5sum>2ffb27b2da2179fa93a47422bbbf6571</md5sum>
 </module>
