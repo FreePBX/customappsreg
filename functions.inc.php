@@ -167,7 +167,7 @@ function customappsreg_customdests_delete($custom_dest) {
 	}
 }
 
-function customappsreg_customextens_delete($custom_extens) {
+function customappsreg_customextens_delete($custom_exten) {
 	global $db;
 
 	$sql = "DELETE FROM custom_extensions WHERE custom_exten = ".q($custom_exten);
@@ -199,7 +199,7 @@ function customappsreg_customdests_edit($old_custom_dest, $custom_dest,  $descri
 	}
 }
 
-function customappsreg_customextens_edit($old_custom_extens, $custom_extens,  $description, $notes) { 
+function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $description, $notes) { 
 	global $db;
 
 	$sql = "UPDATE custom_extensions SET ".
