@@ -1,7 +1,7 @@
 <module>
 	<rawname>customappsreg</rawname>
 	<name>Custom Applications</name>
-	<version>2.4.0.3</version>
+	<version>2.4.0.4</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
@@ -12,6 +12,7 @@
 		<customdests>Custom Destinations</customdests>
 	</menuitems>
 	<changelog>
+		*2.4.0.4* #2700 block editing of destination field when once other modules are using it
 		*2.4.0.3* added depends on 2.4.0
 		*2.4.0.2* #2558 can't edit/del custom extension
 		*2.4.0.1* Fix typo in install script, non-existent primary key

@@ -67,6 +67,8 @@ foreach (customappsreg_customdests_list() as $row) {
 
 if ($custom_dest != '') {
 	// load
+	$usage_list = framework_display_destination_usage(customappsreg_customdests_getdest($custom_dest));
+
 	$row = customappsreg_customdests_get($custom_dest);
 	
 	$description = $row['description'];
@@ -89,10 +91,31 @@ echo $helptext;
 	<table>
 	<tr><td colspan="2"><h5><?php  echo ($custom_dest ? _("Edit Custom Destination") : _("Add Custom Destination")) ?><hr></h5></td></tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Custom Destination")?>:<span><?php echo _("This is the Custom Destination to be published. It should be formatted exactly as you would put it in a goto statement, with context, exten, priority all included. An example might look like:<br />mycustom-app,s,1")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Custom Destination")?>:
+			<span>
+				<?php 
+				echo _("This is the Custom Destination to be published. It should be formatted exactly as you would put it in a goto statement, with context, exten, priority all included. An example might look like:<br />mycustom-app,s,1");
+				if (!empty($usage_list)) {
+					echo "<br />"._("READONLY WARNING: Because this destination is being used by other module objects it can not be edited. You must remove those dependencies in order to edit this destination, or create a new destination to use");
+				}
+				?>
+			</span></a></td>
+	<?php
+	if (!empty($usage_list)) {
+	?>
+		<td><b><?php echo $custom_dest; ?></b></td>
+	<?php
+	} else {
+	?>
 		<td><input size="30" type="text" name="extdisplay" id="extdisplay" value="<?php  echo $custom_dest; ?>"></td>
+	<?php
+	}
+	?>
 	</tr>
 
+	<?php
+	if (empty($usage_list)) {
+	?>
 	<tr>
 		<td>
 		<a href=# class="info"><?php echo _("Destination Quick Pick")?>
@@ -113,6 +136,9 @@ echo $helptext;
 			</select>
 		</td>
 	</tr>
+	<?php
+	}
+	?>
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("Brief Description that will be published to modules when showing destinations. Example: My Weather App")?></span></a></td>
@@ -130,7 +156,6 @@ echo $helptext;
 
 		<?php
 		if ($custom_dest != '') {
-			$usage_list = framework_display_destination_usage(customappsreg_customdests_getdest($custom_dest));
 			if (!empty($usage_list)) {
 			?>
 				<tr><td colspan="2">
