@@ -21,6 +21,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.4/customappsreg-2.4.0.3.tgz</location>
-	<md5sum>e8747f9839adcc852aaf6597339314ff</md5sum>
+	<location>release/2.4/customappsreg-2.4.0.4.tgz</location>
+	<md5sum>c228e55da15a0d03bd1dbe83cab3091e</md5sum>
 </module>
