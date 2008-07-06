@@ -107,7 +107,7 @@ echo $helptext;
 	<?php
 	} else {
 	?>
-		<td><input size="30" type="text" name="extdisplay" id="extdisplay" value="<?php  echo $custom_dest; ?>"></td>
+		<td><input size="30" type="text" name="extdisplay" id="extdisplay" value="<?php  echo $custom_dest; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	<?php
 	}
 	?>
@@ -125,7 +125,7 @@ echo $helptext;
 		</a>
 		</td>
 		<td>
-			<select onChange="insertDest();" id="insdest">
+			<select onChange="insertDest();" id="insdest" tabindex="<?php echo ++$tabindex;?>">
 				<option value=""><?php echo _("(pick destination)")?></option>
 	<?php
 				$results = customappsreg_customdests_getunknown();
@@ -142,15 +142,15 @@ echo $helptext;
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("Brief Description that will be published to modules when showing destinations. Example: My Weather App")?></span></a></td>
-		<td><input size="30" type="text" name="description" value="<?php  echo $description; ?>"></td>
+		<td><input size="30" type="text" name="description" value="<?php  echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td valign="top"><a href="#" class="info"><?php echo _("Notes")?>:<span><?php echo _("More detailed notes about this destination to help document it. This field is not used elsewhere.")?></span></a></td>
-		<td><textarea name="notes" cols="23" rows="6"><?php echo $notes; ?></textarea></td> 
+		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td> 
 	</tr>
 
 	<tr>
-		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>">
+		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 		<?php if ($custom_dest != '') { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
 		</td>		
 

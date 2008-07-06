@@ -111,20 +111,20 @@ if (!empty($conflict_url)) {
 	<tr><td colspan="2"><h5><?php  echo ($custom_exten ? _("Edit Custom Extension") : _("Add Custom Extension")) ?><hr></h5></td></tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Custom Extension")?>:<span><?php echo _("This is the Extension or Feature Code you are using in your dialplan that you want the FreePBX Extension Registry to be aware of.")?></span></a></td>
-		<td><input size="10" type="text" name="extdisplay" id="extdisplay" value="<?php  echo $custom_exten; ?>"></td>
+		<td><input size="10" type="text" name="extdisplay" id="extdisplay" value="<?php  echo $custom_exten; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Description")?>:<span><?php echo _("Brief description that will be published in the Extension Registry about this extension")?></span></a></td>
-		<td><input size="30" type="text" name="description" value="<?php  echo $description; ?>"></td>
+		<td><input size="30" type="text" name="description" value="<?php  echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td valign="top"><a href="#" class="info"><?php echo _("Notes")?>:<span><?php echo _("More detailed notes about this extension to help document it. This field is not used elsewhere.")?></span></a></td>
-		<td><textarea name="notes" cols="23" rows="6"><?php echo $notes; ?></textarea></td> 
+		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td> 
 	</tr>
 
 	<tr>
-		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>">
+		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 		<?php if ($custom_exten != '') { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
 		</td>		
 	</tr>
