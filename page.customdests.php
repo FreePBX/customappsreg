@@ -80,7 +80,7 @@ if ($custom_dest != '') {
 	echo "<h2>"._("Add Custom Destination")."</h2>";
 }
 
-$helptext = _("Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the noticication panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field.");
+$helptext = _("Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the notification panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field.");
 echo $helptext;
 ?>
 
@@ -120,7 +120,7 @@ echo $helptext;
 		<td>
 		<a href=# class="info"><?php echo _("Destination Quick Pick")?>
 			<span>
-				<?php echo _("Choose un-identified destinations on your system to add to the Custom Destinaion Registry. This will insert the chosen entry into the Custom Destination box above.")?>
+				<?php echo _("Choose un-identified destinations on your system to add to the Custom Destination Registry. This will insert the chosen entry into the Custom Destination box above.")?>
 			</span>
 		</a>
 		</td>

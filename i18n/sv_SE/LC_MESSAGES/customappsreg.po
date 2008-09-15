@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-08 15:24+0200\n"
-"PO-Revision-Date: 2008-09-15 16:29+0100\n"
+"PO-Revision-Date: 2008-09-15 16:49+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "Redigera:"
 
 #: page.customdests.php:83
 msgid "Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the noticication panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field."
-msgstr "Anpassade destinationer ger dig möjlighet att registrera dina anpassningar i nummerplanen och 'publicerar' dessa som tillgängliga destinationer för andra moduler. Detta är en avancerad funktion och bör bara användas av personer med insikt i Asterisk nummerplan. Om du får varningar eller felmeddelande i \"Meddelanden från FreePBX\" on ANPASSADE destinationer, bör du inkludera dom här."
+msgstr "Anpassade destinationer ger dig möjlighet att registrera dina anpassningar i nummerplanen och 'publicerar' dessa som tillgängliga destinationer för andra moduler. Detta är en avancerad funktion och bör bara användas av personer med insikt i Asterisk nummerplan. Om du får varningar eller felmeddelande i \"Meddelanden från FreePBX\" om ANPASSADE destinationer, bör du inkludera dom här."
 
 #: page.customdests.php:92
 msgid "Edit Custom Destination"
@@ -110,7 +110,7 @@ msgstr "Notering"
 
 #: page.customdests.php:148
 msgid "More detailed notes about this destination to help document it. This field is not used elsewhere."
-msgstr "Mer detaljerad beskrivning om denna destionation, för dokumentation. Detta fält används bara här."
+msgstr "Mer detaljerad beskrivning om denna destination, för dokumentation. Detta fält används bara här."
 
 #: page.customdests.php:153
 #: page.customextens.php:127
