@@ -94,7 +94,7 @@ if ($custom_exten != '') {
 	echo "<h2>"._("Add Custom Extension")."</h2>";
 }
 
-$helptext = _("Custom Extensions provides you with a facility to register any custom extenions or feature codes that you have created in a custom file and FreePBX doesn't otherwise know about them. This allows the Extension Registry to be aware of your own extensions so that it can detect conflicts or report back information about your custom extensions to other modules that may make use of the information. You should not put extensions that you create in the Misc Apps Module as those are not custom.");
+$helptext = _("Custom Extensions provides you with a facility to register any custom extensions or feature codes that you have created in a custom file and FreePBX doesn't otherwise know about them. This allows the Extension Registry to be aware of your own extensions so that it can detect conflicts or report back information about your custom extensions to other modules that may make use of the information. You should not put extensions that you create in the Misc Apps Module as those are not custom.");
 echo $helptext;
 
 if (!empty($conflict_url)) {
