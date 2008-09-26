@@ -63,7 +63,7 @@ msgid "Edit: "
 msgstr "Redigera:"
 
 #: page.customdests.php:83
-msgid "Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the noticication panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field."
+msgid "Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the notification panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field."
 msgstr "Anpassade destinationer ger dig möjlighet att registrera dina anpassningar i nummerplanen och 'publicerar' dessa som tillgängliga destinationer för andra moduler. Detta är en avancerad funktion och bör bara användas av personer med insikt i Asterisk nummerplan. Om du får varningar eller felmeddelande i \"Meddelanden från FreePBX\" om ANPASSADE destinationer, bör du inkludera dom här."
 
 #: page.customdests.php:92
