@@ -178,3 +178,12 @@ msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
 msgstr ""
+
+#: module.xml
+msgid "Custom Destinations"
+msgstr ""
+
+#: module.xml
+msgid "Custom Extensions"
+msgstr ""
+
