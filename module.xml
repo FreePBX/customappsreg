@@ -1,7 +1,7 @@
 <module>
 	<rawname>customappsreg</rawname>
 	<name>Custom Applications</name>
-	<version>2.5.0.2</version>
+	<version>2.5.0.3</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
@@ -12,6 +12,7 @@
 		<customdests>Custom Destinations</customdests>
 	</menuitems>
 	<changelog>
+		*2.5.0.3* localizations fixes
 		*2.5.0.2* localization, Swedish
 		*2.5.0.1* #3003 spelling
 		*2.5.0* #2845 tabindex
@@ -25,6 +26,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/customappsreg-2.5.0.2.tgz</location>
-	<md5sum>145cab7cfcbe06b4537e895bb198934b</md5sum>
+	<location>release/2.5/customappsreg-2.5.0.3.tgz</location>
+	<md5sum>b12d9ea05f3d0141bde4277ad0750bd8</md5sum>
 </module>
