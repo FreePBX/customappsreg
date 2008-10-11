@@ -26,7 +26,7 @@ function customappsreg_getdestinfo($dest) {
 		return false;
 	} else {
 		$type = isset($active_modules['customappsreg']['type'])?$active_modules['customappsreg']['type']:'tool';
-		return array('description' => 'Custom Destination: '.$thisexten['description'],
+		return array('description' => sprintf(_("Custom Destination: %s"),$thisexten['description']),
 		             'edit_url' => 'config.php?display=customdests&type='.$type.'&extdisplay='.urlencode($dest),
 							  );
 	}

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-08 15:24+0200\n"
-"PO-Revision-Date: 2008-09-15 16:49+0100\n"
+"POT-Creation-Date: 2008-10-05 22:57+0200\n"
+"PO-Revision-Date: 2008-10-11 16:54+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:29
+#, php-format
+msgid "Custom Destination: %s"
+msgstr "Anpassad destination: %s"
 
 #: functions.inc.php:52
 msgid "Custom Extension: "
@@ -87,7 +92,7 @@ msgid "Destination Quick Pick"
 msgstr "Snabbval för destination"
 
 #: page.customdests.php:123
-msgid "Choose un-identified destinations on your system to add to the Custom Destinaion Registry. This will insert the chosen entry into the Custom Destination box above."
+msgid "Choose un-identified destinations on your system to add to the Custom Destination Registry. This will insert the chosen entry into the Custom Destination box above."
 msgstr "Välj en oidentifierad destination i ditt system för att lägga till den i registret för  Anpassad destinationer. Detta kommer att lägga till värdet i rutan Anpassad destination ovan."
 
 #: page.customdests.php:129
