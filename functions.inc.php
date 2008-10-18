@@ -3,7 +3,7 @@
 function customappsreg_destinations() {
 	// return an associative array with destination and description
 	foreach (customappsreg_customdests_list() as $row) {
-		$extens[] = array('destination' => $row['custom_dest'], 'description' => $row['description']);
+		$extens[] = array('destination' => $row['custom_dest'], 'description' => $row['description'], 'category' => _("Custom Destinations"));
 	}
 	return $extens;
 }
