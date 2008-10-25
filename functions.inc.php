@@ -5,7 +5,8 @@ function customappsreg_destinations() {
 	foreach (customappsreg_customdests_list() as $row) {
 		$extens[] = array('destination' => $row['custom_dest'], 'description' => $row['description'], 'category' => _("Custom Destinations"));
 	}
-	return $extens;
+	return isset($extens)?$extens:null;
+
 }
 
 /** the 'exten' is the same as the destination for this module
