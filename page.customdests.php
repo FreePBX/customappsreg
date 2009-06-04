@@ -12,6 +12,7 @@
  * GNU General Public License for more details.
  */
 
+$tabindex = 0;
 $display = 'customdests';
 
 $type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
