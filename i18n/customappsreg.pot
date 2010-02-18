@@ -1,14 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
 #
-#, fuzzy
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for customappsreg
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 22:57+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,53 +28,78 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:29
+#: customappsreg/customappsreg.i18n.php:5
+msgid "Custom Applications"
+msgstr ""
+
+#: customappsreg/customappsreg.i18n.php:7
+msgid "System Administration"
+msgstr ""
+
+#: customappsreg/customappsreg.i18n.php:9
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+
+#: customappsreg/customappsreg.i18n.php:11
+msgid "Custom Extensions"
+msgstr ""
+
+#: customappsreg/customappsreg.i18n.php:13 customappsreg/functions.inc.php:6
+msgid "Custom Destinations"
+msgstr ""
+
+#: customappsreg/functions.inc.php:30
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
 
-#: functions.inc.php:52
+#: customappsreg/functions.inc.php:53
 msgid "Custom Extension: "
 msgstr ""
 
-#: functions.inc.php:103 page.customdests.php:190
+#: customappsreg/functions.inc.php:104 customappsreg/page.customdests.php:191
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
 
-#: functions.inc.php:107 functions.inc.php:140 page.customdests.php:191
-#: page.customextens.php:140
+#: customappsreg/functions.inc.php:108 customappsreg/functions.inc.php:141
+#: customappsreg/page.customdests.php:192
+#: customappsreg/page.customextens.php:141
 msgid "Invalid description specified, must not be blank"
 msgstr ""
 
-#: functions.inc.php:112
+#: customappsreg/functions.inc.php:113
 msgid "DUPLICATE Destination: This destination is already in use"
 msgstr ""
 
-#: functions.inc.php:123 functions.inc.php:186
+#: customappsreg/functions.inc.php:124 customappsreg/functions.inc.php:187
 msgid ""
 "DUPLICATE Destination: This destination is in use or potentially used by "
 "another module"
 msgstr ""
 
-#: functions.inc.php:136 page.customextens.php:139
+#: customappsreg/functions.inc.php:137 customappsreg/page.customextens.php:140
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: functions.inc.php:151
+#: customappsreg/functions.inc.php:152
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
-#: page.customdests.php:54 page.customdests.php:80 page.customdests.php:92
+#: customappsreg/page.customdests.php:55 customappsreg/page.customdests.php:81
+#: customappsreg/page.customdests.php:93
 msgid "Add Custom Destination"
 msgstr ""
 
-#: page.customdests.php:78 page.customextens.php:92
+#: customappsreg/page.customdests.php:79
+#: customappsreg/page.customextens.php:93
 msgid "Edit: "
 msgstr ""
 
-#: page.customdests.php:83
+#: customappsreg/page.customdests.php:84
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -74,76 +111,82 @@ msgid ""
 "aware of into the Custom Destination field."
 msgstr ""
 
-#: page.customdests.php:92
+#: customappsreg/page.customdests.php:93
 msgid "Edit Custom Destination"
 msgstr ""
 
-#: page.customdests.php:94
+#: customappsreg/page.customdests.php:95
 msgid "Custom Destination"
 msgstr ""
 
-#: page.customdests.php:97
+#: customappsreg/page.customdests.php:98
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
 "priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
 
-#: page.customdests.php:99
+#: customappsreg/page.customdests.php:100
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
 "edit this destination, or create a new destination to use"
 msgstr ""
 
-#: page.customdests.php:121
+#: customappsreg/page.customdests.php:122
 msgid "Destination Quick Pick"
 msgstr ""
 
-#: page.customdests.php:123
+#: customappsreg/page.customdests.php:124
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr ""
 
-#: page.customdests.php:129
+#: customappsreg/page.customdests.php:130
 msgid "(pick destination)"
 msgstr ""
 
-#: page.customdests.php:144 page.customextens.php:118
+#: customappsreg/page.customdests.php:145
+#: customappsreg/page.customextens.php:119
 msgid "Description"
 msgstr ""
 
-#: page.customdests.php:144
+#: customappsreg/page.customdests.php:145
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
 msgstr ""
 
-#: page.customdests.php:148 page.customextens.php:122
+#: customappsreg/page.customdests.php:149
+#: customappsreg/page.customextens.php:123
 msgid "Notes"
 msgstr ""
 
-#: page.customdests.php:148
+#: customappsreg/page.customdests.php:149
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
 
-#: page.customdests.php:153 page.customextens.php:127
+#: customappsreg/page.customdests.php:154
+#: customappsreg/page.customextens.php:128
 msgid "Submit Changes"
 msgstr ""
 
-#: page.customdests.php:154 page.customextens.php:128
+#: customappsreg/page.customdests.php:155
+#: customappsreg/page.customextens.php:129
 msgid "Delete"
 msgstr ""
 
-#: page.customextens.php:70 page.customextens.php:94 page.customextens.php:111
+#: customappsreg/page.customextens.php:71
+#: customappsreg/page.customextens.php:95
+#: customappsreg/page.customextens.php:112
 msgid "Add Custom Extension"
 msgstr ""
 
-#: page.customextens.php:97
+#: customappsreg/page.customextens.php:98
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -154,40 +197,32 @@ msgid ""
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
 
-#: page.customextens.php:101
+#: customappsreg/page.customextens.php:102
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: page.customextens.php:111
+#: customappsreg/page.customextens.php:112
 msgid "Edit Custom Extension"
 msgstr ""
 
-#: page.customextens.php:113
+#: customappsreg/page.customextens.php:114
 msgid "Custom Extension"
 msgstr ""
 
-#: page.customextens.php:113
+#: customappsreg/page.customextens.php:114
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
 
-#: page.customextens.php:118
+#: customappsreg/page.customextens.php:119
 msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
 
-#: page.customextens.php:122
+#: customappsreg/page.customextens.php:123
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
-msgstr ""
-
-#: module.xml
-msgid "Custom Destinations"
-msgstr ""
-
-#: module.xml
-msgid "Custom Extensions"
 msgstr ""
