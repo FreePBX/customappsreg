@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,78 +28,58 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: customappsreg/customappsreg.i18n.php:5
 msgid "Custom Applications"
 msgstr ""
 
-#: customappsreg/customappsreg.i18n.php:7
 msgid "System Administration"
 msgstr ""
 
-#: customappsreg/customappsreg.i18n.php:9
 msgid ""
 "Registry to add custom extensions and destinations that may be created and "
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
 
-#: customappsreg/customappsreg.i18n.php:11
 msgid "Custom Extensions"
 msgstr ""
 
-#: customappsreg/customappsreg.i18n.php:13 customappsreg/functions.inc.php:6
 msgid "Custom Destinations"
 msgstr ""
 
-#: customappsreg/functions.inc.php:30
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
 
-#: customappsreg/functions.inc.php:53
 msgid "Custom Extension: "
 msgstr ""
 
-#: customappsreg/functions.inc.php:104 customappsreg/page.customdests.php:191
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
 
-#: customappsreg/functions.inc.php:108 customappsreg/functions.inc.php:141
-#: customappsreg/page.customdests.php:192
-#: customappsreg/page.customextens.php:141
 msgid "Invalid description specified, must not be blank"
 msgstr ""
 
-#: customappsreg/functions.inc.php:113
 msgid "DUPLICATE Destination: This destination is already in use"
 msgstr ""
 
-#: customappsreg/functions.inc.php:124 customappsreg/functions.inc.php:187
 msgid ""
 "DUPLICATE Destination: This destination is in use or potentially used by "
 "another module"
 msgstr ""
 
-#: customappsreg/functions.inc.php:137 customappsreg/page.customextens.php:140
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: customappsreg/functions.inc.php:152
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
-#: customappsreg/page.customdests.php:55 customappsreg/page.customdests.php:81
-#: customappsreg/page.customdests.php:93
 msgid "Add Custom Destination"
 msgstr ""
 
-#: customappsreg/page.customdests.php:79
-#: customappsreg/page.customextens.php:93
 msgid "Edit: "
 msgstr ""
 
-#: customappsreg/page.customdests.php:84
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -111,82 +91,61 @@ msgid ""
 "aware of into the Custom Destination field."
 msgstr ""
 
-#: customappsreg/page.customdests.php:93
 msgid "Edit Custom Destination"
 msgstr ""
 
-#: customappsreg/page.customdests.php:95
 msgid "Custom Destination"
 msgstr ""
 
-#: customappsreg/page.customdests.php:98
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
 "priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
 
-#: customappsreg/page.customdests.php:100
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
 "edit this destination, or create a new destination to use"
 msgstr ""
 
-#: customappsreg/page.customdests.php:122
 msgid "Destination Quick Pick"
 msgstr ""
 
-#: customappsreg/page.customdests.php:124
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr ""
 
-#: customappsreg/page.customdests.php:130
 msgid "(pick destination)"
 msgstr ""
 
-#: customappsreg/page.customdests.php:145
-#: customappsreg/page.customextens.php:119
 msgid "Description"
 msgstr ""
 
-#: customappsreg/page.customdests.php:145
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
 msgstr ""
 
-#: customappsreg/page.customdests.php:149
-#: customappsreg/page.customextens.php:123
 msgid "Notes"
 msgstr ""
 
-#: customappsreg/page.customdests.php:149
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
 
-#: customappsreg/page.customdests.php:154
-#: customappsreg/page.customextens.php:128
 msgid "Submit Changes"
 msgstr ""
 
-#: customappsreg/page.customdests.php:155
-#: customappsreg/page.customextens.php:129
 msgid "Delete"
 msgstr ""
 
-#: customappsreg/page.customextens.php:71
-#: customappsreg/page.customextens.php:95
-#: customappsreg/page.customextens.php:112
 msgid "Add Custom Extension"
 msgstr ""
 
-#: customappsreg/page.customextens.php:98
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -197,31 +156,25 @@ msgid ""
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
 
-#: customappsreg/page.customextens.php:102
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: customappsreg/page.customextens.php:112
 msgid "Edit Custom Extension"
 msgstr ""
 
-#: customappsreg/page.customextens.php:114
 msgid "Custom Extension"
 msgstr ""
 
-#: customappsreg/page.customextens.php:114
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
 
-#: customappsreg/page.customextens.php:119
 msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
 
-#: customappsreg/page.customextens.php:123
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
