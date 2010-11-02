@@ -1,7 +1,7 @@
 <module>
 	<rawname>customappsreg</rawname>
 	<name>Custom Applications</name>
-	<version>2.8.0.0</version>
+	<version>2.9.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>tool</type>
@@ -14,6 +14,7 @@
 		<customdests>Custom Destinations</customdests>
 	</menuitems>
 	<changelog>
+		*2.9.0.0* #4618 XSS patch
 		*2.8.0.0* published 2.8 version
 		*2.7.0.0* localizations
 		*2.6.0.2* localizations
@@ -34,6 +35,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.8/customappsreg-2.8.0.0.tgz</location>
-	<md5sum>9c35cea0178fdf94d1932f0998d0855e</md5sum>
+	<location>release/2.9/customappsreg-2.9.0.0.tgz</location>
+	<md5sum>06a858f5e1b9df13757100470b3886a4</md5sum>
 </module>
