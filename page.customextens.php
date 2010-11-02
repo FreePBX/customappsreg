@@ -19,10 +19,12 @@ $type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 if (isset($_REQUEST['delete'])) $action = 'delete'; 
 
-$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? $_REQUEST['old_custom_exten'] :  '';
-$custom_exten     = isset($_REQUEST['extdisplay']) ? $_REQUEST['extdisplay'] :  '';
-$description     = isset($_REQUEST['description']) ? $_REQUEST['description'] :  '';
-$notes           = isset($_REQUEST['notes']) ? $_REQUEST['notes'] :  '';
+$custom_exten = preg_replace("/[^0-9*#]/" ,"", trim($custom_exten));
+
+$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['old_custom_exten']) :  '';
+$custom_exten     = isset($_REQUEST['extdisplay']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['extdisplay']) :  '';
+$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description']) :  '';
+$notes           = isset($_REQUEST['notes']) ? htmlentities($_REQUEST['notes']) :  '';
 
 switch ($action) {
 	case 'add':

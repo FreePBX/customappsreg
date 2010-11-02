@@ -21,8 +21,8 @@ if (isset($_REQUEST['delete'])) $action = 'delete';
 
 $old_custom_dest = isset($_REQUEST['old_custom_dest']) ? $_REQUEST['old_custom_dest'] :  '';
 $custom_dest     = isset($_REQUEST['extdisplay']) ? $_REQUEST['extdisplay'] :  '';
-$description     = isset($_REQUEST['description']) ? $_REQUEST['description'] :  '';
-$notes           = isset($_REQUEST['notes']) ? $_REQUEST['notes'] :  '';
+$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description']) :  '';
+$notes           = isset($_REQUEST['notes']) ? htmlentities($_REQUEST['notes']) :  '';
 
 switch ($action) {
 	case 'add':
@@ -104,7 +104,7 @@ echo $helptext;
 	<?php
 	if (!empty($usage_list)) {
 	?>
-		<td><b><?php echo $custom_dest; ?></b></td>
+		<td><b><?php echo htmlentities($custom_dest); ?></b></td>
 	<?php
 	} else {
 	?>

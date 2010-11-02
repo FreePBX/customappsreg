@@ -114,9 +114,9 @@ function customappsreg_customdests_add($custom_dest, $description, $notes) {
 		return false;
 	}
 
-	$custom_dest = q($custom_dest);
-	$description = q($description);
-	$notes       = q($notes);
+	$custom_dest = sql_formattext($custom_dest);
+	$description = sql_formattext($description);
+	$notes       = sql_formattext($notes);
 	$sql = "INSERT INTO custom_destinations (custom_dest, description, notes) VALUES ($custom_dest, $description, $notes)";
 	$results = $db->query($sql);
 	if (DB::IsError($results)) {
@@ -142,9 +142,9 @@ function customappsreg_customextens_add($custom_exten, $description, $notes) {
 		return false;
 	}
 
-	$custom_exten = q($custom_exten);
-	$description  = q($description);
-	$notes        = q($notes);
+	$custom_exten = sql_formattext($custom_exten);
+	$description  = sql_formattext($description);
+	$notes        = sql_formattext($notes);
 	$sql = "INSERT INTO custom_extensions (custom_exten, description, notes) VALUES ($custom_exten, $description, $notes)";
 	$results = $db->query($sql);
 	if (DB::IsError($results)) {
@@ -190,10 +190,10 @@ function customappsreg_customdests_edit($old_custom_dest, $custom_dest,  $descri
 	}
 
 	$sql = "UPDATE custom_destinations SET ".
-		"custom_dest = ".q($custom_dest).", ".
-		"description = ".q($description).", ".
-		"notes = ".q($notes)." ".
-		"WHERE custom_dest = ".q($old_custom_dest);
+		"custom_dest = ".sql_formattext($custom_dest).", ".
+		"description = ".sql_formattext($description).", ".
+		"notes = ".sql_formattext($notes)." ".
+		"WHERE custom_dest = ".sql_formattext($old_custom_dest);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -204,10 +204,10 @@ function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $des
 	global $db;
 
 	$sql = "UPDATE custom_extensions SET ".
-		"custom_exten = ".q($custom_exten).", ".
-		"description = ".q($description).", ".
-		"notes = ".q($notes)." ".
-		"WHERE custom_exten = ".q($old_custom_exten);
+		"custom_exten = ".sql_formattext($custom_exten).", ".
+		"description = ".sql_formattext($description).", ".
+		"notes = ".sql_formattext($notes)." ".
+		"WHERE custom_exten = ".sql_formattext($old_custom_exten);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
