@@ -1,5 +1,6 @@
 <module>
 	<rawname>customappsreg</rawname>
+	<repo>standard</repo>
 	<name>Custom Applications</name>
 	<version>2.9.0.0</version>
 	<publisher>FreePBX</publisher>
