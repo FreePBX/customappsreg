@@ -6,7 +6,7 @@
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>tool</type>
-	<category>System Administration</category>
+	<category>Advanced Administration</category>
 	<description>
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
@@ -37,5 +37,5 @@
 		<version>2.4.0</version>
 	</depends>
 	<location>release/2.9/customappsreg-2.9.0.0.tgz</location>
-	<md5sum>06a858f5e1b9df13757100470b3886a4</md5sum>
+	<md5sum>8e952c23cd568b43661233fa908c682c</md5sum>
 </module>
