@@ -100,7 +100,7 @@ function customappsreg_customextens_get($custom_exten) {
 function customappsreg_customdests_add($custom_dest, $description, $notes) {
 	global $db;
 
-	if (!ereg("[^,]+,[^,]+,[^,]+",$custom_dest)) {
+  if (!preg_match("/[^,]+,[^,]+,[^,]+/",$custom_dest)) {
 		echo "<script>javascript:alert('"._('Invalid Destination, must not be blank, must be formatted as: context,exten,pri')."')</script>";
 		return false;
 	}
