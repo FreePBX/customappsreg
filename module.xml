@@ -5,8 +5,7 @@
 	<version>2.9.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>tool</type>
-	<category>Advanced Administration</category>
+	<category>Admin</category>
 	<description>
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
