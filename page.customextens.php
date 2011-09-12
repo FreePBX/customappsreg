@@ -65,7 +65,6 @@ switch ($action) {
 }
 
 ?> 
-</div>
 
 <div class="rnav"><ul>
 <?php 
@@ -79,8 +78,6 @@ foreach (customappsreg_customextens_list() as $row) {
 
 ?>
 </ul></div>
-
-<div class="content">
 
 <?php
 
