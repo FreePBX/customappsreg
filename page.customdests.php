@@ -1,4 +1,5 @@
 <?php 
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /** Custom Destinations Display for FreePBX 2.4
  * Copyright 2006 Philippe Lindheimer - Astrogen LLC
  * This program is free software; you can redistribute it and/or

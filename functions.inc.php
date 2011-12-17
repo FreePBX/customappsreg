@@ -1,4 +1,5 @@
 <?php
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 function customappsreg_destinations() {
 	// return an associative array with destination and description
