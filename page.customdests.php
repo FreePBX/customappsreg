@@ -29,7 +29,7 @@ switch ($action) {
 	case 'add':
 		if (customappsreg_customdests_add($custom_dest, $description, $notes)) {
 			needreload();
-			redirect_standard();
+			redirect_standard('extdisplay');
 		} else {
 			$custom_dest='';
 		}
@@ -83,7 +83,13 @@ echo $helptext;
 ?>
 
 <form name="editCustomDest" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkCustomDest(editCustomDest);">
+<?php
+if (!empty($usage_list)) {
+?>
 	<input type="hidden" name="extdisplay" value="<?php echo $custom_dest; ?>">
+<?php
+}
+?>
 	<input type="hidden" name="old_custom_dest" value="<?php echo $custom_dest; ?>">
 	<input type="hidden" name="action" value="<?php echo ($custom_dest != '' ? 'edit' : 'add'); ?>">
 	<table>
