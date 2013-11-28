@@ -39,4 +39,4 @@
 	</depends>
 	<location>release/2.10/customappsreg-2.10.0.0.tgz</location>
 	<md5sum>fd0dd4d58900d77d82c4bdff409744c0</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
