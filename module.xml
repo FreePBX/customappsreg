@@ -1,24 +1,24 @@
 <module>
-	<rawname>customappsreg</rawname>
-	<repo>standard</repo>
-	<name>Custom Applications</name>
-	<version>2.11.0.0</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<category>Admin</category>
-	<description>
+  <rawname>customappsreg</rawname>
+  <repo>standard</repo>
+  <name>Custom Applications</name>
+  <version>2.11.0.0</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <category>Admin</category>
+  <description>
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
-	<menuitems>
-		<customextens>Custom Extensions</customextens>
-		<customdests>Custom Destinations</customdests>
-	</menuitems>
-	<popovers>
-		<customdests>
-			<display>customdests</display>
-		</customdests>
- 	</popovers>
-	<changelog>
+  <menuitems>
+    <customextens>Custom Extensions</customextens>
+    <customdests>Custom Destinations</customdests>
+  </menuitems>
+  <popovers>
+    <customdests>
+      <display>customdests</display>
+    </customdests>
+  </popovers>
+  <changelog>
 		*2.11.0.0* #6051
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
@@ -41,9 +41,12 @@
 		*2.4.0.1* Fix typo in install script, non-existent primary key
 		*2.4.0* First release of module
 	</changelog>
-	<depends>
-		<version>2.4.0</version>
-	</depends>
-	<location>release/2.11/customappsreg-2.11.0.0.tgz</location>
-	<md5sum>21344e8a23a5c1ee5184d9bc96dedfee</md5sum>
+  <depends>
+    <version>2.4.0</version>
+  </depends>
+  <location>release/2.11/customappsreg-2.11.0.0.tgz</location>
+  <md5sum>21344e8a23a5c1ee5184d9bc96dedfee</md5sum>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
