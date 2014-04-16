@@ -1,17 +1,5 @@
 <?php 
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-/** Custom Destinations Display for FreePBX 2.4
- * Copyright 2006 Philippe Lindheimer - Astrogen LLC
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- */
 
 $tabindex = 0;
 $display = 'customdests';

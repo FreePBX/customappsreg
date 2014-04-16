@@ -2,9 +2,10 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.2</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Admin</category>
 	<description>
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
@@ -19,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*2.11.0.2* Add license info
 		*2.11.0.1* Custom Application Popover Allowance
 		*2.11.0.0* #6051
 		*2.10.0.1* #5478 
