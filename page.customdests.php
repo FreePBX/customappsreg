@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /** Custom Destinations Display for FreePBX 2.4
  * Copyright 2006 Philippe Lindheimer - Astrogen LLC
@@ -6,7 +6,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
  * of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -18,7 +18,7 @@ $display = 'customdests';
 
 $type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-if (isset($_REQUEST['delete'])) $action = 'delete'; 
+if (isset($_REQUEST['delete'])) $action = 'delete';
 
 $old_custom_dest = isset($_REQUEST['old_custom_dest']) ? $_REQUEST['old_custom_dest'] :  '';
 $custom_dest     = isset($_REQUEST['extdisplay']) ? $_REQUEST['extdisplay'] :  '';
@@ -47,9 +47,9 @@ switch ($action) {
 	break;
 }
 
-?> 
+?>
 <div class="rnav"><ul>
-<?php 
+<?php
 
 echo '<li><a href="config.php?display='.$display.'&amp;type='.$type.'">'._('Add Custom Destination').'</a></li>';
 
@@ -68,7 +68,7 @@ if ($custom_dest != '') {
 	$usage_list = framework_display_destination_usage(customappsreg_customdests_getdest($custom_dest));
 
 	$row = customappsreg_customdests_get($custom_dest);
-	
+
 	$description = $row['description'];
 	$notes       = $row['notes'];
 
@@ -82,7 +82,7 @@ $helptext = _("Custom Destinations allows you to register your custom destinatio
 echo $helptext;
 ?>
 
-<form name="editCustomDest" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkCustomDest(editCustomDest);">
+<form name="editCustomDest" action="" method="post" onsubmit="return checkCustomDest(editCustomDest);">
 <?php
 if (!empty($usage_list)) {
 ?>
@@ -97,7 +97,7 @@ if (!empty($usage_list)) {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Custom Destination")?>:
 			<span>
-				<?php 
+				<?php
 				echo _("This is the Custom Destination to be published. It should be formatted exactly as you would put it in a goto statement, with context, exten, priority all included. An example might look like:<br />mycustom-app,s,1");
 				if (!empty($usage_list)) {
 					echo "<br />"._("READONLY WARNING: Because this destination is being used by other module objects it can not be edited. You must remove those dependencies in order to edit this destination, or create a new destination to use");
@@ -150,13 +150,13 @@ if (!empty($usage_list)) {
 	</tr>
 	<tr>
 		<td valign="top"><a href="#" class="info"><?php echo _("Notes")?>:<span><?php echo _("More detailed notes about this destination to help document it. This field is not used elsewhere.")?></span></a></td>
-		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td> 
+		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td>
 	</tr>
 
 	<tr>
 		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 		<?php if ($custom_dest != '') { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-		</td>		
+		</td>
 
 		<?php
 		if ($custom_dest != '') {
@@ -172,7 +172,7 @@ if (!empty($usage_list)) {
 	</tr>
 	</table>
 	</form>
-			
+
 <script language="javascript">
 <!--
 
@@ -198,7 +198,7 @@ function checkCustomDest(theForm) {
 	var re = /[^,]+,[^,]+,[^,]+/;
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 
 	if (isEmpty(theForm.extdisplay.value) || !re.test(theForm.extdisplay.value)) {
 		return warnInvalid(theForm.extdisplay, msgInvalidCustomDest);

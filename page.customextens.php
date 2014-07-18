@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /** Custom Extensions Display for FreePBX 2.4
  * Copyright 2006 Philippe Lindheimer - Astrogen LLC
@@ -6,7 +6,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
  * of the License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -18,7 +18,7 @@ $display = 'customextens';
 
 $type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-if (isset($_REQUEST['delete'])) $action = 'delete'; 
+if (isset($_REQUEST['delete'])) $action = 'delete';
 
 $custom_exten = preg_replace("/[^0-9*#]/" ,"", trim($custom_exten));
 
@@ -65,10 +65,10 @@ switch ($action) {
 	break;
 }
 
-?> 
+?>
 
 <div class="rnav"><ul>
-<?php 
+<?php
 
 echo '<li><a href="config.php?display='.$display.'&amp;type='.$type.'">'._('Add Custom Extension').'</a></li>';
 
@@ -85,7 +85,7 @@ foreach (customappsreg_customextens_list() as $row) {
 if ($custom_exten != '') {
 	// load
 	$row = customappsreg_customextens_get($custom_exten);
-	
+
 	$description = $row['description'];
 	$notes       = $row['notes'];
 
@@ -104,7 +104,7 @@ if (!empty($conflict_url)) {
 }
 ?>
 
-<form name="editCustomExten" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkCustomExten(editCustomExten);">
+<form name="editCustomExten" action="" method="post" onsubmit="return checkCustomExten(editCustomExten);">
 	<input type="hidden" name="extdisplay" value="<?php echo $custom_exten; ?>">
 	<input type="hidden" name="old_custom_exten" value="<?php echo $custom_exten; ?>">
 	<input type="hidden" name="action" value="<?php echo ($custom_exten != '' ? 'edit' : 'add'); ?>">
@@ -121,17 +121,17 @@ if (!empty($conflict_url)) {
 	</tr>
 	<tr>
 		<td valign="top"><a href="#" class="info"><?php echo _("Notes")?>:<span><?php echo _("More detailed notes about this extension to help document it. This field is not used elsewhere.")?></span></a></td>
-		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td> 
+		<td><textarea name="notes" cols="23" rows="6" tabindex="<?php echo ++$tabindex;?>"><?php echo $notes; ?></textarea></td>
 	</tr>
 
 	<tr>
 		<td colspan="2"><br><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>">
 		<?php if ($custom_exten != '') { echo '&nbsp;<input name="delete" type="submit" value="'._("Delete").'">'; } ?>
-		</td>		
+		</td>
 	</tr>
 	</table>
 	</form>
-			
+
 <script language="javascript">
 <!--
 
@@ -141,7 +141,7 @@ function checkCustomExten(theForm) {
 	var msgInvalidDescription = "<?php echo _('Invalid description specified, must not be blank'); ?>";
 
 	// form validation
-	defaultEmptyOK = false;	
+	defaultEmptyOK = false;
 
 	if (isEmpty(theForm.extdisplay.value)) {
 		return warnInvalid(theForm.extdisplay, msgInvalidCustomExten);
