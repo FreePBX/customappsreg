@@ -15,18 +15,21 @@
 #
 # Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2009-04-15 12:21+0100\n"
-"Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
-"Language-Team: Français <LL@li.org>\n"
+"PO-Revision-Date: 2014-09-11 01:56+0200\n"
+"Last-Translator: Andrew <andrew.nagy@the159.com>\n"
+"Language-Team: French "
+"<http://git.freepbx.org/projects/freepbx/customappsreg/fr/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 
 msgid "Custom Applications"
 msgstr ""
@@ -47,7 +50,7 @@ msgstr "Destinations Personnalisées"
 
 #, php-format
 msgid "Custom Destination: %s"
-msgstr "Destination Personnalisée"
+msgstr "Destination Personnalisée: %s"
 
 msgid "Custom Extension: "
 msgstr "Extension Personnalisée"
