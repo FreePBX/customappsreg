@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:42-0500\n"
 "PO-Revision-Date: 2009-05-11 20:05-0300\n"
 "Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
 "Language-Team: MidiVTS Team <team@midivts.org>\n"
@@ -30,62 +30,66 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-msgid "Custom Applications"
-msgstr ""
+#: /usr/src/freepbx/customappsreg/page.customdests.php:121
+msgid "(pick destination)"
+msgstr "(selecionar destino)"
 
-msgid "Admin"
-msgstr ""
+#: /usr/src/freepbx/customappsreg/page.customdests.php:42
+#: /usr/src/freepbx/customappsreg/page.customdests.php:66
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Add Custom Destination"
+msgstr "Adicionar um destino personalizado"
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:61
+#: /usr/src/freepbx/customappsreg/page.customextens.php:83
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
+msgid "Add Custom Extension"
+msgstr "Adicionar extensão personalizada"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
 msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+"Brief Description that will be published to modules when showing "
+"destinations. Example: My Weather App"
 msgstr ""
+"Breve descrição que será publicada para os módulos quando mostrando os "
+"destinos. Exemplo: Minha Previsão do Tempo"
 
-msgid "Custom Extensions"
-msgstr "Extensões personalizadas"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid ""
+"Brief description that will be published in the Extension Registry about "
+"this extension"
+msgstr ""
+"Breve descrição que será publicada no registro de extensões sobre esta "
+"extensão"
 
-msgid "Custom Destinations"
-msgstr "Destinos personalizados"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:115
+msgid ""
+"Choose un-identified destinations on your system to add to the Custom "
+"Destination Registry. This will insert the chosen entry into the Custom "
+"Destination box above."
+msgstr ""
+"Escolha destinos não identificados no seu sistema para adicionar ao registro "
+"de destinos personalizados. ISto irá inserir a entrada escolhida dentro da "
+"caixa de destino personalizada acima. "
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:90
+msgid "Conflicting Extensions"
+msgstr "Extensões conflitantes"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:86
+msgid "Custom Destination"
+msgstr "Destino personalizado"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:33
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino personalizado: %s"
 
-msgid "Custom Extension: "
-msgstr "Extensão personalizada:"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:9
+msgid "Custom Destinations"
+msgstr "Destinos personalizados"
 
-msgid ""
-"Invalid Destination, must not be blank, must be formatted as: context,exten,"
-"pri"
-msgstr ""
-"Destino inválido, não deve ser branco, deve ser formatado como: context, "
-"exten, pri"
-
-msgid "Invalid description specified, must not be blank"
-msgstr "Descrição inválida especificada, não deve estar em branco"
-
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "Destino duplicado: Este destino já está em uso"
-
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"Destino duplicado: Este destino esta em uso ou potencialmente usado por "
-"outro módulo"
-
-msgid "Invalid Extension, must not be blank"
-msgstr "Extensão inválida, não deve estar em branco"
-
-msgid "DUPLICATE Extension: This extension already in use"
-msgstr "Extensão duplicada: A extensão já está em uso"
-
-msgid "Add Custom Destination"
-msgstr "Adicionar um destino personalizado"
-
-msgid "Edit: "
-msgstr "Editar:"
-
+#: /usr/src/freepbx/customappsreg/page.customdests.php:69
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -105,74 +109,15 @@ msgstr ""
 "desconhecidos' irá permitir que você escolha e insira quaisquer destinos que "
 "o registro não está a par no campo Destino Personalizado. "
 
-msgid "Edit Custom Destination"
-msgstr "Editar destino personalizado"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
+msgid "Custom Extension"
+msgstr "Extensão personalizada"
 
-msgid "Custom Destination"
-msgstr "Destino personalizado"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:56
+msgid "Custom Extension: "
+msgstr "Extensão personalizada:"
 
-msgid ""
-"This is the Custom Destination to be published. It should be formatted "
-"exactly as you would put it in a goto statement, with context, exten, "
-"priority all included. An example might look like:<br />mycustom-app,s,1"
-msgstr ""
-"Este é um destino personalizado a ser publicado. Ele deve ser formatado "
-"exatamente como você colocaria em uma instrução goto, com contexto, extensão "
-"e prioridade incluídas. Algo como: <br />mycustom-app,s,1"
-
-msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
-msgstr ""
-"AVISO SOMENTE LEITURA: Este destino está sendo usado por outro módulo e não "
-"pode ser editado. Você deve remover estas dependências de forma a editar o "
-"destino ou criar um novo destino a ser usado"
-
-msgid "Destination Quick Pick"
-msgstr "Seleção rápida do Destino"
-
-msgid ""
-"Choose un-identified destinations on your system to add to the Custom "
-"Destination Registry. This will insert the chosen entry into the Custom "
-"Destination box above."
-msgstr ""
-"Escolha destinos não identificados no seu sistema para adicionar ao registro "
-"de destinos personalizados. ISto irá inserir a entrada escolhida dentro da "
-"caixa de destino personalizada acima. "
-
-msgid "(pick destination)"
-msgstr "(selecionar destino)"
-
-msgid "Description"
-msgstr "Descrição "
-
-msgid ""
-"Brief Description that will be published to modules when showing "
-"destinations. Example: My Weather App"
-msgstr ""
-"Breve descrição que será publicada para os módulos quando mostrando os "
-"destinos. Exemplo: Minha Previsão do Tempo"
-
-msgid "Notes"
-msgstr "Notas"
-
-msgid ""
-"More detailed notes about this destination to help document it. This field "
-"is not used elsewhere."
-msgstr ""
-"Notas mais detalhadas sobre o destino para ajudar a documentá-la. Este campo "
-"não é usado em nenhum outro lugar."
-
-msgid "Submit Changes"
-msgstr "Submeter Mudanças"
-
-msgid "Delete"
-msgstr "Remover"
-
-msgid "Add Custom Extension"
-msgstr "Adicionar extensão personalizada"
-
+#: /usr/src/freepbx/customappsreg/page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -191,15 +136,118 @@ msgstr ""
 "não deveria colocar as extensões que você criou no módulo Misc Apps como não "
 "customizada. "
 
-msgid "Conflicting Extensions"
-msgstr "Extensões conflitantes"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:116
+msgid "DUPLICATE Destination: This destination is already in use"
+msgstr "Destino duplicado: Este destino já está em uso"
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:127
+#: /usr/src/freepbx/customappsreg/functions.inc.php:190
+msgid ""
+"DUPLICATE Destination: This destination is in use or potentially used by "
+"another module"
+msgstr ""
+"Destino duplicado: Este destino esta em uso ou potencialmente usado por "
+"outro módulo"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:155
+msgid "DUPLICATE Extension: This extension already in use"
+msgstr "Extensão duplicada: A extensão já está em uso"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:146
+#: /usr/src/freepbx/customappsreg/page.customextens.php:117
+msgid "Delete"
+msgstr "Remover"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid "Description"
+msgstr "Descrição "
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:113
+msgid "Destination Quick Pick"
+msgstr "Seleção rápida do Destino"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Edit Custom Destination"
+msgstr "Editar destino personalizado"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
 msgid "Edit Custom Extension"
 msgstr "Editar extensão personalizada"
 
-msgid "Custom Extension"
-msgstr "Extensão personalizada"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:64
+#: /usr/src/freepbx/customappsreg/page.customextens.php:81
+msgid "Edit: "
+msgstr "Editar:"
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:107
+#: /usr/src/freepbx/customappsreg/page.customdests.php:182
+msgid ""
+"Invalid Destination, must not be blank, must be formatted as: context,exten,"
+"pri"
+msgstr ""
+"Destino inválido, não deve ser branco, deve ser formatado como: context, "
+"exten, pri"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:128
+msgid "Invalid Extension, must not be blank"
+msgstr "Extensão inválida, não deve estar em branco"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:111
+#: /usr/src/freepbx/customappsreg/functions.inc.php:144
+#: /usr/src/freepbx/customappsreg/page.customdests.php:183
+#: /usr/src/freepbx/customappsreg/page.customextens.php:129
+msgid "Invalid description specified, must not be blank"
+msgstr "Descrição inválida especificada, não deve estar em branco"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+msgid ""
+"More detailed notes about this destination to help document it. This field "
+"is not used elsewhere."
+msgstr ""
+"Notas mais detalhadas sobre o destino para ajudar a documentá-la. Este campo "
+"não é usado em nenhum outro lugar."
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid ""
+"More detailed notes about this extension to help document it. This field is "
+"not used elsewhere."
+msgstr ""
+"Notas mais detalhadas sobre a extensão para ajudar a documentá-la. Este "
+"campo não é usado em mais nenhum lugar."
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid "Notes"
+msgstr "Notas"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:91
+msgid ""
+"READONLY WARNING: Because this destination is being used by other module "
+"objects it can not be edited. You must remove those dependencies in order to "
+"edit this destination, or create a new destination to use"
+msgstr ""
+"AVISO SOMENTE LEITURA: Este destino está sendo usado por outro módulo e não "
+"pode ser editado. Você deve remover estas dependências de forma a editar o "
+"destino ou criar um novo destino a ser usado"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:145
+#: /usr/src/freepbx/customappsreg/page.customextens.php:116
+msgid "Submit Changes"
+msgstr "Submeter Mudanças"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:89
+msgid ""
+"This is the Custom Destination to be published. It should be formatted "
+"exactly as you would put it in a goto statement, with context, exten, "
+"priority all included. An example might look like:<br />mycustom-app,s,1"
+msgstr ""
+"Este é um destino personalizado a ser publicado. Ele deve ser formatado "
+"exatamente como você colocaria em uma instrução goto, com contexto, extensão "
+"e prioridade incluídas. Algo como: <br />mycustom-app,s,1"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
@@ -208,16 +256,5 @@ msgstr ""
 "discage, e que você quer que o registro de extensões do freePBX esteja a "
 "par. "
 
-msgid ""
-"Brief description that will be published in the Extension Registry about "
-"this extension"
-msgstr ""
-"Breve descrição que será publicada no registro de extensões sobre esta "
-"extensão"
-
-msgid ""
-"More detailed notes about this extension to help document it. This field is "
-"not used elsewhere."
-msgstr ""
-"Notas mais detalhadas sobre a extensão para ajudar a documentá-la. Este "
-"campo não é usado em mais nenhum lugar."
+#~ msgid "Custom Extensions"
+#~ msgstr "Extensões personalizadas"

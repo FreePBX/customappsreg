@@ -7,80 +7,81 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:42-0500\n"
 "PO-Revision-Date: 2014-07-21 16:13+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian "
-"<http://git.freepbx.org/projects/freepbx/customappsreg/bg/>\n"
-"Language: bg_BG\n"
+"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
+"customappsreg/bg/>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-msgid "Custom Applications"
-msgstr "Custom Приложения"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:121
+msgid "(pick destination)"
+msgstr "(избери направление)"
 
-msgid "Admin"
-msgstr "Админ"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:42
+#: /usr/src/freepbx/customappsreg/page.customdests.php:66
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Add Custom Destination"
+msgstr "Добави Custom Направление"
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:61
+#: /usr/src/freepbx/customappsreg/page.customextens.php:83
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
+msgid "Add Custom Extension"
+msgstr "Добави Custom Вътрешна Линия"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
 msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+"Brief Description that will be published to modules when showing "
+"destinations. Example: My Weather App"
 msgstr ""
-"Предоставя възможност за добавяне на вътрешни линии и направления, които "
-"могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
-"Направления да ги използва."
+"Кратко описание което ще се предостави на модулите когато показват "
+"направленията. Например: My Weather App"
 
-msgid "Custom Extensions"
-msgstr "Custom Вътрешни Линии"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid ""
+"Brief description that will be published in the Extension Registry about "
+"this extension"
+msgstr ""
+"Кратко описание което ще се представи в Регистрирани Вътрешни Линии за тази "
+"вътрешна линия"
 
-msgid "Custom Destinations"
-msgstr "Custom Направления"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:115
+msgid ""
+"Choose un-identified destinations on your system to add to the Custom "
+"Destination Registry. This will insert the chosen entry into the Custom "
+"Destination box above."
+msgstr ""
+"Избира незвестни направления във вашата система за да ги добави към "
+"Регистрирани Custom Направления. Това ще постави избраното в Custom "
+"Направление полето по-горе."
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:90
+msgid "Conflicting Extensions"
+msgstr "Вътрешни Линии в Конфликт"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:86
+msgid "Custom Destination"
+msgstr "Custom Направление"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:33
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Custom Направление: %s"
 
-msgid "Custom Extension: "
-msgstr "Custom Вътрешна Линия: "
+#: /usr/src/freepbx/customappsreg/functions.inc.php:9
+msgid "Custom Destinations"
+msgstr "Custom Направления"
 
-msgid ""
-"Invalid Destination, must not be blank, must be formatted as: context,exten,"
-"pri"
-msgstr ""
-"Неправилно Направление, не може да е празно, трябва да е форматирано така: "
-"context,exten,pri"
-
-msgid "Invalid description specified, must not be blank"
-msgstr "Неправилно описание, не може да е празно"
-
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "ДУБЛИРАНО Направление: Направлението вече се използва"
-
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"ДУБЛИРАНО Направление: Направлението се използва или потенциално се използва "
-"от друг модул"
-
-msgid "Invalid Extension, must not be blank"
-msgstr "Неправилна Вътрешна Линия, полето не може да е празно"
-
-msgid "DUPLICATE Extension: This extension already in use"
-msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
-
-msgid "Add Custom Destination"
-msgstr "Добави Custom Направление"
-
-msgid "Edit: "
-msgstr "Редактирай: "
-
+#: /usr/src/freepbx/customappsreg/page.customdests.php:69
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -100,73 +101,15 @@ msgstr ""
 "Избиране на Направление' ви предлага да изберете и добавите всички "
 "направления за които регистрите не са известени в Custom Направление полето."
 
-msgid "Edit Custom Destination"
-msgstr "Редактирай Custom Направление"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
+msgid "Custom Extension"
+msgstr "Custom Вътрешна Линия"
 
-msgid "Custom Destination"
-msgstr "Custom Направление"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:56
+msgid "Custom Extension: "
+msgstr "Custom Вътрешна Линия: "
 
-msgid ""
-"This is the Custom Destination to be published. It should be formatted "
-"exactly as you would put it in a goto statement, with context, exten, "
-"priority all included. An example might look like:<br />mycustom-app,s,1"
-msgstr ""
-"Custom Направление за предоставяне. Трябва да е форматирано точно както "
-"бихте го написали в goto въвеждане, с включени context, exten, priority. "
-"Например:<br />mycustom-app,s,1"
-
-msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
-msgstr ""
-"ВНИМАНИЕ: Тъй като това направление се използва от друг модул не може да "
-"бъде редактирано. Трябва да премахните тази завимост за да можете да "
-"редактирате направлението или създайте ново направление което да използвате"
-
-msgid "Destination Quick Pick"
-msgstr "Бързо Избиране на Направление"
-
-msgid ""
-"Choose un-identified destinations on your system to add to the Custom "
-"Destination Registry. This will insert the chosen entry into the Custom "
-"Destination box above."
-msgstr ""
-"Избира незвестни направления във вашата система за да ги добави към "
-"Регистрирани Custom Направления. Това ще постави избраното в Custom "
-"Направление полето по-горе."
-
-msgid "(pick destination)"
-msgstr "(избери направление)"
-
-msgid "Description"
-msgstr "Описание"
-
-msgid ""
-"Brief Description that will be published to modules when showing "
-"destinations. Example: My Weather App"
-msgstr ""
-"Кратко описание което ще се предостави на модулите когато показват "
-"направленията. Например: My Weather App"
-
-msgid "Notes"
-msgstr "Бележки"
-
-msgid ""
-"More detailed notes about this destination to help document it. This field "
-"is not used elsewhere."
-msgstr ""
-"По детайлни бележки за това направление. Това поле не се използва никъде."
-
-msgid "Submit Changes"
-msgstr "Приеми Промените"
-
-msgid "Delete"
-msgstr "Изтрий"
-
-msgid "Add Custom Extension"
-msgstr "Добави Custom Вътрешна Линия"
-
+#: /usr/src/freepbx/customappsreg/page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -185,15 +128,116 @@ msgstr ""
 "вътрешните линии които сте създали в Модул Други Направления, тъй като те не "
 "са custom."
 
-msgid "Conflicting Extensions"
-msgstr "Вътрешни Линии в Конфликт"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:116
+msgid "DUPLICATE Destination: This destination is already in use"
+msgstr "ДУБЛИРАНО Направление: Направлението вече се използва"
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:127
+#: /usr/src/freepbx/customappsreg/functions.inc.php:190
+msgid ""
+"DUPLICATE Destination: This destination is in use or potentially used by "
+"another module"
+msgstr ""
+"ДУБЛИРАНО Направление: Направлението се използва или потенциално се използва "
+"от друг модул"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:155
+msgid "DUPLICATE Extension: This extension already in use"
+msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:146
+#: /usr/src/freepbx/customappsreg/page.customextens.php:117
+msgid "Delete"
+msgstr "Изтрий"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid "Description"
+msgstr "Описание"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:113
+msgid "Destination Quick Pick"
+msgstr "Бързо Избиране на Направление"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Edit Custom Destination"
+msgstr "Редактирай Custom Направление"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
 msgid "Edit Custom Extension"
 msgstr "Редактирай Custom Вътрешна Линия"
 
-msgid "Custom Extension"
-msgstr "Custom Вътрешна Линия"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:64
+#: /usr/src/freepbx/customappsreg/page.customextens.php:81
+msgid "Edit: "
+msgstr "Редактирай: "
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:107
+#: /usr/src/freepbx/customappsreg/page.customdests.php:182
+msgid ""
+"Invalid Destination, must not be blank, must be formatted as: context,exten,"
+"pri"
+msgstr ""
+"Неправилно Направление, не може да е празно, трябва да е форматирано така: "
+"context,exten,pri"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:128
+msgid "Invalid Extension, must not be blank"
+msgstr "Неправилна Вътрешна Линия, полето не може да е празно"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:111
+#: /usr/src/freepbx/customappsreg/functions.inc.php:144
+#: /usr/src/freepbx/customappsreg/page.customdests.php:183
+#: /usr/src/freepbx/customappsreg/page.customextens.php:129
+msgid "Invalid description specified, must not be blank"
+msgstr "Неправилно описание, не може да е празно"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+msgid ""
+"More detailed notes about this destination to help document it. This field "
+"is not used elsewhere."
+msgstr ""
+"По детайлни бележки за това направление. Това поле не се използва никъде."
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid ""
+"More detailed notes about this extension to help document it. This field is "
+"not used elsewhere."
+msgstr ""
+"По детайлни бележки за тази вътрешна линия. Това поле не се използва никъде."
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid "Notes"
+msgstr "Бележки"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:91
+msgid ""
+"READONLY WARNING: Because this destination is being used by other module "
+"objects it can not be edited. You must remove those dependencies in order to "
+"edit this destination, or create a new destination to use"
+msgstr ""
+"ВНИМАНИЕ: Тъй като това направление се използва от друг модул не може да "
+"бъде редактирано. Трябва да премахните тази завимост за да можете да "
+"редактирате направлението или създайте ново направление което да използвате"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:145
+#: /usr/src/freepbx/customappsreg/page.customextens.php:116
+msgid "Submit Changes"
+msgstr "Приеми Промените"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:89
+msgid ""
+"This is the Custom Destination to be published. It should be formatted "
+"exactly as you would put it in a goto statement, with context, exten, "
+"priority all included. An example might look like:<br />mycustom-app,s,1"
+msgstr ""
+"Custom Направление за предоставяне. Трябва да е форматирано точно както "
+"бихте го написали в goto въвеждане, с включени context, exten, priority. "
+"Например:<br />mycustom-app,s,1"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
@@ -201,15 +245,20 @@ msgstr ""
 "Вътрешна Линия или Специален Код които използвате в вашите схеми на избиране "
 "за които искате FreePBX Регистрирани Вътрешни Линии да се известява."
 
-msgid ""
-"Brief description that will be published in the Extension Registry about "
-"this extension"
-msgstr ""
-"Кратко описание което ще се представи в Регистрирани Вътрешни Линии за тази "
-"вътрешна линия"
+#~ msgid "Custom Applications"
+#~ msgstr "Custom Приложения"
 
-msgid ""
-"More detailed notes about this extension to help document it. This field is "
-"not used elsewhere."
-msgstr ""
-"По детайлни бележки за тази вътрешна линия. Това поле не се използва никъде."
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Предоставя възможност за добавяне на вътрешни линии и направления, които "
+#~ "могат да се създават и използват така, че Регистратора на Вътрешни Линии "
+#~ "и Направления да ги използва."
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Custom Вътрешни Линии"

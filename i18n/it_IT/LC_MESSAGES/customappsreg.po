@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:42-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -12,62 +12,63 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-msgid "Custom Applications"
-msgstr ""
+#: /usr/src/freepbx/customappsreg/page.customdests.php:121
+msgid "(pick destination)"
+msgstr "(seleziona destinazione)"
 
-msgid "Admin"
-msgstr ""
+#: /usr/src/freepbx/customappsreg/page.customdests.php:42
+#: /usr/src/freepbx/customappsreg/page.customdests.php:66
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Add Custom Destination"
+msgstr "Aggiungi Destinazione Personalizzata"
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:61
+#: /usr/src/freepbx/customappsreg/page.customextens.php:83
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
+msgid "Add Custom Extension"
+msgstr "Aggiungi Interno Personalizzato"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
 msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+"Brief Description that will be published to modules when showing "
+"destinations. Example: My Weather App"
 msgstr ""
+"Breve Descrizione che sarà pubblicata nei moduli quando si visualizzeranno "
+"le destinazioni. Esempio: Mia Applicazione Meteo"
 
-msgid "Custom Extensions"
-msgstr "Interni Personalizzati"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid ""
+"Brief description that will be published in the Extension Registry about "
+"this extension"
+msgstr ""
+"Breve descrizione che sarà pubblicata nel Registro Interni a proposito di "
+"questo interno"
 
-msgid "Custom Destinations"
-msgstr "Destinazioni Personalizzate"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:115
+msgid ""
+"Choose un-identified destinations on your system to add to the Custom "
+"Destination Registry. This will insert the chosen entry into the Custom "
+"Destination box above."
+msgstr "Scegliere una destinazione"
 
+#: /usr/src/freepbx/customappsreg/page.customextens.php:90
+msgid "Conflicting Extensions"
+msgstr "Interni in conflitto"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:86
+msgid "Custom Destination"
+msgstr "Destinazione Personalizzata"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:33
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destinazione Personalizzata: %s"
 
-msgid "Custom Extension: "
-msgstr "Interno Personalizzato:"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:9
+msgid "Custom Destinations"
+msgstr "Destinazioni Personalizzate"
 
-msgid ""
-"Invalid Destination, must not be blank, must be formatted as: context,exten,"
-"pri"
-msgstr ""
-"Destinazione non valida, non può essere lasciata vuota, deve essere "
-"formattata come: contesto,exten,pri"
-
-msgid "Invalid description specified, must not be blank"
-msgstr "Descrizione specificata non valida, non può essere lasciata vuota"
-
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "Destinazione DUPLICATA: Questa destinazione è già in uso"
-
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"Destinazione DUPLICATA: Questa destinazione è già in uso o potenzialmente "
-"utilizzata da un altro modulo"
-
-msgid "Invalid Extension, must not be blank"
-msgstr "Interno non valido, non può essere lasciato vuoto"
-
-msgid "DUPLICATE Extension: This extension already in use"
-msgstr "Interno DUPLICATO: Questo interno è già in uso"
-
-msgid "Add Custom Destination"
-msgstr "Aggiungi Destinazione Personalizzata"
-
-msgid "Edit: "
-msgstr "Modifica:"
-
+#: /usr/src/freepbx/customappsreg/page.customdests.php:69
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -87,72 +88,15 @@ msgstr ""
 "Sconosciute' permetterà di scegliere ed inserire qualsiasi destinazione che "
 "il registro non è a conoscenza nel campo Destinazioni Personalizzate."
 
-msgid "Edit Custom Destination"
-msgstr "Modifica Destinazione Personalizzata"
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
+msgid "Custom Extension"
+msgstr "Interno Personalizzato"
 
-msgid "Custom Destination"
-msgstr "Destinazione Personalizzata"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:56
+msgid "Custom Extension: "
+msgstr "Interno Personalizzato:"
 
-msgid ""
-"This is the Custom Destination to be published. It should be formatted "
-"exactly as you would put it in a goto statement, with context, exten, "
-"priority all included. An example might look like:<br />mycustom-app,s,1"
-msgstr ""
-"Questa è la Destinazione Personalizzata che sarà pubblicata. Deve essere "
-"formattata esattamente come se fosse inserita dopo il comando goto, con "
-"contesto,exten,priorità tutto incluso. Esempio: <br />app-prova,s,1"
-
-msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
-msgstr ""
-"ATTENZIONE, SOLA LETTURA: siccome questa destinazione è utilizzata da altri "
-"moduli non può essere modificata. Devi prima eliminare queste dipendenze "
-"prima di rimuovere questa destinazione, o creare una nuova destinazione da "
-"utilizzare"
-
-msgid "Destination Quick Pick"
-msgstr "Selezione Rapida Destinazione"
-
-msgid ""
-"Choose un-identified destinations on your system to add to the Custom "
-"Destination Registry. This will insert the chosen entry into the Custom "
-"Destination box above."
-msgstr "Scegliere una destinazione"
-
-msgid "(pick destination)"
-msgstr "(seleziona destinazione)"
-
-msgid "Description"
-msgstr "Descrizione"
-
-msgid ""
-"Brief Description that will be published to modules when showing "
-"destinations. Example: My Weather App"
-msgstr ""
-"Breve Descrizione che sarà pubblicata nei moduli quando si visualizzeranno "
-"le destinazioni. Esempio: Mia Applicazione Meteo"
-
-msgid "Notes"
-msgstr "Note"
-
-msgid ""
-"More detailed notes about this destination to help document it. This field "
-"is not used elsewhere."
-msgstr ""
-"Ulteriori note descrittive a proposito di questa destinazione per aiutare a "
-"documentarla. Questo campo non è utilizzato da nessun'altra parte."
-
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
-
-msgid "Delete"
-msgstr "Elimina"
-
-msgid "Add Custom Extension"
-msgstr "Aggiungi Interno Personalizzato"
-
+#: /usr/src/freepbx/customappsreg/page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -171,15 +115,119 @@ msgstr ""
 "modulo Applicazioni Varie perchè questi non sono interni (extension) "
 "personalizzati."
 
-msgid "Conflicting Extensions"
-msgstr "Interni in conflitto"
+#: /usr/src/freepbx/customappsreg/functions.inc.php:116
+msgid "DUPLICATE Destination: This destination is already in use"
+msgstr "Destinazione DUPLICATA: Questa destinazione è già in uso"
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:127
+#: /usr/src/freepbx/customappsreg/functions.inc.php:190
+msgid ""
+"DUPLICATE Destination: This destination is in use or potentially used by "
+"another module"
+msgstr ""
+"Destinazione DUPLICATA: Questa destinazione è già in uso o potenzialmente "
+"utilizzata da un altro modulo"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:155
+msgid "DUPLICATE Extension: This extension already in use"
+msgstr "Interno DUPLICATO: Questo interno è già in uso"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:146
+#: /usr/src/freepbx/customappsreg/page.customextens.php:117
+msgid "Delete"
+msgstr "Elimina"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:136
+#: /usr/src/freepbx/customappsreg/page.customextens.php:107
+msgid "Description"
+msgstr "Descrizione"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:113
+msgid "Destination Quick Pick"
+msgstr "Selezione Rapida Destinazione"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:84
+msgid "Edit Custom Destination"
+msgstr "Modifica Destinazione Personalizzata"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:100
 msgid "Edit Custom Extension"
 msgstr "Modifica Interno Personalizzato"
 
-msgid "Custom Extension"
-msgstr "Interno Personalizzato"
+#: /usr/src/freepbx/customappsreg/page.customdests.php:64
+#: /usr/src/freepbx/customappsreg/page.customextens.php:81
+msgid "Edit: "
+msgstr "Modifica:"
 
+#: /usr/src/freepbx/customappsreg/functions.inc.php:107
+#: /usr/src/freepbx/customappsreg/page.customdests.php:182
+msgid ""
+"Invalid Destination, must not be blank, must be formatted as: context,exten,"
+"pri"
+msgstr ""
+"Destinazione non valida, non può essere lasciata vuota, deve essere "
+"formattata come: contesto,exten,pri"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:128
+msgid "Invalid Extension, must not be blank"
+msgstr "Interno non valido, non può essere lasciato vuoto"
+
+#: /usr/src/freepbx/customappsreg/functions.inc.php:111
+#: /usr/src/freepbx/customappsreg/functions.inc.php:144
+#: /usr/src/freepbx/customappsreg/page.customdests.php:183
+#: /usr/src/freepbx/customappsreg/page.customextens.php:129
+msgid "Invalid description specified, must not be blank"
+msgstr "Descrizione specificata non valida, non può essere lasciata vuota"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+msgid ""
+"More detailed notes about this destination to help document it. This field "
+"is not used elsewhere."
+msgstr ""
+"Ulteriori note descrittive a proposito di questa destinazione per aiutare a "
+"documentarla. Questo campo non è utilizzato da nessun'altra parte."
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid ""
+"More detailed notes about this extension to help document it. This field is "
+"not used elsewhere."
+msgstr ""
+"Ulteriore nota descrittiva a proposito di questo interno per aiutare a "
+"documentarlo. Questo campo non è utilizzato da nessun'altra parte."
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:140
+#: /usr/src/freepbx/customappsreg/page.customextens.php:111
+msgid "Notes"
+msgstr "Note"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:91
+msgid ""
+"READONLY WARNING: Because this destination is being used by other module "
+"objects it can not be edited. You must remove those dependencies in order to "
+"edit this destination, or create a new destination to use"
+msgstr ""
+"ATTENZIONE, SOLA LETTURA: siccome questa destinazione è utilizzata da altri "
+"moduli non può essere modificata. Devi prima eliminare queste dipendenze "
+"prima di rimuovere questa destinazione, o creare una nuova destinazione da "
+"utilizzare"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:145
+#: /usr/src/freepbx/customappsreg/page.customextens.php:116
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
+
+#: /usr/src/freepbx/customappsreg/page.customdests.php:89
+msgid ""
+"This is the Custom Destination to be published. It should be formatted "
+"exactly as you would put it in a goto statement, with context, exten, "
+"priority all included. An example might look like:<br />mycustom-app,s,1"
+msgstr ""
+"Questa è la Destinazione Personalizzata che sarà pubblicata. Deve essere "
+"formattata esattamente come se fosse inserita dopo il comando goto, con "
+"contesto,exten,priorità tutto incluso. Esempio: <br />app-prova,s,1"
+
+#: /usr/src/freepbx/customappsreg/page.customextens.php:102
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
@@ -187,16 +235,5 @@ msgstr ""
 "Questo è l'Interno o il Codice Servizio che stai utilizzando nel tuo piano "
 "di chiamata e che vuoi che il Registro Interni di FreePBX sia a consoscenza."
 
-msgid ""
-"Brief description that will be published in the Extension Registry about "
-"this extension"
-msgstr ""
-"Breve descrizione che sarà pubblicata nel Registro Interni a proposito di "
-"questo interno"
-
-msgid ""
-"More detailed notes about this extension to help document it. This field is "
-"not used elsewhere."
-msgstr ""
-"Ulteriore nota descrittiva a proposito di questo interno per aiutare a "
-"documentarlo. Questo campo non è utilizzato da nessun'altra parte."
+#~ msgid "Custom Extensions"
+#~ msgstr "Interni Personalizzati"
