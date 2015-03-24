@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - customappsreg module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:15-0500\n"
-"PO-Revision-Date: 2015-03-23 20:55+0200\n"
+"PO-Revision-Date: 2015-03-23 20:56+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/customappsreg/es_ES/>\n"
@@ -107,7 +107,7 @@ msgstr "Extensión personalizada"
 
 #: functions.inc.php:56
 msgid "Custom Extension: "
-msgstr "Extensión personalizada: %s"
+msgstr "Extensión personalizada: "
 
 #: customappsreg.i18n.php:6
 msgid "Custom Extensions"
@@ -238,8 +238,8 @@ msgid ""
 msgstr ""
 "Éste es el Destino personalizado que será publicado. Debería ser formateado "
 "exactamente igual que como se pondría en un sentencia \"goto\", con "
-"contexto, extensión y prioridad incluidas. Un ejemplo podría ser<br/>"
-"\"mycustom-apps,s,1\"."
+"contexto, extensión y prioridad incluidas. Un ejemplo podría ser<br "
+"/>mycustom-apps,s,1"
 
 #: page.customextens.php:102
 msgid ""
