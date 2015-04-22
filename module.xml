@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>2.11.0.2</version>
+	<version>12.0.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,36 +20,19 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*12.0.1* Add advanced 'Return' function.
 		*2.11.0.2* Add license info
 		*2.11.0.1* Custom Application Popover Allowance
 		*2.11.0.0* #6051
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes
-		*2.9.0.1* #4001
-		*2.9.0.0* #4618 XSS patch
-		*2.8.0.0* published 2.8 version
-		*2.7.0.0* localizations
-		*2.6.0.2* localizations
-		*2.6.0.1* localizations, misc
-		*2.6.0.0* stoped harmless php warning msg
-		*2.5.0.4* #3263, localization fixes
-		*2.5.0.3* localizations fixes
-		*2.5.0.2* localization, Swedish
-		*2.5.0.1* #3003 spelling
-		*2.5.0* #2845 tabindex
-		*2.4.0.5* #2843 Russian Translation
-		*2.4.0.4* #2700 block editing of destination field when once other modules are using it
-		*2.4.0.3* added depends on 2.4.0
-		*2.4.0.2* #2558 can't edit/del custom extension
-		*2.4.0.1* Fix typo in install script, non-existent primary key
-		*2.4.0* First release of module
 	</changelog>
   <depends>
-    <version>2.4.0</version>
+    <version>12.0.54</version>
   </depends>
-  <location>release/2.11/customappsreg-2.11.0.0.tgz</location>
-  <md5sum>21344e8a23a5c1ee5184d9bc96dedfee</md5sum>
+  <location></location>
+  <md5sum></md5sum>
   <supported>
-    <version>2.10</version>
+    <version>12.0</version>
   </supported>
 </module>
