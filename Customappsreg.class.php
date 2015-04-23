@@ -39,6 +39,28 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		}
 	}
 
+	// Why yes, we DO want to generate dialplan, thank you very much!
+	public static function myDialplanHooks() {
+		return true;
+	}
+
+	// This is the wrapper around any custom dests that (may) have a return.
+	public function doDialplanHook(&$ext, $engine, $priority) {
+		$context = 'customdests';
+		$allDests = $this->getAllCustomDests();
+		foreach ($allDests as $dest) {
+			if (!$dest['destret']) {
+				continue;
+			}
+			print_r($dest);
+			$hash = hash('sha256', $dest['extdisplay']);
+			$ext->add($context, $hash, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
+			$ext->add($context, $hash, '', new \ext_gosub($dest['extdisplay']));
+			$ext->add($context, $hash, '', new \ext_noop('Returned from Custom Destination '.$dest['description']));
+			$ext->add($context, $hash, '', new \ext_goto($dest['dest']));
+		}
+	}
+
 	private function handleDestsPost($vars) {
 		switch ($vars['action']) {
 		case 'delete':
