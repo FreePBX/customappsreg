@@ -161,16 +161,6 @@ function customappsreg_customextens_add($custom_exten, $description, $notes) {
 	return true;
 }
 
-function customappsreg_customdests_delete($custom_dest) {
-	global $db;
-
-	$sql = "DELETE FROM custom_destinations WHERE custom_dest = ".q($custom_dest);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
-}
-
 function customappsreg_customextens_delete($custom_exten) {
 	global $db;
 
