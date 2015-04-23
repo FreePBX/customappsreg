@@ -5,11 +5,22 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 function customappsreg_destinations() {
 	// return an associative array with destination and description
-	foreach (customappsreg_customdests_list() as $row) {
-		$extens[] = array('destination' => $row['custom_dest'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
+	$allDests = \FreePBX::Customappsreg()->getAllCustomDests();
+	if (!$allDests) {
+		return null;
 	}
-	return isset($extens)?$extens:null;
 
+	$extens = array();
+	foreach ($allDests as $row) {
+		// If this has a return flag, we need to wrap it.
+		if ($row['destret']) {
+			$hash = hash('sha256', $row['extdisplay']);
+			$extens[] = array('destination' => "customdests,$hash,1", 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
+		} else {
+			$extens[] = array('destination' => $row['extdisplay'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
+		}
+	}
+	return $extens;
 }
 
 /** the 'exten' is the same as the destination for this module
@@ -223,4 +234,3 @@ function customappsreg_customdests_getunknown() {
 	return array_unique($results);
 }
 
-?>
