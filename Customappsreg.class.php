@@ -7,6 +7,19 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 	private $allDests = false;
 
 	public function install() {
+		// Check for old Destinations table
+		$db = $this->Database();
+		$sql = "SELECT * FROM `custom_destinations` LIMIT 1";
+		try {
+			$res = $db->query($sql);
+			// If we made it here, the table exists, and needs to be converted.
+			$this->convertDestDatabase();
+		} catch (Exception $e) {
+			if ($e->getCode() != "42S02") { // 42S02 == table doesn't exist. Which is correct
+				// We don't know what it is, let someone else deal with it.
+				throw $e;
+			}
+		}
 	}
 
 	public function uninstall() {
