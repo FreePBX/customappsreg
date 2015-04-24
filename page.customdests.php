@@ -139,6 +139,18 @@ echo $helptext;
 </form>
 			
 <script language="javascript">
+$(document).ready(function() {
+	$("#destret").click(function(e){
+		if($(e.target).prop('checked')) {
+			$("#hasreturn").show();
+		} else {
+			$("#hasreturn").hide();
+		}
+	});
+});
+
+
+
 <!--
 
 function insertDest() {
