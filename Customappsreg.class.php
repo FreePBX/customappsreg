@@ -4,6 +4,8 @@ namespace FreePBX\modules;
 
 class Customappsreg extends \FreePBX_Helpers implements \BMO {
 
+	private $allDests = false;
+
 	public function install() {
 	}
 
@@ -35,7 +37,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		if ($page == "customdests") {
 			$this->handleDestsPost($postarr);
 		} else {
-			$this->handleExtenPost($postarr);
+			//$this->handleExtenPost($postarr);
 		}
 	}
 
@@ -52,12 +54,11 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			if (!$dest['destret']) {
 				continue;
 			}
-			print_r($dest);
-			$hash = hash('sha256', $dest['extdisplay']);
-			$ext->add($context, $hash, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
-			$ext->add($context, $hash, '', new \ext_gosub($dest['extdisplay']));
-			$ext->add($context, $hash, '', new \ext_noop('Returned from Custom Destination '.$dest['description']));
-			$ext->add($context, $hash, '', new \ext_goto($dest['dest']));
+			$fakedest = "cd".$dest['index'];
+			$ext->add($context, $fakedest, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
+			$ext->add($context, $fakedest, '', new \ext_gosub($dest['extdisplay']));
+			$ext->add($context, $fakedest, '', new \ext_noop('Returned from Custom Destination '.$dest['description']));
+			$ext->add($context, $fakedest, '', new \ext_goto($dest['dest']));
 		}
 	}
 
@@ -96,12 +97,43 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 	}
 
 	public function getAllCustomDests() {
-		$dests = $this->getAll("dests");
-		if (!is_array($dests)) {
-			return array();
+		if ($this->allDests === false) {
+			$this->allDests = $this->getAll("dests");
+			if (!is_array($this->allDests)) {
+				$this->allDests = array();
+			}
+			// Add an add-hoc index to it. This is kinda hacky.
+			$i = 0;
+			foreach ($this->allDests as &$d) {
+				$d['index'] = $i++;
+			}
 		}
-		return $dests;
+		return $this->allDests;
 	}
+
+	public function getUnknownDests() {
+
+		$results = array();
+
+		// Is always an array
+		$all_probs = framework_list_problem_destinations();
+
+		foreach ($all_probs as $prob) {
+			if ($problem['status'] != "CUSTOM") {
+				continue;
+			}
+
+			if (substr($problem['dest'], 0, 11) == "customdests") {
+				// Assume we know what we're doing
+				continue;
+			}
+
+			// Otherwise
+			$results[$problem['dest']] = true;
+		}
+		return array_keys($results);
+	}
+
 }
 
 

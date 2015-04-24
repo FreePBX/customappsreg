@@ -14,8 +14,8 @@ function customappsreg_destinations() {
 	foreach ($allDests as $row) {
 		// If this has a return flag, we need to wrap it.
 		if ($row['destret']) {
-			$hash = hash('sha256', $row['extdisplay']);
-			$extens[] = array('destination' => "customdests,$hash,1", 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
+			$dest = "customdests,cd".$row['index'].",1";
+			$extens[] = array('destination' => $dest, 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
 		} else {
 			$extens[] = array('destination' => $row['extdisplay'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
 		}
@@ -216,21 +216,5 @@ function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $des
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
-}
-
-function customappsreg_customdests_getunknown() {
-
-	$results = array();
-
-	$my_probs = framework_list_problem_destinations($my_hash, false);
-
-	if (!empty($my_probs)) {
-		foreach ($my_probs as $problem) {
-			if ($problem['status'] == 'CUSTOM') {
-				$results[] = $problem['dest'];
-			}
-		}
-	}
-	return array_unique($results);
 }
 

@@ -79,7 +79,7 @@ echo $helptext;
       <select onChange="insertDest();" id="insdest">
 	<option value=""><?php echo _("(pick destination)")?></option>
 	<?php
-		$results = customappsreg_customdests_getunknown();
+		$results = \FreePBX::Customappsreg()->getUnknownDests();
 		foreach ($results as $thisdest) {
 			echo "<option value='$thisdest'>$thisdest</option>\n";
 		}
