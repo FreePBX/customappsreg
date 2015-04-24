@@ -4,32 +4,34 @@ $allDests = \FreePBX::Customappsreg()->getAllCustomDests();
 ?> 
 
 <div class="rnav"><ul>
-<li><a href="config.php?display=customdests&action=addnew"><?php echo _('Add Custom Destination'); ?></a></li>
+<li><a href="config.php?display=customdests"><?php echo _('Add Custom Destination'); ?></a></li>
 
 <?php 
-foreach ($allDests as $row) {
-	$descr = $row['description'].' ('.$row['extdisplay'].')';
-	echo "<li><a href='config.php?display=customdests&extdisplay=".$row['extdisplay']."'>$descr</a></li>";
+foreach ($allDests as $destid => $row) {
+	$descr = $row['description'].' ('.$row['target'].')';
+	echo "<li><a href='config.php?display=customdests&destid=$destid'>$descr</a></li>";
 }
 ?>
 </ul></div>
 
 <?php
 
-if (isset($_REQUEST['extdisplay']) && isset($allDests[$_REQUEST['extdisplay']])) {
-	$current = $allDests[$_REQUEST['extdisplay']];
-	$usage_list = framework_display_destination_usage($current['extdisplay']);
+if (isset($_REQUEST['destid']) && isset($allDests[$_REQUEST['destid']])) {
+	$current = $allDests[$_REQUEST['destid']];
+	$usage_list = framework_display_destination_usage($current['target']);
+	$destid = $_REQUEST['destid'];
 } else {
-	$current = array("extdisplay" => "", "description" => "", "notes" => "", "destret" => false);
+	$current = array("target" => "", "description" => "", "notes" => "", "destret" => false);
 	$usage_list = false;
+	$destid = false;
 }
 
-$dest    = $current['extdisplay'];
+$target  = $current['target'];
 $desc    = $current['description'];
 $notes   = $current['notes'];
 $destret = $current['destret'];
 
-if ($dest) {
+if ($destid) {
 	echo "<h2>"._("Edit: ")."$desc</h2>\n";
 } else {
 	echo "<h2>"._("Add Custom Destination")."</h2>\n";
@@ -39,10 +41,8 @@ $helptext = _("Custom Destinations allows you to register your custom destinatio
 echo $helptext;
 ?>
 
-<form name="editCustomDest" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+<form method="post">
 
-<input type="hidden" name="display" value="customdests">
-<input type="hidden" name="old_custom_dest" value="<?php echo $dest; ?>">
 <table>
   <tr>
     <td colspan="2"><h5><?php  echo ($dest ? _("Edit Custom Destination") : _("Add Custom Destination")) ?><hr></h5></td>
@@ -61,9 +61,9 @@ echo $helptext;
       </a>
     </td>
 <?php if ($usage_list) { ?>
-    <td><b><?php echo htmlentities($custom_dest); ?></b></td>
+    <td><b><?php echo htmlentities($target); ?></b></td>
 <?php } else { ?>
-    <td><input size="30" type="text" name="extdisplay" id="extdisplay" value="<?php echo $dest; ?>"></td>
+    <td><input size="30" type="text" name="target" id="target" value="<?php echo $target; ?>"></td>
 <?php } ?>
   </tr>
 <?php if (!$usage_list) { ?>
@@ -119,7 +119,7 @@ echo $helptext;
 
   <tr>
     <td colspan="2"><br>
-    <?php if ($dest) { ?>
+    <?php if ($destid) { ?>
       <button type="submit" name="action" value="edit"><?php echo _("Submit Changes"); ?></button>
       <button type="submit" name="action" value="delete"><?php echo _("Delete"); ?></button>
     <?php } else { ?>
@@ -156,7 +156,7 @@ $(document).ready(function() {
 function insertDest() {
 
 	dest = document.getElementById('insdest').value;
-	customDest=document.getElementById('extdisplay');
+	customDest=document.getElementById('target');
 
 	if (dest != '') {
 		customDest.value = dest;

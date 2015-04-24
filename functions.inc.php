@@ -14,7 +14,7 @@ function customappsreg_destinations() {
 	foreach ($allDests as $row) {
 		// If this has a return flag, we need to wrap it.
 		if ($row['destret']) {
-			$dest = "customdests,cd".$row['index'].",1";
+			$dest = "customdests,dest-".$row['destid'].",1";
 			$extens[] = array('destination' => $dest, 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
 		} else {
 			$extens[] = array('destination' => $row['extdisplay'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');

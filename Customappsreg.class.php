@@ -21,7 +21,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 	// This is where we handle our POSTs
 	public function doConfigPageInit($page) { 
 		// Grab the variables we care about.
-		$vars = array ("old_custom_dest", "extdisplay", "description", "notes", "destret", "action");
+		$vars = array ("destid", "target", "description", "notes", "destret", "action");
 		$postarr = array();
 		foreach ($vars as $v) {
 			$postarr[$v] = $this->getReq($v);
@@ -51,49 +51,56 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		$context = 'customdests';
 		$allDests = $this->getAllCustomDests();
 		foreach ($allDests as $dest) {
+			$fakedest = "dest-".$dest['destid'];
+			$ext->add($context, $fakedest, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
 			if (!$dest['destret']) {
+				$ext->add($context, $fakedest, '', new \ext_goto($dest['target']));
 				continue;
 			}
-			$fakedest = "cd".$dest['index'];
-			$ext->add($context, $fakedest, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
-			$ext->add($context, $fakedest, '', new \ext_gosub($dest['extdisplay']));
+			$ext->add($context, $fakedest, '', new \ext_gosub($dest['target']));
 			$ext->add($context, $fakedest, '', new \ext_noop('Returned from Custom Destination '.$dest['description']));
 			$ext->add($context, $fakedest, '', new \ext_goto($dest['dest']));
 		}
 	}
 
 	private function handleDestsPost($vars) {
-		switch ($vars['action']) {
+		$action = $vars['action'];
+		unset($vars['action']);
+		switch ($action) {
 		case 'delete':
-			$this->deleteCustomDest($vars['old_custom_dest']);
-			break;
+			$this->deleteCustomDest($vars['destid']);
+			return;
 		case 'edit':
-			$this->deleteCustomDest($vars['old_custom_dest']);
-			$this->addCustomDest($vars['old_custom_dest'], $vars);
-			break;
+			$this->setConfig($vars['destid'], $vars);
+			return;
 		case 'add':
-			$this->addCustomDest($vars['extdisplay'], $vars);
-			break;
+			// Get a new ID
+			$currentid = $this->getConfig("currentid");
+			if (!$currentid) {
+				$currentid = 1;
+			}
+			$vars['destid'] = $currentid;
+			$this->addCustomDest($currentid++, $vars);
+			$this->setConfig("currentid", $currentid);
+			return;
 		default:
 			return;
 		}
 	}
 
-	private function deleteCustomDest($dest) {
-		$this->setConfig($dest, false, "dests");
+	private function deleteCustomDest($destid) {
+		$this->setConfig($destid, false, "dests");
 		return true;
 	}
 
-	private function addCustomDest($dest, $vars) {
+	private function addCustomDest($destid, $vars) {
 		// Remove any vars that may be hanging around
 		unset($vars['action']);
-		unset($vars['old_custom-dest']);
-
-		$this->setConfig($dest, $vars, "dests");
+		$this->setConfig($destid, $vars, "dests");
 	}
 
-	public function getCustomDest($dest) {
-		return $this->getConfig($dest, "dests");
+	public function getCustomDest($destid) {
+		return $this->getConfig($destid, "dests");
 	}
 
 	public function getAllCustomDests() {
@@ -101,11 +108,6 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			$this->allDests = $this->getAll("dests");
 			if (!is_array($this->allDests)) {
 				$this->allDests = array();
-			}
-			// Add an add-hoc index to it. This is kinda hacky.
-			$i = 0;
-			foreach ($this->allDests as &$d) {
-				$d['index'] = $i++;
 			}
 		}
 		return $this->allDests;
@@ -132,6 +134,10 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			$results[$problem['dest']] = true;
 		}
 		return array_keys($results);
+	}
+
+	public function convertDestDatabase() {
+		print "Insert converstion code here!\n";
 	}
 
 }
