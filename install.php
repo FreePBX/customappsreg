@@ -1,34 +1,19 @@
 <?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
-global $db;
+// Check for old Destinations table
+$db = \FreePBX::Database();
 
-$sql = "
-	CREATE TABLE IF NOT EXISTS `custom_destinations` (
-		`custom_dest` varchar(80) NOT NULL default '',
-		`description` varchar(40) NOT NULL default '',
-		`notes` varchar(255) NOT NULL default '',
-		PRIMARY KEY  (`custom_dest`)
-	)";
-
-$check = $db->query($sql);
-if(DB::IsError($check)) {
-	die_freepbx("Can not create custom_destinations table\n");
+$sql = "SELECT * FROM `custom_destinations` LIMIT 1";
+try {
+	$res = $db->query($sql);
+	// If we made it here, the table exists, and needs to be converted.
+	\FreePBX::Customappsreg()->convertDestDatabase();
+} catch (Exception $e) {
+	if ($e->getCode() != "42S02") { // 42S02 == table doesn't exist. Which is correct
+		// We don't know what it is, let someone else deal with it.
+		throw $e;
+	}
 }
 
 
-$sql = "
-	CREATE TABLE IF NOT EXISTS `custom_extensions` 
-	(
-		`custom_exten` varchar(80) NOT NULL default '',
-		`description` varchar(40) NOT NULL default '',
-		`notes` varchar(255) NOT NULL default '',
-		PRIMARY KEY  (`custom_exten`)
-	)";
-
-$check = $db->query($sql);
-if(DB::IsError($check)) {
-	die_freepbx("Can not create custom_extensions table\n");
-}
-
-?>

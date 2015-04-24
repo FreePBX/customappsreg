@@ -74,14 +74,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			$this->setConfig($vars['destid'], $vars);
 			return;
 		case 'add':
-			// Get a new ID
-			$currentid = $this->getConfig("currentid");
-			if (!$currentid) {
-				$currentid = 1;
-			}
-			$vars['destid'] = $currentid;
-			$this->addCustomDest($currentid++, $vars);
-			$this->setConfig("currentid", $currentid);
+			$this->addCustomDest($vars);
 			return;
 		default:
 			return;
@@ -93,10 +86,21 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		return true;
 	}
 
-	private function addCustomDest($destid, $vars) {
+	private function addCustomDest($vars) {
 		// Remove any vars that may be hanging around
 		unset($vars['action']);
-		$this->setConfig($destid, $vars, "dests");
+
+		// Get a new ID
+		$currentid = $this->getConfig("currentid");
+		if (!$currentid) {
+			$currentid = 1;
+		}
+		$vars['destid'] = $currentid;
+
+		// And save it.
+		$this->setConfig($currentid, $vars, "dests");
+		// Hand the new ID back, in case anyone wants it.
+		return $currentid++;
 	}
 
 	public function getCustomDest($destid) {
@@ -137,9 +141,16 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 	}
 
 	public function convertDestDatabase() {
-		print "Insert converstion code here!\n";
+		$db = \FreePBX::Database();
+		$res = $db->query("SELECT * FROM `custom_destinations`")->fetchAll(\PDO::FETCH_ASSOC);
+		foreach ($res as $row) {
+			$tmparr = array("target" => $row['custom_dest'], "notes" => $row['notes'],
+				"description" => $row['description'], "destret" => false);
+			$this->addCustomDest($tmparr);
+		}
+		// We're done. Delete it, now!
+		$res = $db->query("DROP TABLE `custom_destinations`");
 	}
-
 }
 
 

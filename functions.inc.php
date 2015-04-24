@@ -71,16 +71,6 @@ function customappsreg_check_extensions($exten=true) {
 	return $extenlist;
 }
 
-function customappsreg_customdests_list() {
-	global $db;
-	$sql = "SELECT custom_dest, description, notes FROM custom_destinations ORDER BY description";
-	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from custom_destinations");	
-	}
-	return $results;
-}
-
 function customappsreg_customextens_list() {
 	global $db;
 	$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";
@@ -91,16 +81,6 @@ function customappsreg_customextens_list() {
 	return $results;
 }
 
-function customappsreg_customdests_get($custom_dest) {
-	global $db;
-	$sql = "SELECT custom_dest, description, notes FROM custom_destinations WHERE custom_dest = ".q($custom_dest);
-	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from custom_destinations");	
-	}
-	return $row;
-}
-
 function customappsreg_customextens_get($custom_exten) {
 	global $db;
 	$sql = "SELECT custom_exten, description, notes FROM custom_extensions WHERE custom_exten = ".q($custom_exten);
@@ -109,39 +89,6 @@ function customappsreg_customextens_get($custom_exten) {
 		die_freepbx($row->getMessage()."<br><br>Error selecting row from custom_extensions");	
 	}
 	return $row;
-}
-
-function customappsreg_customdests_add($custom_dest, $description, $notes) {
-	global $db;
-
-  if (!preg_match("/[^,]+,[^,]+,[^,]+/",$custom_dest)) {
-		echo "<script>javascript:alert('"._('Invalid Destination, must not be blank, must be formatted as: context,exten,pri')."')</script>";
-		return false;
-	}
-	if (trim($description) == '') {
-		echo "<script>javascript:alert('"._('Invalid description specified, must not be blank')."')</script>";
-		return false;
-	}
-	$usage_list = framework_identify_destinations($custom_dest, $module_hash=false);
-	if (!empty($usage_list[$custom_dest])) {
-		echo "<script>javascript:alert('"._('DUPLICATE Destination: This destination is already in use')."')</script>";
-		return false;
-	}
-
-	$custom_dest = sql_formattext($custom_dest);
-	$description = sql_formattext($description);
-	$notes       = sql_formattext($notes);
-	$sql = "INSERT INTO custom_destinations (custom_dest, description, notes) VALUES ($custom_dest, $description, $notes)";
-	$results = $db->query($sql);
-	if (DB::IsError($results)) {
-		if ($results->getCode() == DB_ERROR_ALREADY_EXISTS) {
-			echo "<script>javascript:alert('"._('DUPLICATE Destination: This destination is in use or potentially used by another module')."')</script>";
-			return false;
-		} else {
-			die_freepbx($results->getMessage()."<br><br>".$sql);
-		}
-	}
-	return true;
 }
 
 function customappsreg_customextens_add($custom_exten, $description, $notes) {
@@ -176,28 +123,6 @@ function customappsreg_customextens_delete($custom_exten) {
 	global $db;
 
 	$sql = "DELETE FROM custom_extensions WHERE custom_exten = ".q($custom_exten);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
-}
-
-function customappsreg_customdests_edit($old_custom_dest, $custom_dest,  $description, $notes) { 
-	global $db;
-
-	if ($old_custom_dest != $custom_dest) {
-		$usage_list = framework_identify_destinations($custom_dest, $module_hash=false);
-		if (!empty($usage_list[$custom_dest])) {
-			echo "<script>javascript:alert('"._('DUPLICATE Destination: This destination is in use or potentially used by another module')."')</script>";
-			return false;
-		}
-	}
-
-	$sql = "UPDATE custom_destinations SET ".
-		"custom_dest = ".sql_formattext($custom_dest).", ".
-		"description = ".sql_formattext($description).", ".
-		"notes = ".sql_formattext($notes)." ".
-		"WHERE custom_dest = ".sql_formattext($old_custom_dest);
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
