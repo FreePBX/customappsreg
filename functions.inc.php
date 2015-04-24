@@ -36,15 +36,21 @@ function customappsreg_customdests_getdest($exten) {
 function customappsreg_getdestinfo($dest) {
 	global $active_modules;
 
-  $thisexten = customappsreg_customdests_get($dest);
-	if (empty($thisexten)) {
-		return false;
-	} else {
-		$type = isset($active_modules['customappsreg']['type'])?$active_modules['customappsreg']['type']:'tool';
-		return array('description' => sprintf(_("Custom Destination: %s"),$thisexten['description']),
-		             'edit_url' => 'config.php?display=customdests&type='.$type.'&extdisplay='.urlencode($dest),
-							  );
+	$allDests = \FreePBX::Customappsreg()->getAllCustomDests();
+	// Look for $dest in allDests. If we know about it, then return
+	// the details. If we don't, return false.
+
+	foreach ($allDests as $cd) {
+		if ($cd['dest'] == $dest) {
+			// Found it.
+			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
+		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+			return $tmparr;
+		}
 	}
+
+	// Didn't find it.
+	return false;
 }
 
 function customappsreg_check_extensions($exten=true) {

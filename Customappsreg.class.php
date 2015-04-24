@@ -112,7 +112,11 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 
 		// And save it.
 		$this->setConfig($currentid, $vars, "dests");
-		// Hand the new ID back, in case anyone wants it.
+
+		// Invalidate the allDests cache
+		$this->allDests = false;
+
+		// Finally, hand the new ID back, in case anyone wants it.
 		return $currentid++;
 	}
 
