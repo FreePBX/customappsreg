@@ -17,7 +17,7 @@ function customappsreg_destinations() {
 			$dest = "customdests,dest-".$row['destid'].",1";
 			$extens[] = array('destination' => $dest, 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
 		} else {
-			$extens[] = array('destination' => $row['extdisplay'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
+			$extens[] = array('destination' => $row['target'], 'description' => $row['description'], 'category' => _("Custom Destinations"), 'id' => 'customdests');
 		}
 	}
 	return $extens;
@@ -41,7 +41,7 @@ function customappsreg_getdestinfo($dest) {
 	// the details. If we don't, return false.
 
 	foreach ($allDests as $cd) {
-		if ($cd['dest'] == $dest) {
+		if ($cd['target'] == $dest) {
 			// Found it.
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
 		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);

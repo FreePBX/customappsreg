@@ -45,7 +45,7 @@ echo $helptext;
 
 <table>
   <tr>
-    <td colspan="2"><h5><?php  echo ($dest ? _("Edit Custom Destination") : _("Add Custom Destination")) ?><hr></h5></td>
+    <td colspan="2"><h5><?php  echo ($destid ? _("Edit Custom Destination") : _("Add Custom Destination")) ?><hr></h5></td>
   </tr>
   <tr>
     <td>
@@ -127,7 +127,7 @@ echo $helptext;
     <?php } ?>
     </td>		
   </tr>
-<?php if ($dest && $usage_list) { ?>
+<?php if ($target && $usage_list) { ?>
   <tr>
     <td colspan="2">
       <a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
