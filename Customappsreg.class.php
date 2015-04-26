@@ -82,12 +82,15 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		switch ($action) {
 		case 'delete':
 			$this->deleteCustomDest($vars['destid']);
+			needreload();
 			return;
 		case 'edit':
 			$this->setConfig($vars['destid'], $vars);
+			needreload();
 			return;
 		case 'add':
 			$this->addCustomDest($vars);
+			needreload();
 			return;
 		default:
 			return;
