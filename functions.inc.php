@@ -40,6 +40,20 @@ function customappsreg_getdestinfo($dest) {
 	// Look for $dest in allDests. If we know about it, then return
 	// the details. If we don't, return false.
 
+	// Is it a new one?
+	if (substr($dest, 0, 12) == "customdests,") {
+		if (!preg_match("/customdests,dest-(\d+),1/", $dest, $matches)) {
+			throw new \Exception("Unable to validate dest $dest");
+		}
+		if (!isset($allDests[$matches[1]])) {
+			return false;
+		} else {
+			// Found it.
+			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
+		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+			return $tmparr;
+		}
+	}
 	foreach ($allDests as $cd) {
 		if ($cd['target'] == $dest) {
 			// Found it.
