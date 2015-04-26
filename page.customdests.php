@@ -17,9 +17,9 @@ foreach ($allDests as $destid => $row) {
 <?php
 
 if (isset($_REQUEST['destid']) && isset($allDests[$_REQUEST['destid']])) {
-	$current = $allDests[$_REQUEST['destid']];
-	$usage_list = framework_display_destination_usage($current['target']);
 	$destid = $_REQUEST['destid'];
+	$current = $allDests[$destid];
+	$usage_list = framework_display_destination_usage(\FreePBX::Customappsreg()->getDestTarget($destid));
 } else {
 	$current = array("target" => "", "description" => "", "notes" => "", "destret" => false);
 	$usage_list = false;

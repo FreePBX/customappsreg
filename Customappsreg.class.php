@@ -85,7 +85,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			needreload();
 			return;
 		case 'edit':
-			$this->setConfig($vars['destid'], $vars);
+			$this->setConfig($vars['destid'], $vars, "dests");
 			needreload();
 			return;
 		case 'add':
@@ -173,6 +173,22 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		}
 		// We're done. Delete it, now!
 		$res = $db->query("DROP TABLE `custom_destinations`");
+	}
+
+	public function getDestTarget($destid = false) {
+		if (!$destid) {
+			throw new \Exception("No destid provided");
+		}
+
+		$dest = $this->getCustomDest($destid);
+		if (!$dest) {
+			throw new \Exception("Invalid destid provided");
+		}
+		if ($dest['destret']) {
+			return "customdests,dest-".$dest['destid'].",1";
+		} else {
+			return $dest['target'];
+		}
 	}
 }
 
