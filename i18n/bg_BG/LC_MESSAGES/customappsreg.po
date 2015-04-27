@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:15-0500\n"
+"POT-Creation-Date: 2015-04-28 06:43+1000\n"
 "PO-Revision-Date: 2014-07-21 16:13+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.customdests.php:121
+#: page.customdests.php:80
 msgid "(pick destination)"
 msgstr "(избери направление)"
 
-#: page.customdests.php:42 page.customdests.php:66 page.customdests.php:84
+#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
 msgid "Add Custom Destination"
 msgstr "Добави Custom Направление"
 
@@ -34,11 +34,7 @@ msgstr "Добави Custom Направление"
 msgid "Add Custom Extension"
 msgstr "Добави Custom Вътрешна Линия"
 
-#: customappsreg.i18n.php:4
-msgid "Admin"
-msgstr "Админ"
-
-#: page.customdests.php:136
+#: page.customdests.php:94
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -54,7 +50,7 @@ msgstr ""
 "Кратко описание което ще се представи в Регистрирани Вътрешни Линии за тази "
 "вътрешна линия"
 
-#: page.customdests.php:115
+#: page.customdests.php:74
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -68,24 +64,20 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: customappsreg.i18n.php:3
-msgid "Custom Applications"
-msgstr "Custom Приложения"
-
-#: page.customdests.php:86
+#: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Custom Направление"
 
-#: functions.inc.php:33
+#: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Custom Направление: %s"
 
-#: customappsreg.i18n.php:7 functions.inc.php:9
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Custom Направления"
 
-#: page.customdests.php:69
+#: page.customdests.php:40
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -109,13 +101,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Custom Вътрешна Линия"
 
-#: functions.inc.php:56
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Custom Вътрешна Линия: "
-
-#: customappsreg.i18n.php:6
-msgid "Custom Extensions"
-msgstr "Custom Вътрешни Линии"
 
 #: page.customextens.php:86
 msgid ""
@@ -136,35 +124,29 @@ msgstr ""
 "вътрешните линии които сте създали в Модул Други Направления, тъй като те не "
 "са custom."
 
-#: functions.inc.php:116
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "ДУБЛИРАНО Направление: Направлението вече се използва"
-
-#: functions.inc.php:127 functions.inc.php:190
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"ДУБЛИРАНО Направление: Направлението се използва или потенциално се използва "
-"от друг модул"
-
-#: functions.inc.php:155
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
 
-#: page.customdests.php:146 page.customextens.php:117
+#: page.customdests.php:124 page.customextens.php:117
 msgid "Delete"
 msgstr "Изтрий"
 
-#: page.customdests.php:136 page.customextens.php:107
+#: page.customdests.php:94 page.customextens.php:107
 msgid "Description"
 msgstr "Описание"
 
-#: page.customdests.php:113
+#: page.customdests.php:72
 msgid "Destination Quick Pick"
 msgstr "Бързо Избиране на Направление"
 
-#: page.customdests.php:84
+#: page.customdests.php:105
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
+msgstr ""
+
+#: page.customdests.php:48
 msgid "Edit Custom Destination"
 msgstr "Редактирай Custom Направление"
 
@@ -172,11 +154,11 @@ msgstr "Редактирай Custom Направление"
 msgid "Edit Custom Extension"
 msgstr "Редактирай Custom Вътрешна Линия"
 
-#: page.customdests.php:64 page.customextens.php:81
+#: page.customdests.php:35 page.customextens.php:81
 msgid "Edit: "
 msgstr "Редактирай: "
 
-#: functions.inc.php:107 page.customdests.php:182
+#: page.customdests.php:171
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -184,16 +166,15 @@ msgstr ""
 "Неправилно Направление, не може да е празно, трябва да е форматирано така: "
 "context,exten,pri"
 
-#: functions.inc.php:140 page.customextens.php:128
+#: functions.inc.php:118 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Неправилна Вътрешна Линия, полето не може да е празно"
 
-#: functions.inc.php:111 functions.inc.php:144 page.customdests.php:183
-#: page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Неправилно описание, не може да е празно"
 
-#: page.customdests.php:140
+#: page.customdests.php:100
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -207,11 +188,11 @@ msgid ""
 msgstr ""
 "По детайлни бележки за тази вътрешна линия. Това поле не се използва никъде."
 
-#: page.customdests.php:140 page.customextens.php:111
+#: page.customdests.php:100 page.customextens.php:111
 msgid "Notes"
 msgstr "Бележки"
 
-#: page.customdests.php:91
+#: page.customdests.php:57
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -221,20 +202,15 @@ msgstr ""
 "бъде редактирано. Трябва да премахните тази завимост за да можете да "
 "редактирате направлението или създайте ново направление което да използвате"
 
-#: customappsreg.i18n.php:5
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+#: page.customdests.php:105
+msgid "Return"
 msgstr ""
-"Предоставя възможност за добавяне на вътрешни линии и направления, които "
-"могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
-"Направления да ги използва."
 
-#: page.customdests.php:145 page.customextens.php:116
+#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Приеми Промените"
 
-#: page.customdests.php:89
+#: page.customdests.php:55
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -251,3 +227,31 @@ msgid ""
 msgstr ""
 "Вътрешна Линия или Специален Код които използвате в вашите схеми на избиране "
 "за които искате FreePBX Регистрирани Вътрешни Линии да се известява."
+
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Custom Приложения"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Custom Вътрешни Линии"
+
+#~ msgid "DUPLICATE Destination: This destination is already in use"
+#~ msgstr "ДУБЛИРАНО Направление: Направлението вече се използва"
+
+#~ msgid ""
+#~ "DUPLICATE Destination: This destination is in use or potentially used by "
+#~ "another module"
+#~ msgstr ""
+#~ "ДУБЛИРАНО Направление: Направлението се използва или потенциално се "
+#~ "използва от друг модул"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Предоставя възможност за добавяне на вътрешни линии и направления, които "
+#~ "могат да се създават и използват така, че Регистратора на Вътрешни Линии "
+#~ "и Направления да ги използва."

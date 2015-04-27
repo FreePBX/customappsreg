@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:15-0500\n"
+"POT-Creation-Date: 2015-04-28 06:43+1000\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -49,11 +49,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: page.customdests.php:121
+#: page.customdests.php:80
 msgid "(pick destination)"
 msgstr "宛先をピックアップ"
 
-#: page.customdests.php:42 page.customdests.php:66 page.customdests.php:84
+#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
 msgid "Add Custom Destination"
 msgstr "カスタム宛先を追加"
 
@@ -61,11 +61,7 @@ msgstr "カスタム宛先を追加"
 msgid "Add Custom Extension"
 msgstr "カスタム内線を追加"
 
-#: customappsreg.i18n.php:4
-msgid "Admin"
-msgstr "アドミン"
-
-#: page.customdests.php:136
+#: page.customdests.php:94
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -79,7 +75,7 @@ msgid ""
 "this extension"
 msgstr "内線レジストリ内で公開される内線についての簡単な説明。"
 
-#: page.customdests.php:115
+#: page.customdests.php:74
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -92,24 +88,20 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: customappsreg.i18n.php:3
-msgid "Custom Applications"
-msgstr "カスタムアプリケーション"
-
-#: page.customdests.php:86
+#: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "カスタム宛先"
 
-#: functions.inc.php:33
+#: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
 
-#: customappsreg.i18n.php:7 functions.inc.php:9
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "カスタム宛先"
 
-#: page.customdests.php:69
+#: page.customdests.php:40
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -128,13 +120,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "カスタム内線"
 
-#: functions.inc.php:56
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "カスタム内線："
-
-#: customappsreg.i18n.php:6
-msgid "Custom Extensions"
-msgstr "カスタム内線"
 
 #: page.customextens.php:86
 msgid ""
@@ -152,35 +140,29 @@ msgstr ""
 "ルに情報をレポートします。その他モジュールで作成した内線はカスタムではないの"
 "で、ここでは使用しないでください。"
 
-#: functions.inc.php:116
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "宛先の重複： この宛先は既に使用されております。"
-
-#: functions.inc.php:127 functions.inc.php:190
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"宛先の重複： この宛先は既に使用されているか、他のモジュールによって潜在的に使"
-"用されています。"
-
-#: functions.inc.php:155
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
-#: page.customdests.php:146 page.customextens.php:117
+#: page.customdests.php:124 page.customextens.php:117
 msgid "Delete"
 msgstr "削除"
 
-#: page.customdests.php:136 page.customextens.php:107
+#: page.customdests.php:94 page.customextens.php:107
 msgid "Description"
 msgstr "説明"
 
-#: page.customdests.php:113
+#: page.customdests.php:72
 msgid "Destination Quick Pick"
 msgstr "宛先クイックピックアップ"
 
-#: page.customdests.php:84
+#: page.customdests.php:105
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
+msgstr ""
+
+#: page.customdests.php:48
 msgid "Edit Custom Destination"
 msgstr "カスタム宛先を編集"
 
@@ -188,11 +170,11 @@ msgstr "カスタム宛先を編集"
 msgid "Edit Custom Extension"
 msgstr "カスタム内線を編集"
 
-#: page.customdests.php:64 page.customextens.php:81
+#: page.customdests.php:35 page.customextens.php:81
 msgid "Edit: "
 msgstr "編集："
 
-#: functions.inc.php:107 page.customdests.php:182
+#: page.customdests.php:171
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -200,16 +182,15 @@ msgstr ""
 "無効な宛先です、空白にすることはできません。フォーマット：コンテキスト,exten,"
 "優先度"
 
-#: functions.inc.php:140 page.customextens.php:128
+#: functions.inc.php:118 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "無効な内線番号です、空白にすることはできません。"
 
-#: functions.inc.php:111 functions.inc.php:144 page.customdests.php:183
-#: page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "無効な説明が指定されました。空白にすることはできません。"
 
-#: page.customdests.php:140
+#: page.customdests.php:100
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -225,11 +206,11 @@ msgstr ""
 "この内線についてのより詳細な説明。このフィールドは他の場所で使用されていませ"
 "ん。"
 
-#: page.customdests.php:140 page.customextens.php:111
+#: page.customdests.php:100 page.customextens.php:111
 msgid "Notes"
 msgstr "ノート"
 
-#: page.customdests.php:91
+#: page.customdests.php:57
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -239,19 +220,15 @@ msgstr ""
 "できません。この宛先を編集する場合はこれらの依存関係を解消する、新しく宛先を"
 "作成する必要があります。"
 
-#: customappsreg.i18n.php:5
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+#: page.customdests.php:105
+msgid "Return"
 msgstr ""
-"カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジス"
-"トリがこれらを含むことができるように作成され、使用されます。"
 
-#: page.customdests.php:145 page.customextens.php:116
+#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: page.customdests.php:89
+#: page.customdests.php:55
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -268,3 +245,30 @@ msgid ""
 msgstr ""
 "あなたのダイヤルプラン内でFreePBX内線レジストリに認識させたい内線番号又はキー"
 "コードです。"
+
+#~ msgid "Admin"
+#~ msgstr "アドミン"
+
+#~ msgid "Custom Applications"
+#~ msgstr "カスタムアプリケーション"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "カスタム内線"
+
+#~ msgid "DUPLICATE Destination: This destination is already in use"
+#~ msgstr "宛先の重複： この宛先は既に使用されております。"
+
+#~ msgid ""
+#~ "DUPLICATE Destination: This destination is in use or potentially used by "
+#~ "another module"
+#~ msgstr ""
+#~ "宛先の重複： この宛先は既に使用されているか、他のモジュールによって潜在的"
+#~ "に使用されています。"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジ"
+#~ "ストリがこれらを含むことができるように作成され、使用されます。"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:15-0500\n"
+"POT-Creation-Date: 2015-04-28 06:43+1000\n"
 "PO-Revision-Date: 2014-09-11 01:56+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: French <http://git.freepbx.org/projects/freepbx/customappsreg/"
@@ -31,11 +31,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 1.10-dev\n"
 
-#: page.customdests.php:121
+#: page.customdests.php:80
 msgid "(pick destination)"
 msgstr "(sélectionnez une destiation)"
 
-#: page.customdests.php:42 page.customdests.php:66 page.customdests.php:84
+#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
 msgid "Add Custom Destination"
 msgstr "Ajouter une Destination Personnalisée"
 
@@ -43,11 +43,7 @@ msgstr "Ajouter une Destination Personnalisée"
 msgid "Add Custom Extension"
 msgstr "Ajouter une Extension Personnalisée"
 
-#: customappsreg.i18n.php:4
-msgid "Admin"
-msgstr ""
-
-#: page.customdests.php:136
+#: page.customdests.php:94
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -63,7 +59,7 @@ msgstr ""
 "Brève description qui sera publiée dans le Registre d'Extension à propos de "
 "cette extension"
 
-#: page.customdests.php:115
+#: page.customdests.php:74
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -78,24 +74,20 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Extensions Conflictuelles"
 
-#: customappsreg.i18n.php:3
-msgid "Custom Applications"
-msgstr ""
-
-#: page.customdests.php:86
+#: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destination Personnalisée"
 
-#: functions.inc.php:33
+#: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destination Personnalisée: %s"
 
-#: customappsreg.i18n.php:7 functions.inc.php:9
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinations Personnalisées"
 
-#: page.customdests.php:69
+#: page.customdests.php:40
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -121,13 +113,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Extension Personnalisée"
 
-#: functions.inc.php:56
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Extension Personnalisée"
-
-#: customappsreg.i18n.php:6
-msgid "Custom Extensions"
-msgstr "Extensions Personnalisées"
 
 #: page.customextens.php:86
 msgid ""
@@ -149,35 +137,29 @@ msgstr ""
 "que vous avez créé dans le Module Misc Apps car elles ne sont pas "
 "personnalisées."
 
-#: functions.inc.php:116
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "Destination DUPLIQUEE: Cette destination est déjà utilisée"
-
-#: functions.inc.php:127 functions.inc.php:190
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"Destination DUPLIQUEE: Cette destination est utilisée ou potentiellement "
-"utilisée par un autre module"
-
-#: functions.inc.php:155
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extension DUPLIQUEE: Cette extension est déjà utilisée"
 
-#: page.customdests.php:146 page.customextens.php:117
+#: page.customdests.php:124 page.customextens.php:117
 msgid "Delete"
 msgstr "Supprimer"
 
-#: page.customdests.php:136 page.customextens.php:107
+#: page.customdests.php:94 page.customextens.php:107
 msgid "Description"
 msgstr "Description"
 
-#: page.customdests.php:113
+#: page.customdests.php:72
 msgid "Destination Quick Pick"
 msgstr "Sélection Rapide de Destination"
 
-#: page.customdests.php:84
+#: page.customdests.php:105
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
+msgstr ""
+
+#: page.customdests.php:48
 msgid "Edit Custom Destination"
 msgstr "Editer la Destination Personnalisée"
 
@@ -185,11 +167,11 @@ msgstr "Editer la Destination Personnalisée"
 msgid "Edit Custom Extension"
 msgstr "Editer une Extension Personnalisée"
 
-#: page.customdests.php:64 page.customextens.php:81
+#: page.customdests.php:35 page.customextens.php:81
 msgid "Edit: "
 msgstr "Editer"
 
-#: functions.inc.php:107 page.customdests.php:182
+#: page.customdests.php:171
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -197,16 +179,15 @@ msgstr ""
 "Destination invalide, ne doit pas être vide, doit être formatté comme suit : "
 "context,exten,pri"
 
-#: functions.inc.php:140 page.customextens.php:128
+#: functions.inc.php:118 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Extension Invalide, ne doit pas être vide"
 
-#: functions.inc.php:111 functions.inc.php:144 page.customdests.php:183
-#: page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Description spécifiée invalide, ne doit pas être vide"
 
-#: page.customdests.php:140
+#: page.customdests.php:100
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -222,11 +203,11 @@ msgstr ""
 "Notes plus détaillées à propos de cette extension pour aider à la "
 "documenter. Ce champ ne sera pas utilisé ailleurs."
 
-#: page.customdests.php:140 page.customextens.php:111
+#: page.customdests.php:100 page.customextens.php:111
 msgid "Notes"
 msgstr "Notes"
 
-#: page.customdests.php:91
+#: page.customdests.php:57
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -237,17 +218,15 @@ msgstr ""
 "pouvoir éditer cette destination, ou créer une nouvelle destination à "
 "utiliser"
 
-#: customappsreg.i18n.php:5
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+#: page.customdests.php:105
+msgid "Return"
 msgstr ""
 
-#: page.customdests.php:145 page.customextens.php:116
+#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Appliquer les Modifications"
 
-#: page.customdests.php:89
+#: page.customdests.php:55
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -265,3 +244,16 @@ msgid ""
 msgstr ""
 "Il s'agit de l'Extension ou Fonction que vous utilisez dans votre plan de "
 "numérotation et dont vous voulez informer le Registre d'Extension."
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Extensions Personnalisées"
+
+#~ msgid "DUPLICATE Destination: This destination is already in use"
+#~ msgstr "Destination DUPLIQUEE: Cette destination est déjà utilisée"
+
+#~ msgid ""
+#~ "DUPLICATE Destination: This destination is in use or potentially used by "
+#~ "another module"
+#~ msgstr ""
+#~ "Destination DUPLIQUEE: Cette destination est utilisée ou potentiellement "
+#~ "utilisée par un autre module"

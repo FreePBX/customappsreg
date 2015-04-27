@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:15-0500\n"
+"POT-Creation-Date: 2015-04-28 06:43+1000\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.customdests.php:121
+#: page.customdests.php:80
 msgid "(pick destination)"
 msgstr "（选取目的地）"
 
-#: page.customdests.php:42 page.customdests.php:66 page.customdests.php:84
+#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
 msgid "Add Custom Destination"
 msgstr "添加自定义目的地"
 
@@ -30,11 +30,7 @@ msgstr "添加自定义目的地"
 msgid "Add Custom Extension"
 msgstr "添加自定义分机"
 
-#: customappsreg.i18n.php:4
-msgid "Admin"
-msgstr ""
-
-#: page.customdests.php:136
+#: page.customdests.php:94
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -46,7 +42,7 @@ msgid ""
 "this extension"
 msgstr "将在分机注册表中发布的关于此分机的简短描述"
 
-#: page.customdests.php:115
+#: page.customdests.php:74
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -59,24 +55,20 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "分机冲突"
 
-#: customappsreg.i18n.php:3
-msgid "Custom Applications"
-msgstr ""
-
-#: page.customdests.php:86
+#: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "自定义目的地"
 
-#: functions.inc.php:33
+#: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
 
-#: customappsreg.i18n.php:7 functions.inc.php:9
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "自定义目的地"
 
-#: page.customdests.php:69
+#: page.customdests.php:40
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -97,13 +89,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "自定义分机"
 
-#: functions.inc.php:56
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "自定义分机："
-
-#: customappsreg.i18n.php:6
-msgid "Custom Extensions"
-msgstr "自定义分机"
 
 #: page.customextens.php:86
 msgid ""
@@ -121,33 +109,29 @@ msgstr ""
 "报告你自定义的分机号。请你不要在此处添加你在Misc Apps模块中创建的分机，因为那"
 "些不算自定义的分机。"
 
-#: functions.inc.php:116
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "重复的目的地：此目的地已被使用"
-
-#: functions.inc.php:127 functions.inc.php:190
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr "重复的目的地：此目的地已被使用或可能在被其他模块使用"
-
-#: functions.inc.php:155
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
-#: page.customdests.php:146 page.customextens.php:117
+#: page.customdests.php:124 page.customextens.php:117
 msgid "Delete"
 msgstr "删除"
 
-#: page.customdests.php:136 page.customextens.php:107
+#: page.customdests.php:94 page.customextens.php:107
 msgid "Description"
 msgstr "描述"
 
-#: page.customdests.php:113
+#: page.customdests.php:72
 msgid "Destination Quick Pick"
 msgstr "快速选取目的地"
 
-#: page.customdests.php:84
+#: page.customdests.php:105
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
+msgstr ""
+
+#: page.customdests.php:48
 msgid "Edit Custom Destination"
 msgstr "编辑自定义目的地"
 
@@ -155,26 +139,25 @@ msgstr "编辑自定义目的地"
 msgid "Edit Custom Extension"
 msgstr "编辑自定义分机"
 
-#: page.customdests.php:64 page.customextens.php:81
+#: page.customdests.php:35 page.customextens.php:81
 msgid "Edit: "
 msgstr "编辑："
 
-#: functions.inc.php:107 page.customdests.php:182
+#: page.customdests.php:171
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr "无效的目的地，不可以为空，格式必须为：context,exten,pri"
 
-#: functions.inc.php:140 page.customextens.php:128
+#: functions.inc.php:118 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "无效的分机号，不能为空"
 
-#: functions.inc.php:111 functions.inc.php:144 page.customdests.php:183
-#: page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "指定了无效的描述，不能为空"
 
-#: page.customdests.php:140
+#: page.customdests.php:100
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -186,11 +169,11 @@ msgid ""
 "not used elsewhere."
 msgstr "更多的关于此分机的详细信息，此域不会被用在别的地方。"
 
-#: page.customdests.php:140 page.customextens.php:111
+#: page.customdests.php:100 page.customextens.php:111
 msgid "Notes"
 msgstr "备注"
 
-#: page.customdests.php:91
+#: page.customdests.php:57
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -199,17 +182,15 @@ msgstr ""
 "只读警告：由于此目的地正在被其他模块使用，所以不能编辑目的地。你必须移除对它"
 "的依赖，然后才能编辑它。或者也可以创建新的目的地。"
 
-#: customappsreg.i18n.php:5
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+#: page.customdests.php:105
+msgid "Return"
 msgstr ""
 
-#: page.customdests.php:145 page.customextens.php:116
+#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: page.customdests.php:89
+#: page.customdests.php:55
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -225,6 +206,17 @@ msgid ""
 msgstr ""
 "这是你在你的拨号方案中使用的分机和功能代码，而你希望让FreePBX的分机注册表知道"
 "它们。"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "自定义分机"
+
+#~ msgid "DUPLICATE Destination: This destination is already in use"
+#~ msgstr "重复的目的地：此目的地已被使用"
+
+#~ msgid ""
+#~ "DUPLICATE Destination: This destination is in use or potentially used by "
+#~ "another module"
+#~ msgstr "重复的目的地：此目的地已被使用或可能在被其他模块使用"
 
 #~ msgid ""
 #~ "Custom Destinations allows you to register your custom destinations that "
