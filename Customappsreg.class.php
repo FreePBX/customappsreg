@@ -14,7 +14,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			$res = $db->query($sql);
 			// If we made it here, the table exists, and needs to be converted.
 			$this->convertDestDatabase();
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			if ($e->getCode() != "42S02") { // 42S02 == table doesn't exist. Which is correct
 				// We don't know what it is, let someone else deal with it.
 				throw $e;
@@ -32,7 +32,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 	}
 
 	// This is where we handle our POSTs
-	public function doConfigPageInit($page) { 
+	public function doConfigPageInit($page) {
 		// Grab the variables we care about.
 		$vars = array ("destid", "target", "description", "notes", "destret", "action");
 		$postarr = array();
@@ -191,5 +191,3 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		}
 	}
 }
-
-
