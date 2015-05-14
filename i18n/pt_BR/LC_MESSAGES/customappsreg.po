@@ -19,26 +19,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:15-0500\n"
+"POT-Creation-Date: 2015-04-28 06:43+1000\n"
 "PO-Revision-Date: 2015-04-29 07:07+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/customappsreg/pt_BR/>\n"
-"Language: pt_BR\n"
+"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
+"freepbx/customappsreg/pt_BR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.customdests.php:121
+#: page.customdests.php:80
 msgid "(pick destination)"
 msgstr "(selecionar destino)"
 
-#: page.customdests.php:42 page.customdests.php:66 page.customdests.php:84
+#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
 msgid "Add Custom Destination"
 msgstr "Adicionar Destino Personalizado"
 
@@ -46,11 +46,7 @@ msgstr "Adicionar Destino Personalizado"
 msgid "Add Custom Extension"
 msgstr "Adicionar Ramal Personalizado"
 
-#: customappsreg.i18n.php:4
-msgid "Admin"
-msgstr "Admin"
-
-#: page.customdests.php:136
+#: page.customdests.php:94
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -65,7 +61,7 @@ msgid ""
 msgstr ""
 "Breve descrição que será publicada no Registro de ramal sobre este ramal"
 
-#: page.customdests.php:115
+#: page.customdests.php:74
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -79,24 +75,20 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: customappsreg.i18n.php:3
-msgid "Custom Applications"
-msgstr "Aplicações Personalizadas"
-
-#: page.customdests.php:86
+#: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destino Personalizado"
 
-#: functions.inc.php:33
+#: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino Personalizado: %s"
 
-#: customappsreg.i18n.php:7 functions.inc.php:9
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinos Personalizados"
 
-#: page.customdests.php:69
+#: page.customdests.php:40
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -121,13 +113,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Ramal Personalizado"
 
-#: functions.inc.php:56
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Ramal Personalizado: "
-
-#: customappsreg.i18n.php:6
-msgid "Custom Extensions"
-msgstr "Ramais Personalizados"
 
 #: page.customextens.php:86
 msgid ""
@@ -148,35 +136,29 @@ msgstr ""
 "não deveria colocar os ramais que você criou no Módulo Misc Apps como eles "
 "não são customizada."
 
-#: functions.inc.php:116
-msgid "DUPLICATE Destination: This destination is already in use"
-msgstr "Destino DUPLICADO: Este destino já está em uso"
-
-#: functions.inc.php:127 functions.inc.php:190
-msgid ""
-"DUPLICATE Destination: This destination is in use or potentially used by "
-"another module"
-msgstr ""
-"Destino DUPLICADO: Este destino esta em uso ou potencialmente usado por "
-"outro módulo"
-
-#: functions.inc.php:155
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Ramal DUPLICADO: O ramal já está em uso"
 
-#: page.customdests.php:146 page.customextens.php:117
+#: page.customdests.php:124 page.customextens.php:117
 msgid "Delete"
 msgstr "Apagar"
 
-#: page.customdests.php:136 page.customextens.php:107
+#: page.customdests.php:94 page.customextens.php:107
 msgid "Description"
 msgstr "Descrição "
 
-#: page.customdests.php:113
+#: page.customdests.php:72
 msgid "Destination Quick Pick"
 msgstr "Seleção Rápida de Destino"
 
-#: page.customdests.php:84
+#: page.customdests.php:105
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
+msgstr ""
+
+#: page.customdests.php:48
 msgid "Edit Custom Destination"
 msgstr "Editar Destino Personalizado"
 
@@ -184,11 +166,11 @@ msgstr "Editar Destino Personalizado"
 msgid "Edit Custom Extension"
 msgstr "Editar Ramal Personalizada"
 
-#: page.customdests.php:64 page.customextens.php:81
+#: page.customdests.php:35 page.customextens.php:81
 msgid "Edit: "
 msgstr "Editar: "
 
-#: functions.inc.php:107 page.customdests.php:182
+#: page.customdests.php:171
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -196,16 +178,15 @@ msgstr ""
 "Destino Inválido, não deve ser branco, deve ser formatado como: context, "
 "exten, pri"
 
-#: functions.inc.php:140 page.customextens.php:128
+#: functions.inc.php:118 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Ramal Inválido, não deve estar em branco"
 
-#: functions.inc.php:111 functions.inc.php:144 page.customdests.php:183
-#: page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrição inválida especificada, não deve estar em branco"
 
-#: page.customdests.php:140
+#: page.customdests.php:100
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -221,11 +202,11 @@ msgstr ""
 "Notas mais detalhadas sobre o ramal para ajudar a documentá-lo. Este campo "
 "não é usado em mais nenhum lugar."
 
-#: page.customdests.php:140 page.customextens.php:111
+#: page.customdests.php:100 page.customextens.php:111
 msgid "Notes"
 msgstr "Notas"
 
-#: page.customdests.php:91
+#: page.customdests.php:57
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -235,20 +216,15 @@ msgstr ""
 "pode ser editado. Você deve remover estas dependências de forma a editar o "
 "destino ou criar um novo destino a ser usado"
 
-#: customappsreg.i18n.php:5
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
+#: page.customdests.php:105
+msgid "Return"
 msgstr ""
-"Registro para adicionar ramais e destinos personalizados que podem ser "
-"criados e usados de forma que o Registro de Ramais e Destinos possam "
-"incluí-los."
 
-#: page.customdests.php:145 page.customextens.php:116
+#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Enviar Mudanças"
 
-#: page.customdests.php:89
+#: page.customdests.php:55
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -265,3 +241,31 @@ msgid ""
 msgstr ""
 "Este é o Ramal ou Código de Recurso que você está usando no seu plano de "
 "discagem, e que você quer que o Registro de Ramal do FreePBX esteja ciente."
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Aplicações Personalizadas"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Ramais Personalizados"
+
+#~ msgid "DUPLICATE Destination: This destination is already in use"
+#~ msgstr "Destino DUPLICADO: Este destino já está em uso"
+
+#~ msgid ""
+#~ "DUPLICATE Destination: This destination is in use or potentially used by "
+#~ "another module"
+#~ msgstr ""
+#~ "Destino DUPLICADO: Este destino esta em uso ou potencialmente usado por "
+#~ "outro módulo"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Registro para adicionar ramais e destinos personalizados que podem ser "
+#~ "criados e usados de forma que o Registro de Ramais e Destinos possam "
+#~ "incluí-los."
