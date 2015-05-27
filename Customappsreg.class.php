@@ -89,8 +89,9 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			needreload();
 			return;
 		case 'add':
-			$this->addCustomDest($vars);
+			$id = $this->addCustomDest($vars);
 			needreload();
+			$_REQUEST['destid'] = $id;
 			return;
 		default:
 			return;
@@ -147,7 +148,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		// Is always an array
 		$all_probs = framework_list_problem_destinations();
 
-		foreach ($all_probs as $prob) {
+		foreach ($all_probs as $problem) {
 			if ($problem['status'] != "CUSTOM") {
 				continue;
 			}
@@ -190,4 +191,65 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			return $dest['target'];
 		}
 	}
+	public function getActionBar($request) {
+		$buttons = array();
+		switch($request['display']) {
+			case 'customdests':
+			case 'customextens':
+				$buttons = array(
+					'delete' => array(
+						'name' => 'delete',
+						'id' => 'delete',
+						'value' => _('Delete')
+					),
+					'reset' => array(
+						'name' => 'reset',
+						'id' => 'reset',
+						'value' => _('Reset')
+					),
+					'submit' => array(
+						'name' => 'submit',
+						'id' => 'submit',
+						'value' => _('Submit')
+					)
+				);
+				if (empty($request['destid'])) {
+					unset($buttons['delete']);
+				}
+				if(!isset($request['view'])){
+					$buttons = array();
+				}
+			break;
+		}
+		return $buttons;
+	}
+	public function ajaxRequest($req, &$setting) {
+		switch ($req) {
+		   case 'getJSON':
+		       return true;
+		   break;
+		   default:
+		       return false;
+		   break;
+		}
+	}
+	public function ajaxHandler(){
+		switch ($_REQUEST['command']) {
+		  case 'getJSON':
+		      switch ($_REQUEST['jdata']) {
+		          case 'destgrid':
+		            return array_values($this->getAllCustomDests());
+		          break;
+
+		          default:
+		            return false;
+		          break;
+		       }
+		  break;
+
+		  default:
+		    return false;
+		  break;
+		}
+		}
 }
