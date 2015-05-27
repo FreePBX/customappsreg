@@ -33,24 +33,72 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 
 	// This is where we handle our POSTs
 	public function doConfigPageInit($page) {
-		// Grab the variables we care about.
-		$vars = array ("destid", "target", "description", "notes", "destret", "action");
-		$postarr = array();
-		foreach ($vars as $v) {
-			$postarr[$v] = $this->getReq($v);
-		}
+		switch($page){
+			case 'customdests':
+				// Grab the variables we care about.
+				$vars = array ("destid", "target", "description", "notes", "destret", "action");
+				$postarr = array();
+				foreach ($vars as $v) {
+					$postarr[$v] = $this->getReq($v);
+				}
+				// Do we have a dest?
+				if (isset($_REQUEST['goto0'])) {
+					$postarr['dest'] = $_REQUEST[$_REQUEST['goto0']."0"];
+				} else {
+					$postarr['dest'] = "";
+				}
 
-		// Do we have a dest?
-		if (isset($_REQUEST['goto0'])) {
-			$postarr['dest'] = $_REQUEST[$_REQUEST['goto0']."0"];
-		} else {
-			$postarr['dest'] = "";
-		}
+				if ($page == "customdests") {
+					$this->handleDestsPost($postarr);
+				} else {
+					//$this->handleExtenPost($postarr);
+				}
+			break;
+			case 'customextens':
+				$type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
+				$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
+				if (isset($_REQUEST['delete'])) $action = 'delete';
+				$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['old_custom_exten']) :  '';
+				$custom_exten     = isset($_REQUEST['extdisplay']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['extdisplay']) :  '';
+				$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description']) :  '';
+				$notes           = isset($_REQUEST['notes']) ? htmlentities($_REQUEST['notes']) :  '';
 
-		if ($page == "customdests") {
-			$this->handleDestsPost($postarr);
-		} else {
-			//$this->handleExtenPost($postarr);
+				switch ($action) {
+					case 'add':
+						$this->conflict_url = array();
+						$this->usage_arr = framework_check_extension_usage($custom_exten);
+						if (!empty($usage_arr)) {
+							$this->conflict_url = framework_display_extension_usage_alert($usage_arr);
+							$custom_exten='';
+						} else {
+							if (customappsreg_customextens_add($custom_exten, $description, $notes)) {
+								$_REQUEST['extdisplay'] = $custom_exten;
+								needreload();
+							} else {
+								$custom_exten='';
+							}
+						}
+				break;
+				case 'edit':
+					$this->conflict_url = array();
+					if ($old_custom_exten != $custom_exten) {
+						$this->usage_arr = framework_check_extension_usage($custom_exten);
+						if (!empty($usage_arr)) {
+							$this->conflict_url = framework_display_extension_usage_alert($usage_arr);
+						}
+					}
+					if (empty($this->conflict_url)) {
+						if (customappsreg_customextens_edit($old_custom_exten, $custom_exten, $description, $notes)) {
+							needreload();
+						}
+					}
+				break;
+				case 'delete':
+					customappsreg_customextens_delete($custom_exten);
+					needreload();
+				break;
+			}
+			break;
 		}
 	}
 
@@ -139,6 +187,17 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			}
 		}
 		return $this->allDests;
+	}
+	public function getAllCustomExtens() {
+		$dbh = \FreePBX::Database();
+		$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";
+		$stmt = $dbh->prepare($sql);
+		$stmt->execute();
+		$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+		if($results) {
+			return $results;
+		}
+		return array();
 	}
 
 	public function getUnknownDests() {
@@ -237,13 +296,15 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		switch ($_REQUEST['command']) {
 		  case 'getJSON':
 		      switch ($_REQUEST['jdata']) {
-		          case 'destgrid':
-		            return array_values($this->getAllCustomDests());
-		          break;
-
-		          default:
-		            return false;
-		          break;
+		        case 'destgrid':
+		          return array_values($this->getAllCustomDests());
+		        break;
+						case 'extensgrid':
+							return array_values($this->getAllCustomExtens());
+						break;
+		        default:
+	            return false;
+	          break;
 		       }
 		  break;
 
@@ -251,5 +312,5 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		    return false;
 		  break;
 		}
-		}
+	}
 }
