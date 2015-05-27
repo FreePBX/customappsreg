@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-28 06:43+1000\n"
+"POT-Creation-Date: 2015-05-27 16:18-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -12,27 +12,32 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: page.customdests.php:80
+#: views/customdests/form.php:78
 msgid "(pick destination)"
 msgstr "(seleziona destinazione)"
 
-#: page.customdests.php:7 page.customdests.php:37 page.customdests.php:48
+#: views/customdests/grid.php:11 views/customextens/grid.php:12
+msgid "Actions"
+msgstr ""
+
+#: views/customdests/form.php:33
 msgid "Add Custom Destination"
 msgstr "Aggiungi Destinazione Personalizzata"
 
-#: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
+#: views/customextens/form.php:14
 msgid "Add Custom Extension"
 msgstr "Aggiungi Interno Personalizzato"
 
-#: page.customdests.php:94
-msgid ""
-"Brief Description that will be published to modules when showing "
-"destinations. Example: My Weather App"
+#: views/customdests/bootnav.php:7 views/customdests/grid.php:5
+#: views/customextens/grid.php:5
+msgid "Add Destination"
 msgstr ""
-"Breve Descrizione che sarà pubblicata nei moduli quando si visualizzeranno "
-"le destinazioni. Esempio: Mia Applicazione Meteo"
 
-#: page.customextens.php:107
+#: views/customextens/bootnav.php:7
+msgid "Add Extension"
+msgstr ""
+
+#: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
@@ -40,31 +45,28 @@ msgstr ""
 "Breve descrizione che sarà pubblicata nel Registro Interni a proposito di "
 "questo interno"
 
-#: page.customdests.php:74
+#: views/customdests/form.php:93
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr "Scegliere una destinazione"
 
-#: page.customextens.php:90
+#: views/customextens/form.php:18
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
-
-#: page.customdests.php:52
-msgid "Custom Destination"
-msgstr "Destinazione Personalizzata"
 
 #: functions.inc.php:52 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destinazione Personalizzata: %s"
 
-#: functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
+#: page.customextens.php:19
 msgid "Custom Destinations"
 msgstr "Destinazioni Personalizzate"
 
-#: page.customdests.php:40
+#: page.customdests.php:4
 msgid ""
 "Custom Destinations allows you to register your custom destinations that "
 "point to custom dialplans and will also 'publish' these destinations as "
@@ -84,7 +86,7 @@ msgstr ""
 "Sconosciute' permetterà di scegliere ed inserire qualsiasi destinazione che "
 "il registro non è a conoscenza nel campo Destinazioni Personalizzate."
 
-#: page.customextens.php:102
+#: views/customextens/form.php:35
 msgid "Custom Extension"
 msgstr "Interno Personalizzato"
 
@@ -92,7 +94,7 @@ msgstr "Interno Personalizzato"
 msgid "Custom Extension: "
 msgstr "Interno Personalizzato:"
 
-#: page.customextens.php:86
+#: page.customextens.php:4
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
 "extensions or feature codes that you have created in a custom file and "
@@ -115,37 +117,42 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Interno DUPLICATO: Questo interno è già in uso"
 
-#: page.customdests.php:124 page.customextens.php:117
+#: Customappsreg.class.php:262
 msgid "Delete"
 msgstr "Elimina"
 
-#: page.customdests.php:94 page.customextens.php:107
+#: views/customdests/form.php:105 views/customextens/form.php:59
+#: views/customextens/grid.php:11
 msgid "Description"
 msgstr "Descrizione"
 
-#: page.customdests.php:72
+#: views/customdests/form.php:180
+msgid "Destination"
+msgstr ""
+
+#: views/customdests/form.php:73
 msgid "Destination Quick Pick"
 msgstr "Selezione Rapida Destinazione"
 
-#: page.customdests.php:105
+#: views/customdests/grid.php:10
+msgid "Destinations"
+msgstr ""
+
+#: views/customdests/form.php:168
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
 
-#: page.customdests.php:48
-msgid "Edit Custom Destination"
-msgstr "Modifica Destinazione Personalizzata"
-
-#: page.customextens.php:100
-msgid "Edit Custom Extension"
-msgstr "Modifica Interno Personalizzato"
-
-#: page.customdests.php:35 page.customextens.php:81
+#: views/customdests/form.php:31 views/customextens/form.php:11
 msgid "Edit: "
 msgstr "Modifica:"
 
-#: page.customdests.php:171
+#: views/customextens/grid.php:10
+msgid "Extensions"
+msgstr ""
+
+#: views/customdests/form.php:224
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -153,15 +160,24 @@ msgstr ""
 "Destinazione non valida, non può essere lasciata vuota, deve essere "
 "formattata come: contesto,exten,pri"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Interno non valido, non può essere lasciato vuoto"
 
-#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
+#: functions.inc.php:122 views/customdests/form.php:225
+#: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrizione specificata non valida, non può essere lasciata vuota"
 
-#: page.customdests.php:100
+#: views/customdests/bootnav.php:5
+msgid "List Destinations"
+msgstr ""
+
+#: views/customextens/bootnav.php:5
+msgid "List Extensions"
+msgstr ""
+
+#: views/customdests/form.php:141
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -169,7 +185,7 @@ msgstr ""
 "Ulteriori note descrittive a proposito di questa destinazione per aiutare a "
 "documentarla. Questo campo non è utilizzato da nessun'altra parte."
 
-#: page.customextens.php:111
+#: views/customextens/form.php:95
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
@@ -177,11 +193,15 @@ msgstr ""
 "Ulteriore nota descrittiva a proposito di questo interno per aiutare a "
 "documentarlo. Questo campo non è utilizzato da nessun'altra parte."
 
-#: page.customdests.php:100 page.customextens.php:111
+#: views/customdests/form.php:160
+msgid "No"
+msgstr ""
+
+#: views/customdests/form.php:129 views/customextens/form.php:83
 msgid "Notes"
 msgstr "Note"
 
-#: page.customdests.php:57
+#: views/customdests/form.php:12
 msgid ""
 "READONLY WARNING: Because this destination is being used by other module "
 "objects it can not be edited. You must remove those dependencies in order to "
@@ -192,15 +212,31 @@ msgstr ""
 "prima di rimuovere questa destinazione, o creare una nuova destinazione da "
 "utilizzare"
 
-#: page.customdests.php:105
+#: Customappsreg.class.php:267
+msgid "Reset"
+msgstr ""
+
+#: views/customdests/form.php:153
 msgid "Return"
 msgstr ""
 
-#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
+#: views/customdests/form.php:192
+msgid "Set the Destination after return"
+msgstr ""
 
-#: page.customdests.php:55
+#: Customappsreg.class.php:272
+msgid "Submit"
+msgstr ""
+
+#: views/customdests/form.php:49
+msgid "Target"
+msgstr ""
+
+#: views/customextens/form.php:122
+msgid "The entered extension conflicts with another extension on the system"
+msgstr ""
+
+#: views/customdests/form.php:61
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -210,13 +246,36 @@ msgstr ""
 "formattata esattamente come se fosse inserita dopo il comando goto, con "
 "contesto,exten,priorità tutto incluso. Esempio: <br />app-prova,s,1"
 
-#: page.customextens.php:102
+#: views/customextens/form.php:47
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
 "Questo è l'Interno o il Codice Servizio che stai utilizzando nel tuo piano "
 "di chiamata e che vuoi che il Registro Interni di FreePBX sia a consoscenza."
+
+#: views/customdests/form.php:158
+msgid "Yes"
+msgstr ""
+
+#~ msgid ""
+#~ "Brief Description that will be published to modules when showing "
+#~ "destinations. Example: My Weather App"
+#~ msgstr ""
+#~ "Breve Descrizione che sarà pubblicata nei moduli quando si "
+#~ "visualizzeranno le destinazioni. Esempio: Mia Applicazione Meteo"
+
+#~ msgid "Custom Destination"
+#~ msgstr "Destinazione Personalizzata"
+
+#~ msgid "Edit Custom Destination"
+#~ msgstr "Modifica Destinazione Personalizzata"
+
+#~ msgid "Edit Custom Extension"
+#~ msgstr "Modifica Interno Personalizzato"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Conferma Cambiamenti"
 
 #~ msgid "Custom Extensions"
 #~ msgstr "Interni Personalizzati"

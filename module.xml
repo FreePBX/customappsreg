@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>12.0.2</version>
+	<version>13.0.1alpha1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*13.0.1* Visual Changes
 		*12.0.2* FREEPBX-9234 Escape out the exception
 		*12.0.1* Add advanced 'Return' function.
 		*2.11.0.2* Add license info
@@ -34,6 +35,6 @@
   <location></location>
   <md5sum></md5sum>
   <supported>
-    <version>12.0</version>
+    <version>13.0</version>
   </supported>
 </module>
