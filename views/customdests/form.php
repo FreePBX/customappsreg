@@ -36,7 +36,7 @@ if ($destid) {
 
 <?php echo $subhead?>
 <?php echo $usage?>
-<form class="fpbx-submit" action="" method="post" data-fpbx-delete="<?php echo $delURL?>">
+<form class="fpbx-submit" id="destsForm" action="" method="post" data-fpbx-delete="<?php echo $delURL?>" onsubmit="return checkCustomDest();">
   <input type="hidden" name="action" value="<?php echo $destid?'edit':'add'?>">
   <input type="hidden" name="itemid" value="<?php echo $destid?$destid:''?>" <?php echo $destid?'':'disabled'?>>
   <!--Target-->
@@ -218,5 +218,27 @@ function insertDest() {
 
   // reset element
   document.getElementById('insdest').value = '';
+}
+function checkCustomDest() {
+  var theForm = document.getElementById('destsForm');
+	var msgInvalidCustomDest = "<?php echo _('Invalid Destination, must not be blank, must be formatted as: context,exten,pri'); ?>";
+	var msgInvalidDescription = "<?php echo _('Invalid description specified, must not be blank'); ?>";
+
+	// Make sure the custom dest is in the form "context,exten,pri"
+	var re = /[^,]+,[^,]+,[^,]+/;
+
+	// form validation
+	defaultEmptyOK = false;
+
+	if (isEmpty(theForm.target.value) || !re.test(theForm.target.value)) {
+		warnInvalid(theForm.target, msgInvalidCustomDest);
+    return false;
+	}
+	if (isEmpty(theForm.description.value)) {
+		warnInvalid(theForm.description, msgInvalidDescription);
+    return false;
+	}
+
+	return true;
 }
 </script>
