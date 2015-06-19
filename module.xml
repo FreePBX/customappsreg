@@ -3,7 +3,7 @@
 	<repo>standard</repo>
 	<name>Custom Applications</name>
 	<version>13.0.2</version>
-	<publisher>Schmooze Com Inc</publisher>
+	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Admin</category>
@@ -33,8 +33,8 @@
   <depends>
     <version>12.0.54</version>
   </depends>
-  <location />
-  <md5sum />
+  <location/>
+  <md5sum/>
   <supported>
     <version>13.0</version>
   </supported>
