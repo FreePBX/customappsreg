@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 16:18-0400\n"
+"POT-Creation-Date: 2015-07-09 14:33-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,11 +45,10 @@ msgid "Add Custom Extension"
 msgstr ""
 
 #: views/customdests/bootnav.php:7 views/customdests/grid.php:5
-#: views/customextens/grid.php:5
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7
+#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
 msgid "Add Extension"
 msgstr ""
 
@@ -76,7 +75,6 @@ msgid "Custom Destination: %s"
 msgstr ""
 
 #: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
-#: page.customextens.php:19
 msgid "Custom Destinations"
 msgstr ""
 
@@ -98,6 +96,10 @@ msgstr ""
 
 #: functions.inc.php:87
 msgid "Custom Extension: "
+msgstr ""
+
+#: page.customextens.php:19
+msgid "Custom Extensions"
 msgstr ""
 
 #: page.customextens.php:4

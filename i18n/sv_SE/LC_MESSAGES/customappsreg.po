@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 16:18-0400\n"
+"POT-Creation-Date: 2015-07-09 14:33-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -47,11 +47,10 @@ msgid "Add Custom Extension"
 msgstr "Lägg till anpassad anknytning"
 
 #: views/customdests/bootnav.php:7 views/customdests/grid.php:5
-#: views/customextens/grid.php:5
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7
+#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
 msgid "Add Extension"
 msgstr ""
 
@@ -81,7 +80,6 @@ msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
 #: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
-#: page.customextens.php:19
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -110,6 +108,10 @@ msgstr "Anpassad anknytning"
 #: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
+
+#: page.customextens.php:19
+msgid "Custom Extensions"
+msgstr "Anpassade anknytningar"
 
 #: page.customextens.php:4
 msgid ""
@@ -294,9 +296,6 @@ msgstr ""
 
 #~ msgid "Custom Applications"
 #~ msgstr "Anpassade applikationer"
-
-#~ msgid "Custom Extensions"
-#~ msgstr "Anpassade anknytningar"
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "DUBLETT av destination: Denna destination finns redan"

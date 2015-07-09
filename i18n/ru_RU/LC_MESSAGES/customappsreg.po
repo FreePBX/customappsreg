@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 16:18-0400\n"
+"POT-Creation-Date: 2015-07-09 14:33-0400\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,11 +38,10 @@ msgid "Add Custom Extension"
 msgstr "Добавить Особый номер"
 
 #: views/customdests/bootnav.php:7 views/customdests/grid.php:5
-#: views/customextens/grid.php:5
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7
+#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
 msgid "Add Extension"
 msgstr ""
 
@@ -73,7 +72,6 @@ msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
 
 #: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
-#: page.customextens.php:19
 msgid "Custom Destinations"
 msgstr "Дополнительные назначения"
 
@@ -105,6 +103,10 @@ msgstr "Особый Номер"
 #: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Особый номер: "
+
+#: page.customextens.php:19
+msgid "Custom Extensions"
+msgstr "Особые внутренние номера"
 
 #: page.customextens.php:4
 msgid ""
@@ -293,9 +295,6 @@ msgstr ""
 
 #~ msgid "Custom Applications"
 #~ msgstr "Дополнительные приложения"
-
-#~ msgid "Custom Extensions"
-#~ msgstr "Особые внутренние номера"
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "ДУБЛИКАТ в назначении: это назначение уже используется"

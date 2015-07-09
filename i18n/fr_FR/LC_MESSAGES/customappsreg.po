@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 16:18-0400\n"
+"POT-Creation-Date: 2015-07-09 14:33-0400\n"
 "PO-Revision-Date: 2014-09-11 01:56+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: French <http://git.freepbx.org/projects/freepbx/customappsreg/"
@@ -48,11 +48,10 @@ msgid "Add Custom Extension"
 msgstr "Ajouter une Extension Personnalisée"
 
 #: views/customdests/bootnav.php:7 views/customdests/grid.php:5
-#: views/customextens/grid.php:5
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7
+#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
 msgid "Add Extension"
 msgstr ""
 
@@ -85,7 +84,6 @@ msgid "Custom Destination: %s"
 msgstr "Destination Personnalisée: %s"
 
 #: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
-#: page.customextens.php:19
 msgid "Custom Destinations"
 msgstr "Destinations Personnalisées"
 
@@ -118,6 +116,10 @@ msgstr "Extension Personnalisée"
 #: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Extension Personnalisée"
+
+#: page.customextens.php:19
+msgid "Custom Extensions"
+msgstr "Extensions Personnalisées"
 
 #: page.customextens.php:4
 msgid ""
@@ -303,9 +305,6 @@ msgstr ""
 
 #~ msgid "Submit Changes"
 #~ msgstr "Appliquer les Modifications"
-
-#~ msgid "Custom Extensions"
-#~ msgstr "Extensions Personnalisées"
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "Destination DUPLIQUEE: Cette destination est déjà utilisée"
