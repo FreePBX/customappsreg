@@ -2,7 +2,7 @@
 $dataurl = "ajax.php?module=customappsreg&command=getJSON&jdata=extensgrid";
 ?>
 <div id="toolbar-all">
-<a href="?display=customextens&view=form" class="btn btn-default"><i class="fa fa-plus"></i> <?php echo _("Add Destination")?></a>
+<a href="?display=customextens&view=form" class="btn btn-default"><i class="fa fa-plus"></i> <?php echo _("Add Extension")?></a>
 </div>
  <table id="destgrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
     <thead>
