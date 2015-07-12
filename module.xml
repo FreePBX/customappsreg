@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>13.0.3</version>
+	<version>13.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*13.0.4* Import from 12
 		*13.0.3* FREEPBX-9668 Multiple issues with Custom Extensions
 		*13.0.2* Version bump Beta
 		*13.0.1* Visual Changes
