@@ -1,4 +1,4 @@
-#: views/customdests/form.php:78
+#: views/customdests/form.php:81
 msgid "(pick destination)"
 msgstr ""
 
@@ -6,7 +6,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/customdests/form.php:33
+#: views/customdests/form.php:32
 msgid "Add Custom Destination"
 msgstr ""
 
@@ -23,11 +23,16 @@ msgid "Add Extension"
 msgstr ""
 
 #: views/customextens/form.php:71
-msgid "Brief description that will be published in the Extension Registry about this extension"
+msgid ""
+"Brief description that will be published in the Extension Registry about "
+"this extension"
 msgstr ""
 
-#: views/customdests/form.php:93
-msgid "Choose un-identified destinations on your system to add to the Custom Destination Registry. This will insert the chosen entry into the Custom Destination box above."
+#: views/customdests/form.php:91
+msgid ""
+"Choose un-identified destinations on your system to add to the Custom "
+"Destination Registry. This will insert the chosen entry into the Custom "
+"Destination box above."
 msgstr ""
 
 #: views/customextens/form.php:18
@@ -44,7 +49,15 @@ msgid "Custom Destinations"
 msgstr ""
 
 #: page.customdests.php:4
-msgid "Custom Destinations allows you to register your custom destinations that point to custom dialplans and will also 'publish' these destinations as available destinations to other modules. This is an advanced feature and should only be used by knowledgeable users. If you are getting warnings or errors in the notification panel about CUSTOM destinations that are correct, you should include them here. The 'Unknown Destinations' chooser will allow you to choose and insert any such destinations that the registry is not aware of into the Custom Destination field."
+msgid ""
+"Custom Destinations allows you to register your custom destinations that "
+"point to custom dialplans and will also 'publish' these destinations as "
+"available destinations to other modules. This is an advanced feature and "
+"should only be used by knowledgeable users. If you are getting warnings or "
+"errors in the notification panel about CUSTOM destinations that are correct, "
+"you should include them here. The 'Unknown Destinations' chooser will allow "
+"you to choose and insert any such destinations that the registry is not "
+"aware of into the Custom Destination field."
 msgstr ""
 
 #: views/customextens/form.php:35
@@ -60,27 +73,34 @@ msgid "Custom Extensions"
 msgstr ""
 
 #: page.customextens.php:4
-msgid "Custom Extensions provides you with a facility to register any custom extensions or feature codes that you have created in a custom file and FreePBX doesn't otherwise know about them. This allows the Extension Registry to be aware of your own extensions so that it can detect conflicts or report back information about your custom extensions to other modules that may make use of the information. You should not put extensions that you create in the Misc Apps Module as those are not custom."
+msgid ""
+"Custom Extensions provides you with a facility to register any custom "
+"extensions or feature codes that you have created in a custom file and "
+"FreePBX doesn't otherwise know about them. This allows the Extension "
+"Registry to be aware of your own extensions so that it can detect conflicts "
+"or report back information about your custom extensions to other modules "
+"that may make use of the information. You should not put extensions that you "
+"create in the Misc Apps Module as those are not custom."
 msgstr ""
 
 #: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
-#: Customappsreg.class.php:262
+#: Customappsreg.class.php:284
 msgid "Delete"
 msgstr ""
 
-#: views/customdests/form.php:105 views/customextens/form.php:59
+#: views/customdests/form.php:106 views/customextens/form.php:59
 #: views/customextens/grid.php:11
 msgid "Description"
 msgstr ""
 
-#: views/customdests/form.php:180
+#: views/customdests/form.php:181
 msgid "Destination"
 msgstr ""
 
-#: views/customdests/form.php:73
+#: views/customdests/form.php:76
 msgid "Destination Quick Pick"
 msgstr ""
 
@@ -88,11 +108,13 @@ msgstr ""
 msgid "Destinations"
 msgstr ""
 
-#: views/customdests/form.php:168
-msgid "Does this destination end with 'Return'? If so, you can then select a subsequent destination after this call flow is complete."
+#: views/customdests/form.php:169
+msgid ""
+"Does this destination end with 'Return'? If so, you can then select a "
+"subsequent destination after this call flow is complete."
 msgstr ""
 
-#: views/customdests/form.php:31 views/customextens/form.php:11
+#: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
 msgstr ""
 
@@ -100,15 +122,17 @@ msgstr ""
 msgid "Extensions"
 msgstr ""
 
-#: views/customdests/form.php:224
-msgid "Invalid Destination, must not be blank, must be formatted as: context,exten,pri"
+#: views/customdests/form.php:225
+msgid ""
+"Invalid Destination, must not be blank, must be formatted as: context,exten,"
+"pri"
 msgstr ""
 
 #: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: functions.inc.php:122 views/customdests/form.php:225
+#: functions.inc.php:122 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr ""
@@ -121,43 +145,43 @@ msgstr ""
 msgid "List Extensions"
 msgstr ""
 
-#: views/customdests/form.php:141
-msgid "More detailed notes about this destination to help document it. This field is not used elsewhere."
+#: views/customdests/form.php:142
+msgid ""
+"More detailed notes about this destination to help document it. This field "
+"is not used elsewhere."
 msgstr ""
 
 #: views/customextens/form.php:95
-msgid "More detailed notes about this extension to help document it. This field is not used elsewhere."
+msgid ""
+"More detailed notes about this extension to help document it. This field is "
+"not used elsewhere."
 msgstr ""
 
-#: views/customdests/form.php:160
+#: views/customdests/form.php:161
 msgid "No"
 msgstr ""
 
-#: views/customdests/form.php:129 views/customextens/form.php:83
+#: views/customdests/form.php:130 views/customextens/form.php:83
 msgid "Notes"
 msgstr ""
 
-#: views/customdests/form.php:12
-msgid "READONLY WARNING: Because this destination is being used by other module objects it can not be edited. You must remove those dependencies in order to edit this destination, or create a new destination to use"
-msgstr ""
-
-#: Customappsreg.class.php:267
+#: Customappsreg.class.php:289
 msgid "Reset"
 msgstr ""
 
-#: views/customdests/form.php:153
+#: views/customdests/form.php:154
 msgid "Return"
 msgstr ""
 
-#: views/customdests/form.php:192
+#: views/customdests/form.php:193
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:272
+#: Customappsreg.class.php:294
 msgid "Submit"
 msgstr ""
 
-#: views/customdests/form.php:49
+#: views/customdests/form.php:48
 msgid "Target"
 msgstr ""
 
@@ -165,14 +189,25 @@ msgstr ""
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
 
-#: views/customdests/form.php:61
-msgid "This is the Custom Destination to be published. It should be formatted exactly as you would put it in a goto statement, with context, exten, priority all included. An example might look like:<br />mycustom-app,s,1"
+#: views/customdests/form.php:60
+msgid ""
+"This is the Custom Destination to be published. It should be formatted "
+"exactly as you would put it in a goto statement, with context, exten, "
+"priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
 
 #: views/customextens/form.php:47
-msgid "This is the Extension or Feature Code you are using in your dialplan that you want the FreePBX Extension Registry to be aware of."
+msgid ""
+"This is the Extension or Feature Code you are using in your dialplan that "
+"you want the FreePBX Extension Registry to be aware of."
 msgstr ""
 
-#: views/customdests/form.php:158
+#: views/customdests/form.php:11
+msgid ""
+"WARNING: This destination is being used by other module objects. Changing "
+"this destination may cause unexpected issue."
+msgstr ""
+
+#: views/customdests/form.php:159
 msgid "Yes"
 msgstr ""
