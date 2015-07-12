@@ -8,8 +8,7 @@ if (isset($_REQUEST['destid']) && isset($allDests[$_REQUEST['destid']])) {
   $current['dest']  = isset($current['dest'])?$current['dest']:'';
 	$usage_list = framework_display_destination_usage(\FreePBX::Customappsreg()->getDestTarget($destid));
   if($usage_list){
-    $readonly = 'readonly';
-    $warning = _("READONLY WARNING: Because this destination is being used by other module objects it can not be edited. You must remove those dependencies in order to edit this destination, or create a new destination to use");
+    $warning = _("WARNING: This destination is being used by other module objects. Changing this destination may cause unexpected issue.");
     $usage .= '<div class="info info-warning">';
     $usage .= '<p><b>'.$warning.'</b></p>';
     $usage .= '</div>';
@@ -50,7 +49,7 @@ if ($destid) {
               <i class="fa fa-question-circle fpbx-help-icon" data-for="target"></i>
             </div>
             <div class="col-md-9">
-              <input type="text" class="form-control" id="target" name="target" value="<?php echo isset($target)?$target:''?>" <?php echo $readonly?>>
+              <input type="text" class="form-control" id="target" name="target" value="<?php echo isset($target)?$target:''?>">
             </div>
           </div>
         </div>
@@ -63,6 +62,10 @@ if ($destid) {
     </div>
   </div>
   <!--END Target-->
+<?php
+$unknown = \FreePBX::Customappsreg()->getUnknownDests();
+if ($unknown) {
+?>
   <!--Destination Quick Pick-->
   <div class="element-container">
     <div class="row">
@@ -76,12 +79,7 @@ if ($destid) {
             <div class="col-md-9">
               <select class="form-control" id="insdest" onChange="insertDest();" <?php echo $readonly?>>
                 <option value=""><?php echo _("(pick destination)")?></option>
-                <?php
-                  $results = \FreePBX::Customappsreg()->getUnknownDests();
-                  foreach ($results as $thisdest) {
-                    echo "<option value='$thisdest'>$thisdest</option>\n";
-                  }
-                ?>
+                <?php foreach ($unknown as $thisdest) { echo "<option value='$thisdest'>$thisdest</option>\n"; } ?>
               </select>
             </div>
           </div>
@@ -95,6 +93,9 @@ if ($destid) {
     </div>
   </div>
   <!--END Destination Quick Pick-->
+<?php
+}
+?>
   <!--Description-->
   <div class="element-container">
     <div class="row">
