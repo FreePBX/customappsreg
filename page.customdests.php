@@ -53,18 +53,11 @@ echo $helptext;
 	<span>
 	<?php 
 	echo _("This is the Custom Destination to be published. It should be formatted exactly as you would put it in a goto statement, with context, exten, priority all included. An example might look like:<br />mycustom-app,s,1");
-	if ($usage_list) {
-		echo "<br />"._("READONLY WARNING: Because this destination is being used by other module objects it can not be edited. You must remove those dependencies in order to edit this destination, or create a new destination to use");
-	}
 	?>
 	</span>
       </a>
     </td>
-<?php if ($usage_list) { ?>
-    <td><b><?php echo htmlentities($target); ?></b></td>
-<?php } else { ?>
     <td><input size="30" type="text" name="target" id="target" value="<?php echo $target; ?>"></td>
-<?php } ?>
   </tr>
 <?php if (!$usage_list) { ?>
   <tr>

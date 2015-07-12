@@ -67,30 +67,6 @@ function customappsreg_getdestinfo($dest) {
 	return false;
 }
 
-function customappsreg_check_extensions($exten=true) {
-	global $active_modules;
-
-	$extenlist = array();
-	if (is_array($exten) && empty($exten)) {
-		return $extenlist;
-	}
-	$sql = "SELECT custom_exten, description FROM custom_extensions ";
-	if (is_array($exten)) {
-		$sql .= "WHERE custom_exten in ('".implode("','",$exten)."')";
-	}
-	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
-
-	$type = isset($active_modules['customappsreg']['type'])?$active_modules['customappsreg']['type']:'tool';
-
-	foreach ($results as $result) {
-		$thisexten = $result['custom_exten'];
-		$extenlist[$thisexten]['description'] = _("Custom Extension: ").$result['description'];
-		$extenlist[$thisexten]['status'] = 'INUSE';
-		$extenlist[$thisexten]['edit_url'] = 'config.php?display=customextens&extdisplay='.urlencode($thisexten);
-	}
-	return $extenlist;
-}
-
 function customappsreg_customextens_list() {
 	global $db;
 	$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";

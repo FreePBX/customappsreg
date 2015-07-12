@@ -85,6 +85,9 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			needreload();
 			return;
 		case 'edit':
+			if (empty($vars['target'])) {
+				throw new \Exception("Blank target? How did that happen?");
+			}
 			$this->setConfig($vars['destid'], $vars, "dests");
 			needreload();
 			return;
