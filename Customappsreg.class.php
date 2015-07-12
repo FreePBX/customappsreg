@@ -21,7 +21,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			}
 		}
 		// Create custom_extensions table
-		$sql = "SELECT * FROM `custom_destinations` LIMIT 1";
+		$sql = "SELECT * FROM `custom_extensions` LIMIT 1";
 		try {
 			$res = $db->query($sql);
 			// If we made it here, the table exists, nothing needs to be done
