@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-28 06:43+1000\n"
+"POT-Creation-Date: 2015-07-13 08:18+1000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: page.customdests.php:80
+#: page.customdests.php:73
 msgid "(pick destination)"
 msgstr "(seleziona destinazione)"
 
@@ -24,7 +24,11 @@ msgstr "Aggiungi Destinazione Personalizzata"
 msgid "Add Custom Extension"
 msgstr "Aggiungi Interno Personalizzato"
 
-#: page.customdests.php:94
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
+#: page.customdests.php:87
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -40,7 +44,7 @@ msgstr ""
 "Breve descrizione che sarà pubblicata nel Registro Interni a proposito di "
 "questo interno"
 
-#: page.customdests.php:74
+#: page.customdests.php:67
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -51,6 +55,10 @@ msgstr "Scegliere una destinazione"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr ""
+
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destinazione Personalizzata"
@@ -60,7 +68,7 @@ msgstr "Destinazione Personalizzata"
 msgid "Custom Destination: %s"
 msgstr "Destinazione Personalizzata: %s"
 
-#: functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinazioni Personalizzate"
 
@@ -92,6 +100,10 @@ msgstr "Interno Personalizzato"
 msgid "Custom Extension: "
 msgstr "Interno Personalizzato:"
 
+#: customappsreg.i18n.php:10
+msgid "Custom Extensions"
+msgstr "Interni Personalizzati"
+
 #: page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
@@ -115,19 +127,19 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Interno DUPLICATO: Questo interno è già in uso"
 
-#: page.customdests.php:124 page.customextens.php:117
+#: page.customdests.php:117 page.customextens.php:117
 msgid "Delete"
 msgstr "Elimina"
 
-#: page.customdests.php:94 page.customextens.php:107
+#: page.customdests.php:87 page.customextens.php:107
 msgid "Description"
 msgstr "Descrizione"
 
-#: page.customdests.php:72
+#: page.customdests.php:65
 msgid "Destination Quick Pick"
 msgstr "Selezione Rapida Destinazione"
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -145,7 +157,7 @@ msgstr "Modifica Interno Personalizzato"
 msgid "Edit: "
 msgstr "Modifica:"
 
-#: page.customdests.php:171
+#: page.customdests.php:164
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -157,11 +169,11 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Interno non valido, non può essere lasciato vuoto"
 
-#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrizione specificata non valida, non può essere lasciata vuota"
 
-#: page.customdests.php:100
+#: page.customdests.php:93
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -177,26 +189,21 @@ msgstr ""
 "Ulteriore nota descrittiva a proposito di questo interno per aiutare a "
 "documentarlo. Questo campo non è utilizzato da nessun'altra parte."
 
-#: page.customdests.php:100 page.customextens.php:111
+#: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Note"
 
-#: page.customdests.php:57
+#: customappsreg.i18n.php:8
 msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
 msgstr ""
-"ATTENZIONE, SOLA LETTURA: siccome questa destinazione è utilizzata da altri "
-"moduli non può essere modificata. Devi prima eliminare queste dipendenze "
-"prima di rimuovere questa destinazione, o creare una nuova destinazione da "
-"utilizzare"
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid "Return"
 msgstr ""
 
-#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
+#: page.customdests.php:116 page.customdests.php:119 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Conferma Cambiamenti"
 
@@ -218,8 +225,15 @@ msgstr ""
 "Questo è l'Interno o il Codice Servizio che stai utilizzando nel tuo piano "
 "di chiamata e che vuoi che il Registro Interni di FreePBX sia a consoscenza."
 
-#~ msgid "Custom Extensions"
-#~ msgstr "Interni Personalizzati"
+#~ msgid ""
+#~ "READONLY WARNING: Because this destination is being used by other module "
+#~ "objects it can not be edited. You must remove those dependencies in order "
+#~ "to edit this destination, or create a new destination to use"
+#~ msgstr ""
+#~ "ATTENZIONE, SOLA LETTURA: siccome questa destinazione è utilizzata da "
+#~ "altri moduli non può essere modificata. Devi prima eliminare queste "
+#~ "dipendenze prima di rimuovere questa destinazione, o creare una nuova "
+#~ "destinazione da utilizzare"
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "Destinazione DUPLICATA: Questa destinazione è già in uso"

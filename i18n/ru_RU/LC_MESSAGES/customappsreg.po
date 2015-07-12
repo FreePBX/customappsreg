@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-28 06:43+1000\n"
+"POT-Creation-Date: 2015-07-13 08:18+1000\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,7 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.customdests.php:80
+#: page.customdests.php:73
 msgid "(pick destination)"
 msgstr "(выбрать назначение)"
 
@@ -33,7 +33,11 @@ msgstr "Добавить специальное назначение"
 msgid "Add Custom Extension"
 msgstr "Добавить Особый номер"
 
-#: page.customdests.php:94
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr "Администратор"
+
+#: page.customdests.php:87
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -49,7 +53,7 @@ msgstr ""
 "Короткое описание этого номера, которое будет использоваться в Регистре "
 "номеров"
 
-#: page.customdests.php:74
+#: page.customdests.php:67
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -62,6 +66,10 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Конфликтующие номера"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Дополнительные приложения"
+
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Спецназначение"
@@ -71,7 +79,7 @@ msgstr "Спецназначение"
 msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
 
-#: functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Дополнительные назначения"
 
@@ -104,6 +112,10 @@ msgstr "Особый Номер"
 msgid "Custom Extension: "
 msgstr "Особый номер: "
 
+#: customappsreg.i18n.php:10
+msgid "Custom Extensions"
+msgstr "Особые внутренние номера"
+
 #: page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
@@ -126,19 +138,19 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИКАТ внутреннего номера: этот номер уже используется"
 
-#: page.customdests.php:124 page.customextens.php:117
+#: page.customdests.php:117 page.customextens.php:117
 msgid "Delete"
 msgstr "Удалить"
 
-#: page.customdests.php:94 page.customextens.php:107
+#: page.customdests.php:87 page.customextens.php:107
 msgid "Description"
 msgstr "Описание"
 
-#: page.customdests.php:72
+#: page.customdests.php:65
 msgid "Destination Quick Pick"
 msgstr "Назначение Бытрый Перехват"
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -156,7 +168,7 @@ msgstr "Редактировать Особый номер"
 msgid "Edit: "
 msgstr "Редактировать:"
 
-#: page.customdests.php:171
+#: page.customdests.php:164
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -168,11 +180,11 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Неверный внутренний номер, не может быть пустым"
 
-#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Неверное описание. Не должно быть пустым"
 
-#: page.customdests.php:100
+#: page.customdests.php:93
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -188,26 +200,23 @@ msgstr ""
 "Более детальные примечания об этом номере, которое поможет документировать "
 "записи, когда их много. Это поле больше нигде не используется."
 
-#: page.customdests.php:100 page.customextens.php:111
+#: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Примечания"
 
-#: page.customdests.php:57
+#: customappsreg.i18n.php:8
 msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
 msgstr ""
-"Предупреждение: Так как это назначение используется другим модулем, оно не "
-"может быть изменено.Вы должны удалить назначение из другого модуля для "
-"возможности изменения назначения, или создать новое назначение для "
-"использования"
+"Реестр особых внутренних номеров и дополнительных назначений, который может "
+"включаться в реестры внутренних номеров и назначений."
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid "Return"
 msgstr ""
 
-#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
+#: page.customdests.php:116 page.customdests.php:119 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Сохнарить изменения"
 
@@ -229,14 +238,15 @@ msgstr ""
 "Это Особый номер или код донабора, который будет использоваться в вашем диал "
 "плане, для учета его в общем Регистре номеров FreePBX."
 
-#~ msgid "Admin"
-#~ msgstr "Администратор"
-
-#~ msgid "Custom Applications"
-#~ msgstr "Дополнительные приложения"
-
-#~ msgid "Custom Extensions"
-#~ msgstr "Особые внутренние номера"
+#~ msgid ""
+#~ "READONLY WARNING: Because this destination is being used by other module "
+#~ "objects it can not be edited. You must remove those dependencies in order "
+#~ "to edit this destination, or create a new destination to use"
+#~ msgstr ""
+#~ "Предупреждение: Так как это назначение используется другим модулем, оно "
+#~ "не может быть изменено.Вы должны удалить назначение из другого модуля для "
+#~ "возможности изменения назначения, или создать новое назначение для "
+#~ "использования"
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "ДУБЛИКАТ в назначении: это назначение уже используется"
@@ -247,14 +257,6 @@ msgstr ""
 #~ msgstr ""
 #~ "ДУБЛИКАТ в назначении: это назначение уже используется или потенциально "
 #~ "может быть использовано в другом модуле"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Реестр особых внутренних номеров и дополнительных назначений, который "
-#~ "может включаться в реестры внутренних номеров и назначений."
 
 #~ msgid ""
 #~ "Choose un-identified destinations on your system to add to the Custom "

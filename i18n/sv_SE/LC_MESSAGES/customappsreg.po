@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-28 06:43+1000\n"
+"POT-Creation-Date: 2015-07-13 08:18+1000\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,7 +30,7 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.customdests.php:80
+#: page.customdests.php:73
 msgid "(pick destination)"
 msgstr "(välj destination)"
 
@@ -42,7 +42,11 @@ msgstr "Lägg till anpassad destination"
 msgid "Add Custom Extension"
 msgstr "Lägg till anpassad anknytning"
 
-#: page.customdests.php:94
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
+#: page.customdests.php:87
 msgid ""
 "Brief Description that will be published to modules when showing "
 "destinations. Example: My Weather App"
@@ -56,7 +60,7 @@ msgid ""
 "this extension"
 msgstr "Kortfattad beskrivning som kommer att visas för övriga anknytningar"
 
-#: page.customdests.php:74
+#: page.customdests.php:67
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -70,6 +74,10 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Anpassade applikationer"
+
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Anpassad destination"
@@ -79,7 +87,7 @@ msgstr "Anpassad destination"
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -109,6 +117,10 @@ msgstr "Anpassad anknytning"
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
+#: customappsreg.i18n.php:10
+msgid "Custom Extensions"
+msgstr "Anpassade anknytningar"
+
 #: page.customextens.php:86
 msgid ""
 "Custom Extensions provides you with a facility to register any custom "
@@ -131,19 +143,19 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
-#: page.customdests.php:124 page.customextens.php:117
+#: page.customdests.php:117 page.customextens.php:117
 msgid "Delete"
 msgstr "Ta bort"
 
-#: page.customdests.php:94 page.customextens.php:107
+#: page.customdests.php:87 page.customextens.php:107
 msgid "Description"
 msgstr "Beskrivning"
 
-#: page.customdests.php:72
+#: page.customdests.php:65
 msgid "Destination Quick Pick"
 msgstr "Snabbval för destination"
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -161,7 +173,7 @@ msgstr "Redigera anpassad anknytning"
 msgid "Edit: "
 msgstr "Redigera:"
 
-#: page.customdests.php:171
+#: page.customdests.php:164
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -173,11 +185,11 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Ogiltig anknytning, den kan inte vara tom"
 
-#: functions.inc.php:122 page.customdests.php:172 page.customextens.php:129
+#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Ogiltig beskrivning, den kan inte vara tom"
 
-#: page.customdests.php:100
+#: page.customdests.php:93
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -193,25 +205,23 @@ msgstr ""
 "Mer detaljerad beskrivning om denna anknytning för att underlätta "
 "dokumentation. Detta används bara här."
 
-#: page.customdests.php:100 page.customextens.php:111
+#: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Notering"
 
-#: page.customdests.php:57
+#: customappsreg.i18n.php:8
 msgid ""
-"READONLY WARNING: Because this destination is being used by other module "
-"objects it can not be edited. You must remove those dependencies in order to "
-"edit this destination, or create a new destination to use"
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
 msgstr ""
-"VARNING SKRIVSKYDDAD: Denna destination används av andra moduler och kan "
-"inte redigeras. Du måste ta bort ta bort dessa beroenden för att kunna "
-"redigera denna destination, eller skapa en ny destination."
+"Lägg till anpassade anknytningar och destinationer i ett register som kan "
+"användas av standardanknytningar och destinationer som ett valbart alternativ"
 
-#: page.customdests.php:105
+#: page.customdests.php:98
 msgid "Return"
 msgstr ""
 
-#: page.customdests.php:123 page.customdests.php:126 page.customextens.php:116
+#: page.customdests.php:116 page.customdests.php:119 page.customextens.php:116
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
@@ -233,11 +243,14 @@ msgstr ""
 "Detta är den anpassade anknytning eller funktionskod som du använder i din "
 "nummerplan som FreePBX kommer att känna till."
 
-#~ msgid "Custom Applications"
-#~ msgstr "Anpassade applikationer"
-
-#~ msgid "Custom Extensions"
-#~ msgstr "Anpassade anknytningar"
+#~ msgid ""
+#~ "READONLY WARNING: Because this destination is being used by other module "
+#~ "objects it can not be edited. You must remove those dependencies in order "
+#~ "to edit this destination, or create a new destination to use"
+#~ msgstr ""
+#~ "VARNING SKRIVSKYDDAD: Denna destination används av andra moduler och kan "
+#~ "inte redigeras. Du måste ta bort ta bort dessa beroenden för att kunna "
+#~ "redigera denna destination, eller skapa en ny destination."
 
 #~ msgid "DUPLICATE Destination: This destination is already in use"
 #~ msgstr "DUBLETT av destination: Denna destination finns redan"
@@ -248,15 +261,6 @@ msgstr ""
 #~ msgstr ""
 #~ "DUBLETT av destination: Denna destination finns redan eller används av "
 #~ "annan modul"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Lägg till anpassade anknytningar och destinationer i ett register som kan "
-#~ "användas av standardanknytningar och destinationer som ett valbart "
-#~ "alternativ"
 
 #~ msgid "Advanced Administration"
 #~ msgstr "Avancerade inställningar"
