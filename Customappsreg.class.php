@@ -26,8 +26,8 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			$res = $db->query($sql);
 			// If we made it here, the table exists, nothing needs to be done
 		} catch (\Exception $e) {
-			if ($e->getCode() != "42S02") { // 42S02 == table doesn't exist.
-				$sql = "CREATE TABLE `custom_extensions` ( 
+			if ($e->getCode() == "42S02") { // 42S02 == table doesn't exist.
+				$sql = "CREATE TABLE `custom_extensions` (
 					`custom_exten` varchar(80) NOT NULL default '',
 					`description` varchar(40) NOT NULL default '',
 					`notes` varchar(255) NOT NULL default '',
