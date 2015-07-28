@@ -49,8 +49,9 @@ function customappsreg_getdestinfo($dest) {
 			return false;
 		} else {
 			// Found it.
+			$cd = $allDests[$matches[1]];
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
 			return $tmparr;
 		}
 	}
@@ -58,7 +59,7 @@ function customappsreg_getdestinfo($dest) {
 		if ($cd['target'] == $dest) {
 			// Found it.
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
 			return $tmparr;
 		}
 	}
