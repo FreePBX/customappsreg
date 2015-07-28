@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:39+1000\n"
+"POT-Creation-Date: 2015-07-28 11:58-0700\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
@@ -120,7 +120,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "カスタム内線"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "カスタム内線："
 
@@ -144,7 +144,7 @@ msgstr ""
 "ルに情報をレポートします。その他モジュールで作成した内線はカスタムではないの"
 "で、ここでは使用しないでください。"
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
@@ -191,11 +191,11 @@ msgstr ""
 "無効な宛先です、空白にすることはできません。フォーマット：コンテキスト,exten,"
 "優先度"
 
-#: functions.inc.php:118 views/customextens/form.php:106
+#: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "無効な内線番号です、空白にすることはできません。"
 
-#: functions.inc.php:122 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "無効な説明が指定されました。空白にすることはできません。"

@@ -39,7 +39,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
@@ -64,7 +64,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr ""
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr ""
 
@@ -83,7 +83,7 @@ msgid ""
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
@@ -128,11 +128,11 @@ msgid ""
 "pri"
 msgstr ""
 
-#: functions.inc.php:118 views/customextens/form.php:106
+#: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: functions.inc.php:122 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr ""

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:39+1000\n"
+"POT-Creation-Date: 2015-07-28 11:58-0700\n"
 "PO-Revision-Date: 2015-04-29 07:07+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino Personalizado: %s"
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Ramal Personalizado"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Ramal Personalizado: "
 
@@ -140,7 +140,7 @@ msgstr ""
 "não deveria colocar os ramais que você criou no Módulo Misc Apps como eles "
 "não são customizada."
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Ramal DUPLICADO: O ramal já está em uso"
 
@@ -187,11 +187,11 @@ msgstr ""
 "Destino Inválido, não deve ser branco, deve ser formatado como: context, "
 "exten, pri"
 
-#: functions.inc.php:118 views/customextens/form.php:106
+#: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Ramal Inválido, não deve estar em branco"
 
-#: functions.inc.php:122 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrição inválida especificada, não deve estar em branco"

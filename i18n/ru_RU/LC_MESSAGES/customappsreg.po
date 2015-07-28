@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:39+1000\n"
+"POT-Creation-Date: 2015-07-28 11:58-0700\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Конфликтующие номера"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
@@ -100,7 +100,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Особый Номер"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Особый номер: "
 
@@ -126,7 +126,7 @@ msgstr ""
 "информацию. Вы не должны создавать эти особые номера в модуле Misc Apps так "
 "как они будут другими."
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИКАТ внутреннего номера: этот номер уже используется"
 
@@ -173,11 +173,11 @@ msgstr ""
 "Неверное назначение, не должно быть пустым, и должно быть в формате: "
 "контекст, экстеншен, приоритет"
 
-#: functions.inc.php:118 views/customextens/form.php:106
+#: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Неверный внутренний номер, не может быть пустым"
 
-#: functions.inc.php:122 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Неверное описание. Не должно быть пустым"
