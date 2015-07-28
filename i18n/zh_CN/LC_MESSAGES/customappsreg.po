@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -29,10 +29,6 @@ msgstr "添加自定义目的地"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "添加自定义分机"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr ""
 
 #: page.customdests.php:87
 msgid ""
@@ -59,20 +55,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "分机冲突"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr ""
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "自定义目的地"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "自定义目的地"
 
@@ -97,13 +89,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "自定义分机"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "自定义分机："
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "自定义分机"
 
 #: page.customextens.php:86
 msgid ""
@@ -121,7 +109,7 @@ msgstr ""
 "报告你自定义的分机号。请你不要在此处添加你在Misc Apps模块中创建的分机，因为那"
 "些不算自定义的分机。"
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
@@ -161,11 +149,11 @@ msgid ""
 "pri"
 msgstr "无效的目的地，不可以为空，格式必须为：context,exten,pri"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "无效的分机号，不能为空"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "指定了无效的描述，不能为空"
 
@@ -184,12 +172,6 @@ msgstr "更多的关于此分机的详细信息，此域不会被用在别的地
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "备注"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
 
 #: page.customdests.php:98
 msgid "Return"
@@ -215,6 +197,9 @@ msgid ""
 msgstr ""
 "这是你在你的拨号方案中使用的分机和功能代码，而你希望让FreePBX的分机注册表知道"
 "它们。"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "自定义分机"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

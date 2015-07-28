@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2014-09-11 01:56+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: French <http://git.freepbx.org/projects/freepbx/customappsreg/"
@@ -42,10 +42,6 @@ msgstr "Ajouter une Destination Personnalisée"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "Ajouter une Extension Personnalisée"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr ""
 
 #: page.customdests.php:87
 msgid ""
@@ -78,20 +74,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Extensions Conflictuelles"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr ""
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destination Personnalisée"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destination Personnalisée: %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinations Personnalisées"
 
@@ -121,13 +113,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Extension Personnalisée"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Extension Personnalisée"
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "Extensions Personnalisées"
 
 #: page.customextens.php:86
 msgid ""
@@ -149,7 +137,7 @@ msgstr ""
 "que vous avez créé dans le Module Misc Apps car elles ne sont pas "
 "personnalisées."
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extension DUPLIQUEE: Cette extension est déjà utilisée"
 
@@ -191,11 +179,11 @@ msgstr ""
 "Destination invalide, ne doit pas être vide, doit être formatté comme suit : "
 "context,exten,pri"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Extension Invalide, ne doit pas être vide"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Description spécifiée invalide, ne doit pas être vide"
 
@@ -218,12 +206,6 @@ msgstr ""
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Notes"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
 
 #: page.customdests.php:98
 msgid "Return"
@@ -251,6 +233,9 @@ msgid ""
 msgstr ""
 "Il s'agit de l'Extension ou Fonction que vous utilisez dans votre plan de "
 "numérotation et dont vous voulez informer le Registre d'Extension."
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Extensions Personnalisées"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

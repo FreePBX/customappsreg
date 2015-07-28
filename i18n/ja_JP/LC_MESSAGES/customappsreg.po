@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -60,10 +60,6 @@ msgstr "カスタム宛先を追加"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "カスタム内線を追加"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr "アドミン"
 
 #: page.customdests.php:87
 msgid ""
@@ -92,20 +88,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "カスタムアプリケーション"
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "カスタム宛先"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "カスタム宛先"
 
@@ -128,13 +120,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "カスタム内線"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "カスタム内線："
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "カスタム内線"
 
 #: page.customextens.php:86
 msgid ""
@@ -152,7 +140,7 @@ msgstr ""
 "ルに情報をレポートします。その他モジュールで作成した内線はカスタムではないの"
 "で、ここでは使用しないでください。"
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
@@ -194,11 +182,11 @@ msgstr ""
 "無効な宛先です、空白にすることはできません。フォーマット：コンテキスト,exten,"
 "優先度"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "無効な内線番号です、空白にすることはできません。"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "無効な説明が指定されました。空白にすることはできません。"
 
@@ -221,14 +209,6 @@ msgstr ""
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "ノート"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジス"
-"トリがこれらを含むことができるように作成され、使用されます。"
 
 #: page.customdests.php:98
 msgid "Return"
@@ -255,6 +235,23 @@ msgid ""
 msgstr ""
 "あなたのダイヤルプラン内でFreePBX内線レジストリに認識させたい内線番号又はキー"
 "コードです。"
+
+#~ msgid "Admin"
+#~ msgstr "アドミン"
+
+#~ msgid "Custom Applications"
+#~ msgstr "カスタムアプリケーション"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "カスタム内線"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジ"
+#~ "ストリがこれらを含むことができるように作成され、使用されます。"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

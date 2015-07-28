@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - customappsreg module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2015-03-23 20:56+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -28,10 +28,6 @@ msgstr "Añadir destino personalizado"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "Añadir extensión personalizada"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr "Admin"
 
 #: page.customdests.php:87
 msgid ""
@@ -63,20 +59,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Aplicaciones Personalizadas"
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destino personalizado"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino personalizado: %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinos personalizados"
 
@@ -105,13 +97,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Extensión personalizada"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Extensión personalizada: "
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "Extensiones personalizadas"
 
 #: page.customextens.php:86
 msgid ""
@@ -131,7 +119,7 @@ msgstr ""
 "uso de esa información. No debería poner aquí extensiones que cree con el "
 "módulo de Aplicaciones variasm ya que esas no son personalizadas."
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extensión duplicada; esta extensión ya está en uso"
 
@@ -173,11 +161,11 @@ msgstr ""
 "Destino no válido; no debe estar vacía, y debe estar formateada del "
 "siguiente modo: contexto,extension,prioridad"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Extensión no válida; no debe estar vacía"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Descripción no válida; no debe estar vacía"
 
@@ -200,14 +188,6 @@ msgstr ""
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Notas"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Registro para agregar extensiones personalizadas y destinos que se pueden "
-"crear y utilizados de manera que Extensiones y Destinos puede incluir estos."
 
 #: page.customdests.php:98
 msgid "Return"
@@ -235,6 +215,24 @@ msgid ""
 msgstr ""
 "Esta es la extensión o código de característica  que se usará en el plan de "
 "marcado que usará el registro de extensiones de FreePBX para poder usarla."
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Aplicaciones Personalizadas"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Extensiones personalizadas"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Registro para agregar extensiones personalizadas y destinos que se pueden "
+#~ "crear y utilizados de manera que Extensiones y Destinos puede incluir "
+#~ "estos."
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

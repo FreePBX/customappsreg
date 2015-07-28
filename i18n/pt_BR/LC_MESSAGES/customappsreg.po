@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2015-04-29 07:07+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -45,10 +45,6 @@ msgstr "Adicionar Destino Personalizado"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "Adicionar Ramal Personalizado"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr "Admin"
 
 #: page.customdests.php:87
 msgid ""
@@ -79,20 +75,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Aplicações Personalizadas"
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Destino Personalizado"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino Personalizado: %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Destinos Personalizados"
 
@@ -121,13 +113,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Ramal Personalizado"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Ramal Personalizado: "
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "Ramais Personalizados"
 
 #: page.customextens.php:86
 msgid ""
@@ -148,7 +136,7 @@ msgstr ""
 "não deveria colocar os ramais que você criou no Módulo Misc Apps como eles "
 "não são customizada."
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Ramal DUPLICADO: O ramal já está em uso"
 
@@ -190,11 +178,11 @@ msgstr ""
 "Destino Inválido, não deve ser branco, deve ser formatado como: context, "
 "exten, pri"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Ramal Inválido, não deve estar em branco"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrição inválida especificada, não deve estar em branco"
 
@@ -217,15 +205,6 @@ msgstr ""
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Notas"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Registro para adicionar ramais e destinos personalizados que podem ser "
-"criados e usados de forma que o Registro de Ramais e Destinos possam incluí-"
-"los."
 
 #: page.customdests.php:98
 msgid "Return"
@@ -252,6 +231,24 @@ msgid ""
 msgstr ""
 "Este é o Ramal ou Código de Recurso que você está usando no seu plano de "
 "discagem, e que você quer que o Registro de Ramal do FreePBX esteja ciente."
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Aplicações Personalizadas"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Ramais Personalizados"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Registro para adicionar ramais e destinos personalizados que podem ser "
+#~ "criados e usados de forma que o Registro de Ramais e Destinos possam "
+#~ "incluí-los."
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

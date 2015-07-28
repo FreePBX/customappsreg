@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-13 08:18+1000\n"
+"POT-Creation-Date: 2015-07-28 12:06-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -41,10 +41,6 @@ msgstr "Lägg till anpassad destination"
 #: page.customextens.php:61 page.customextens.php:83 page.customextens.php:100
 msgid "Add Custom Extension"
 msgstr "Lägg till anpassad anknytning"
-
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
-msgid "Admin"
-msgstr ""
 
 #: page.customdests.php:87
 msgid ""
@@ -74,20 +70,16 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Anpassade applikationer"
-
 #: page.customdests.php:52
 msgid "Custom Destination"
 msgstr "Anpassad destination"
 
-#: functions.inc.php:52 functions.inc.php:60
+#: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: functions.inc.php:18 functions.inc.php:20
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -113,13 +105,9 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Anpassad anknytning"
 
-#: functions.inc.php:87
+#: functions.inc.php:88
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
-
-#: customappsreg.i18n.php:10
-msgid "Custom Extensions"
-msgstr "Anpassade anknytningar"
 
 #: page.customextens.php:86
 msgid ""
@@ -139,7 +127,7 @@ msgstr ""
 "informationen. Du ska inte lägga till anknytningar här som du skapar i "
 "Övriga Applikationer då dom inte räknas som anpassade"
 
-#: functions.inc.php:133
+#: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
@@ -181,11 +169,11 @@ msgstr ""
 "Ogiltig destination, den kan inte vara tom och måste vara formaterad som: "
 "context,exten,pri"
 
-#: functions.inc.php:118 page.customextens.php:128
+#: functions.inc.php:119 page.customextens.php:128
 msgid "Invalid Extension, must not be blank"
 msgstr "Ogiltig anknytning, den kan inte vara tom"
 
-#: functions.inc.php:122 page.customdests.php:165 page.customextens.php:129
+#: functions.inc.php:123 page.customdests.php:165 page.customextens.php:129
 msgid "Invalid description specified, must not be blank"
 msgstr "Ogiltig beskrivning, den kan inte vara tom"
 
@@ -208,14 +196,6 @@ msgstr ""
 #: page.customdests.php:93 page.customextens.php:111
 msgid "Notes"
 msgstr "Notering"
-
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Lägg till anpassade anknytningar och destinationer i ett register som kan "
-"användas av standardanknytningar och destinationer som ett valbart alternativ"
 
 #: page.customdests.php:98
 msgid "Return"
@@ -242,6 +222,21 @@ msgid ""
 msgstr ""
 "Detta är den anpassade anknytning eller funktionskod som du använder i din "
 "nummerplan som FreePBX kommer att känna till."
+
+#~ msgid "Custom Applications"
+#~ msgstr "Anpassade applikationer"
+
+#~ msgid "Custom Extensions"
+#~ msgstr "Anpassade anknytningar"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Lägg till anpassade anknytningar och destinationer i ett register som kan "
+#~ "användas av standardanknytningar och destinationer som ett valbart "
+#~ "alternativ"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "
