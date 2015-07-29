@@ -48,9 +48,10 @@ function customappsreg_getdestinfo($dest) {
 		if (!isset($allDests[$matches[1]])) {
 			return false;
 		} else {
+			$cd = $allDests[$matches[1]];
 			// Found it.
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
 			return $tmparr;
 		}
 	}
@@ -58,7 +59,7 @@ function customappsreg_getdestinfo($dest) {
 		if ($cd['target'] == $dest) {
 			// Found it.
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$dest['destid']);
+		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
 			return $tmparr;
 		}
 	}
@@ -96,7 +97,7 @@ function customappsreg_customextens_list() {
 	$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";
 	$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($results)) {
-		die_freepbx($results->getMessage()."<br><br>Error selecting from custom_extensions");	
+		die_freepbx($results->getMessage()."<br><br>Error selecting from custom_extensions");
 	}
 	return $results;
 }
@@ -106,7 +107,7 @@ function customappsreg_customextens_get($custom_exten) {
 	$sql = "SELECT custom_exten, description, notes FROM custom_extensions WHERE custom_exten = ".q($custom_exten);
 	$row = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 	if(DB::IsError($row)) {
-		die_freepbx($row->getMessage()."<br><br>Error selecting row from custom_extensions");	
+		die_freepbx($row->getMessage()."<br><br>Error selecting row from custom_extensions");
 	}
 	return $row;
 }
@@ -149,7 +150,7 @@ function customappsreg_customextens_delete($custom_exten) {
 	}
 }
 
-function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $description, $notes) { 
+function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $description, $notes) {
 	global $db;
 
 	$sql = "UPDATE custom_extensions SET ".
@@ -162,4 +163,3 @@ function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $des
 		die_freepbx($result->getMessage().$sql);
 	}
 }
-
