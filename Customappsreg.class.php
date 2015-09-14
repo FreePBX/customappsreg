@@ -79,8 +79,8 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 				if (isset($_REQUEST['delete'])) $action = 'delete';
 				$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['old_custom_exten']) :  '';
 				$custom_exten     = isset($_REQUEST['extdisplay']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['extdisplay']) :  '';
-				$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description']) :  '';
-				$notes           = isset($_REQUEST['notes']) ? htmlentities($_REQUEST['notes']) :  '';
+				$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description'],ENT_COMPAT | ENT_HTML401, "UTF-8") :  '';
+				$notes           = isset($_REQUEST['notes']) ? htmlentities($_REQUEST['notes'],ENT_COMPAT | ENT_HTML401, "UTF-8") :  '';
 
 				switch ($action) {
 					case 'add':
