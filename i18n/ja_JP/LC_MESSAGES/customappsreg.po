@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 11:58-0700\n"
+"POT-Creation-Date: 2015-10-21 08:08-0700\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "(pick destination)"
 msgstr "宛先をピックアップ"
 
-#: views/customdests/grid.php:11 views/customextens/grid.php:12
+#: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
 msgstr ""
 
@@ -65,11 +65,11 @@ msgstr "カスタム宛先を追加"
 msgid "Add Custom Extension"
 msgstr "カスタム内線を追加"
 
-#: views/customdests/bootnav.php:7 views/customdests/grid.php:5
+#: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
+#: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
 msgstr ""
 
@@ -97,7 +97,7 @@ msgstr "内線の競合"
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "カスタム宛先"
 
@@ -124,7 +124,7 @@ msgstr "カスタム内線"
 msgid "Custom Extension: "
 msgstr "カスタム内線："
 
-#: page.customextens.php:19
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "カスタム内線"
 
@@ -148,12 +148,12 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "削除"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
-#: views/customextens/grid.php:11
+#: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "説明"
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Destination Quick Pick"
 msgstr "宛先クイックピックアップ"
 
-#: views/customdests/grid.php:10
+#: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
 msgstr ""
 
@@ -179,8 +179,8 @@ msgstr ""
 msgid "Edit: "
 msgstr "編集："
 
-#: views/customextens/grid.php:10
-msgid "Extensions"
+#: views/customextens/grid.php:7 views/customextens/rnav.php:8
+msgid "Extension"
 msgstr ""
 
 #: views/customdests/form.php:225
@@ -200,12 +200,12 @@ msgstr "無効な内線番号です、空白にすることはできません。
 msgid "Invalid description specified, must not be blank"
 msgstr "無効な説明が指定されました。空白にすることはできません。"
 
-#: views/customdests/bootnav.php:5
-msgid "List Destinations"
+#: views/customextens/rnav.php:2
+msgid "List Custom Extensions"
 msgstr ""
 
-#: views/customextens/bootnav.php:5
-msgid "List Extensions"
+#: views/customdests/rnav.php:2
+msgid "List Destinations"
 msgstr ""
 
 #: views/customdests/form.php:142
@@ -232,7 +232,7 @@ msgstr ""
 msgid "Notes"
 msgstr "ノート"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
 
@@ -244,7 +244,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:294
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr ""
 

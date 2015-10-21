@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 11:58-0700\n"
+"POT-Creation-Date: 2015-10-21 08:08-0700\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "(pick destination)"
 msgstr "（选取目的地）"
 
-#: views/customdests/grid.php:11 views/customextens/grid.php:12
+#: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
 msgstr ""
 
@@ -34,11 +34,11 @@ msgstr "添加自定义目的地"
 msgid "Add Custom Extension"
 msgstr "添加自定义分机"
 
-#: views/customdests/bootnav.php:7 views/customdests/grid.php:5
+#: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
+#: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
 msgstr ""
 
@@ -66,7 +66,7 @@ msgstr "分机冲突"
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "自定义目的地"
 
@@ -95,7 +95,7 @@ msgstr "自定义分机"
 msgid "Custom Extension: "
 msgstr "自定义分机："
 
-#: page.customextens.php:19
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "自定义分机"
 
@@ -119,12 +119,12 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "删除"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
-#: views/customextens/grid.php:11
+#: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "描述"
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Destination Quick Pick"
 msgstr "快速选取目的地"
 
-#: views/customdests/grid.php:10
+#: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
 msgstr ""
 
@@ -150,8 +150,8 @@ msgstr ""
 msgid "Edit: "
 msgstr "编辑："
 
-#: views/customextens/grid.php:10
-msgid "Extensions"
+#: views/customextens/grid.php:7 views/customextens/rnav.php:8
+msgid "Extension"
 msgstr ""
 
 #: views/customdests/form.php:225
@@ -169,12 +169,12 @@ msgstr "无效的分机号，不能为空"
 msgid "Invalid description specified, must not be blank"
 msgstr "指定了无效的描述，不能为空"
 
-#: views/customdests/bootnav.php:5
-msgid "List Destinations"
+#: views/customextens/rnav.php:2
+msgid "List Custom Extensions"
 msgstr ""
 
-#: views/customextens/bootnav.php:5
-msgid "List Extensions"
+#: views/customdests/rnav.php:2
+msgid "List Destinations"
 msgstr ""
 
 #: views/customdests/form.php:142
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Notes"
 msgstr "备注"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:294
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr ""
 

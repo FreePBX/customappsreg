@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 11:58-0700\n"
+"POT-Creation-Date: 2015-10-21 08:08-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "(pick destination)"
 msgstr "(välj destination)"
 
-#: views/customdests/grid.php:11 views/customextens/grid.php:12
+#: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
 msgstr ""
 
@@ -46,11 +46,11 @@ msgstr "Lägg till anpassad destination"
 msgid "Add Custom Extension"
 msgstr "Lägg till anpassad anknytning"
 
-#: views/customdests/bootnav.php:7 views/customdests/grid.php:5
+#: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
+#: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr "Konfliktande anknytningar"
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -109,7 +109,7 @@ msgstr "Anpassad anknytning"
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
-#: page.customextens.php:19
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Anpassade anknytningar"
 
@@ -135,12 +135,12 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "Ta bort"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
-#: views/customextens/grid.php:11
+#: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Beskrivning"
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Destination Quick Pick"
 msgstr "Snabbval för destination"
 
-#: views/customdests/grid.php:10
+#: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
 msgstr ""
 
@@ -166,8 +166,8 @@ msgstr ""
 msgid "Edit: "
 msgstr "Redigera:"
 
-#: views/customextens/grid.php:10
-msgid "Extensions"
+#: views/customextens/grid.php:7 views/customextens/rnav.php:8
+msgid "Extension"
 msgstr ""
 
 #: views/customdests/form.php:225
@@ -187,12 +187,12 @@ msgstr "Ogiltig anknytning, den kan inte vara tom"
 msgid "Invalid description specified, must not be blank"
 msgstr "Ogiltig beskrivning, den kan inte vara tom"
 
-#: views/customdests/bootnav.php:5
-msgid "List Destinations"
+#: views/customextens/rnav.php:2
+msgid "List Custom Extensions"
 msgstr ""
 
-#: views/customextens/bootnav.php:5
-msgid "List Extensions"
+#: views/customdests/rnav.php:2
+msgid "List Destinations"
 msgstr ""
 
 #: views/customdests/form.php:142
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Notes"
 msgstr "Notering"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:294
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr ""
 

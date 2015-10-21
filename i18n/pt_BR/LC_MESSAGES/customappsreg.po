@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 11:58-0700\n"
+"POT-Creation-Date: 2015-10-21 08:08-0700\n"
 "PO-Revision-Date: 2015-04-29 07:07+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "(pick destination)"
 msgstr "(selecionar destino)"
 
-#: views/customdests/grid.php:11 views/customextens/grid.php:12
+#: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
 msgstr ""
 
@@ -50,11 +50,11 @@ msgstr "Adicionar Destino Personalizado"
 msgid "Add Custom Extension"
 msgstr "Adicionar Ramal Personalizado"
 
-#: views/customdests/bootnav.php:7 views/customdests/grid.php:5
+#: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
 msgstr ""
 
-#: views/customextens/bootnav.php:7 views/customextens/grid.php:5
+#: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr "Ramais Conflitantes"
 msgid "Custom Destination: %s"
 msgstr "Destino Personalizado: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:19
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Destinos Personalizados"
 
@@ -117,7 +117,7 @@ msgstr "Ramal Personalizado"
 msgid "Custom Extension: "
 msgstr "Ramal Personalizado: "
 
-#: page.customextens.php:19
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Ramais Personalizados"
 
@@ -144,12 +144,12 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Ramal DUPLICADO: O ramal já está em uso"
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "Apagar"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
-#: views/customextens/grid.php:11
+#: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Descrição "
 
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Destination Quick Pick"
 msgstr "Seleção Rápida de Destino"
 
-#: views/customdests/grid.php:10
+#: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
 msgstr ""
 
@@ -175,8 +175,8 @@ msgstr ""
 msgid "Edit: "
 msgstr "Editar: "
 
-#: views/customextens/grid.php:10
-msgid "Extensions"
+#: views/customextens/grid.php:7 views/customextens/rnav.php:8
+msgid "Extension"
 msgstr ""
 
 #: views/customdests/form.php:225
@@ -196,12 +196,12 @@ msgstr "Ramal Inválido, não deve estar em branco"
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrição inválida especificada, não deve estar em branco"
 
-#: views/customdests/bootnav.php:5
-msgid "List Destinations"
+#: views/customextens/rnav.php:2
+msgid "List Custom Extensions"
 msgstr ""
 
-#: views/customextens/bootnav.php:5
-msgid "List Extensions"
+#: views/customdests/rnav.php:2
+msgid "List Destinations"
 msgstr ""
 
 #: views/customdests/form.php:142
@@ -228,7 +228,7 @@ msgstr ""
 msgid "Notes"
 msgstr "Notas"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
 
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:294
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr ""
 
