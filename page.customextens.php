@@ -6,7 +6,6 @@ $view = isset($_REQUEST['view'])?$_REQUEST['view']:'';
 switch ($view) {
 	case 'form':
 		$content = load_view(__DIR__.'/views/customextens/form.php',array('ce'=> $ce));
-		$bootnav = load_view(__DIR__.'/views/customextens/bootnav.php', array('view' => $view));
 	break;
 
 	default:
@@ -20,16 +19,13 @@ switch ($view) {
 	<div class="well well-info">
 		<?php echo $helptext?>
 	</div>
-	<div class = "display full-border">
-		<div class="row">
-			<div class="col-sm-9">
-				<div class="fpbx-container">
-					<div class="display full-border">
-						<?php echo $content ?>
-					</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="fpbx-container">
+				<div class="display <?php echo isset($_REQUEST['view']) ? 'full' : 'no'?>-border">
+					<?php echo $content ?>
 				</div>
 			</div>
-			<?php echo $bootnav ?>
 		</div>
 	</div>
 </div>

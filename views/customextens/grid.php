@@ -1,13 +1,10 @@
-<?php
-$dataurl = "ajax.php?module=customappsreg&command=getJSON&jdata=extensgrid";
-?>
 <div id="toolbar-all">
-<a href="?display=customextens&view=form" class="btn btn-default"><i class="fa fa-plus"></i> <?php echo _("Add Extension")?></a>
+  <a href="?display=customextens&amp;view=form" class="btn btn-default"><i class="fa fa-plus"></i> <?php echo _("Add Extension")?></a>
 </div>
- <table id="destgrid" data-url="<?php echo $dataurl?>" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
+ <table id="destgrid" data-url="ajax.php?module=customappsreg&amp;command=getJSON&amp;jdata=extensgrid" data-cache="false" data-toolbar="#toolbar-all" data-maintain-selected="true" data-show-columns="true" data-show-toggle="true" data-toggle="table" data-pagination="true" data-search="true" class="table table-striped">
     <thead>
             <tr>
-            <th data-field="custom_exten" data-sortable="true"><?php echo _("Extensions")?></th>
+            <th data-field="custom_exten" data-sortable="true"><?php echo _("Extension")?></th>
             <th data-field="description"><?php echo _("Description")?></th>
             <th data-field="custom_exten" data-formatter="linkFormatter"><?php echo _("Actions")?></th>
         </tr>

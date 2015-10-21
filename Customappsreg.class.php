@@ -41,6 +41,15 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		}
 	}
 
+	public function getRightNav($request) {
+		$dir = basename($request['display']);
+		if(isset($request['view']) && $request['view'] == "form") {
+			return load_view(__DIR__."/views/".$dir."/rnav.php",array());
+		} else {
+			return '';
+		}
+	}
+
 	public function uninstall() {
 	}
 
