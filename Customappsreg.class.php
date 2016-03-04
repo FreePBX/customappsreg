@@ -146,7 +146,30 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 				$ext->add($context, $fakedest, '', new \ext_goto($dest['target']));
 				continue;
 			}
-			$ext->add($context, $fakedest, '', new \ext_gosub($dest['target']));
+			$gs = explode(',' , $dest['target'], 3);
+			switch (count($gs)) {
+				case 1:
+					$ext->add($context, $fakedest, '', new \ext_gosub('1','s',$gs[0]));
+				break;
+				case 2:
+					$ext->add($context, $fakedest, '', new \ext_gosub('1',$gs[1],$gs[0]));
+				break;
+				case 3:
+					preg_match("/(\d+)\((.+)\)/", $gs[2], $match);
+					$pri = $gs[2];
+					$args = '';
+					if(count($match) == 3){
+						$pri = $match[1];
+						$args = $match[2];
+					}
+					$ext->add($context, $fakedest, '', new \ext_gosub($pri,$gs[1],$gs[0],$args));
+				break;
+				default:
+					$ext->add($context, $fakedest, '', new \ext_gosub($dest['target']));
+				break;
+			}
+
+
 			$ext->add($context, $fakedest, '', new \ext_noop('Returned from Custom Destination '.$dest['description']));
 			$ext->add($context, $fakedest, '', new \ext_goto($dest['dest']));
 		}
