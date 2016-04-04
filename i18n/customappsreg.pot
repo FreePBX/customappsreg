@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for customappsreg
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,11 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6
+#: customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -61,12 +66,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr ""
+
 #: functions.inc.php:53
 #: functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
 
+#: customappsreg.i18n.php:14
 #: functions.inc.php:18
 #: functions.inc.php:20
 #: page.customdests.php:18
@@ -93,6 +103,7 @@ msgstr ""
 msgid "Custom Extension: "
 msgstr ""
 
+#: customappsreg.i18n.php:10
 #: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr ""
@@ -112,7 +123,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr ""
 
@@ -198,7 +209,13 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr ""
 
@@ -210,7 +227,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: 2014-07-21 16:13+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -46,6 +46,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr "Админ"
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -68,12 +72,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Custom Приложения"
+
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Custom Направление: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Custom Направления"
 
@@ -105,7 +114,7 @@ msgstr "Custom Вътрешна Линия"
 msgid "Custom Extension: "
 msgstr "Custom Вътрешна Линия: "
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Custom Вътрешни Линии"
 
@@ -132,7 +141,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -214,7 +223,16 @@ msgstr ""
 msgid "Notes"
 msgstr "Бележки"
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"Предоставя възможност за добавяне на вътрешни линии и направления, които "
+"могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
+"Направления да ги използва."
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr ""
 
@@ -226,7 +244,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr ""
 
@@ -276,9 +294,6 @@ msgstr ""
 #~ "редактирате направлението или създайте ново направление което да "
 #~ "използвате"
 
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
 #~ msgid ""
 #~ "Brief Description that will be published to modules when showing "
 #~ "destinations. Example: My Weather App"
@@ -286,20 +301,8 @@ msgstr ""
 #~ "Кратко описание което ще се предостави на модулите когато показват "
 #~ "направленията. Например: My Weather App"
 
-#~ msgid "Custom Applications"
-#~ msgstr "Custom Приложения"
-
 #~ msgid "Custom Destination"
 #~ msgstr "Custom Направление"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Предоставя възможност за добавяне на вътрешни линии и направления, които "
-#~ "могат да се създават и използват така, че Регистратора на Вътрешни Линии "
-#~ "и Направления да ги използва."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Приеми Промените"

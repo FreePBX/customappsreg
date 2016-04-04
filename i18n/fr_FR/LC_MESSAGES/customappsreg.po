@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: 2016-02-04 23:06+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/customappsreg/fr_FR/>\n"
-"Language: fr_FR\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
+"customappsreg/fr_FR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -55,6 +55,10 @@ msgstr "Ajouter une destination"
 msgid "Add Extension"
 msgstr "Ajouter un poste"
 
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -78,12 +82,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Postes Conflictuels"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr ""
+
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destination personnalisée : %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Destinations personnalisées"
 
@@ -117,7 +126,7 @@ msgstr "Poste personnalisé"
 msgid "Custom Extension: "
 msgstr "Poste personnalisée : "
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Poste personnalisés"
 
@@ -144,7 +153,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Poste DUPLIQUÉ : Cet poste est déjà utilisé"
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -231,7 +240,13 @@ msgstr "Non"
 msgid "Notes"
 msgstr "Notes"
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -243,7 +258,7 @@ msgstr "Retourne"
 msgid "Set the Destination after return"
 msgstr "Définis la destination après le retour"
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr "Soumettre"
 

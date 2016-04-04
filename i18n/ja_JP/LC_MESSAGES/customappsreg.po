@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -73,6 +73,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr "アドミン"
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -92,12 +96,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "カスタムアプリケーション"
+
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "カスタム宛先"
 
@@ -124,7 +133,7 @@ msgstr "カスタム内線"
 msgid "Custom Extension: "
 msgstr "カスタム内線："
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "カスタム内線"
 
@@ -148,7 +157,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr "削除"
 
@@ -232,7 +241,15 @@ msgstr ""
 msgid "Notes"
 msgstr "ノート"
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジス"
+"トリがこれらを含むことができるように作成され、使用されます。"
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr ""
 
@@ -244,7 +261,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr ""
 
@@ -293,9 +310,6 @@ msgstr ""
 #~ "とができません。この宛先を編集する場合はこれらの依存関係を解消する、新しく"
 #~ "宛先を作成する必要があります。"
 
-#~ msgid "Admin"
-#~ msgstr "アドミン"
-
 #~ msgid ""
 #~ "Brief Description that will be published to modules when showing "
 #~ "destinations. Example: My Weather App"
@@ -303,19 +317,8 @@ msgstr ""
 #~ "宛先を表示する際にモジュールに公開される簡単な説明。例：マイ天気アプリケー"
 #~ "ション"
 
-#~ msgid "Custom Applications"
-#~ msgstr "カスタムアプリケーション"
-
 #~ msgid "Custom Destination"
 #~ msgstr "カスタム宛先"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジ"
-#~ "ストリがこれらを含むことができるように作成され、使用されます。"
 
 #~ msgid "Submit Changes"
 #~ msgstr "変更を適用"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -54,6 +54,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -74,12 +78,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Anpassade applikationer"
+
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -109,7 +118,7 @@ msgstr "Anpassad anknytning"
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Anpassade anknytningar"
 
@@ -135,7 +144,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -219,7 +228,15 @@ msgstr ""
 msgid "Notes"
 msgstr "Notering"
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"Lägg till anpassade anknytningar och destinationer i ett register som kan "
+"användas av standardanknytningar och destinationer som ett valbart alternativ"
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr ""
 
@@ -231,7 +248,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr ""
 
@@ -287,20 +304,8 @@ msgstr ""
 #~ "Kortfattad beskrivning som kommer att visas när du väljer destination i "
 #~ "moduler. Exempel: Min Anpassade Väg"
 
-#~ msgid "Custom Applications"
-#~ msgstr "Anpassade applikationer"
-
 #~ msgid "Custom Destination"
 #~ msgstr "Anpassad destination"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Lägg till anpassade anknytningar och destinationer i ett register som kan "
-#~ "användas av standardanknytningar och destinationer som ett valbart "
-#~ "alternativ"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Spara ändringar"

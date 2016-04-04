@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-21 08:08-0700\n"
+"POT-Creation-Date: 2016-04-04 11:34-0700\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -42,6 +42,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -61,12 +65,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "分机冲突"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr ""
+
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "自定义目的地"
 
@@ -95,7 +104,7 @@ msgstr "自定义分机"
 msgid "Custom Extension: "
 msgstr "自定义分机："
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "自定义分机"
 
@@ -119,7 +128,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
-#: Customappsreg.class.php:293
+#: Customappsreg.class.php:316
 msgid "Delete"
 msgstr "删除"
 
@@ -197,7 +206,13 @@ msgstr ""
 msgid "Notes"
 msgstr "备注"
 
-#: Customappsreg.class.php:298
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+
+#: Customappsreg.class.php:321
 msgid "Reset"
 msgstr ""
 
@@ -209,7 +224,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:303
+#: Customappsreg.class.php:326
 msgid "Submit"
 msgstr ""
 
