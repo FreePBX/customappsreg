@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-04 11:34-0700\n"
-"PO-Revision-Date: 2016-11-25 03:44+0200\n"
+"PO-Revision-Date: 2016-11-25 03:47+0200\n"
 "Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/customappsreg/fr_FR/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: views/customdests/form.php:81
 msgid "(pick destination)"
-msgstr "(sélectionnez une destiation)"
+msgstr "(sélectionnez une destination)"
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
@@ -255,7 +255,7 @@ msgstr "Réinitialiser"
 
 #: views/customdests/form.php:154
 msgid "Return"
-msgstr "Retourne"
+msgstr "Entrer"
 
 #: views/customdests/form.php:193
 msgid "Set the Destination after return"
@@ -263,7 +263,7 @@ msgstr "Définis la destination après le retour"
 
 #: Customappsreg.class.php:326
 msgid "Submit"
-msgstr "Soumettre"
+msgstr "Envoyer"
 
 #: views/customdests/form.php:48
 msgid "Target"
