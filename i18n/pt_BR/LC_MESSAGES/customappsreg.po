@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-04 11:34-0700\n"
-"PO-Revision-Date: 2015-04-29 07:07+0200\n"
-"Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
-"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
-"freepbx/customappsreg/pt_BR/>\n"
+"PO-Revision-Date: 2016-12-11 08:25+0200\n"
+"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/customappsreg/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -40,7 +40,7 @@ msgstr "(selecionar destino)"
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
-msgstr ""
+msgstr "Ações"
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
@@ -52,11 +52,11 @@ msgstr "Adicionar Ramal Personalizado"
 
 #: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
-msgstr ""
+msgstr "Adicionar Destino"
 
 #: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
-msgstr ""
+msgstr "Adicionar Ramal"
 
 #: customappsreg.i18n.php:6 customappsreg.i18n.php:12
 msgid "Admin"
@@ -164,7 +164,7 @@ msgstr "Descrição "
 
 #: views/customdests/form.php:181
 msgid "Destination"
-msgstr ""
+msgstr "Destino"
 
 #: views/customdests/form.php:76
 msgid "Destination Quick Pick"
@@ -172,13 +172,15 @@ msgstr "Seleção Rápida de Destino"
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Destinos"
 
 #: views/customdests/form.php:169
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
+"Este destino termina com 'Retorno'? Em caso afirmativo, você pode selecionar "
+"um destino subseqüente após a conclusão deste fluxo de chamadas."
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
@@ -186,7 +188,7 @@ msgstr "Editar: "
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
-msgstr ""
+msgstr "Ramal"
 
 #: views/customdests/form.php:225
 msgid ""
@@ -207,11 +209,11 @@ msgstr "Descrição inválida especificada, não deve estar em branco"
 
 #: views/customextens/rnav.php:2
 msgid "List Custom Extensions"
-msgstr ""
+msgstr "Lista de Ramais Personalizados"
 
 #: views/customdests/rnav.php:2
 msgid "List Destinations"
-msgstr ""
+msgstr "Lista de Destinos"
 
 #: views/customdests/form.php:142
 msgid ""
@@ -231,7 +233,7 @@ msgstr ""
 
 #: views/customdests/form.php:161
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: views/customdests/form.php:130 views/customextens/form.php:83
 msgid "Notes"
@@ -248,27 +250,27 @@ msgstr ""
 
 #: Customappsreg.class.php:321
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: views/customdests/form.php:154
 msgid "Return"
-msgstr ""
+msgstr "Retorno"
 
 #: views/customdests/form.php:193
 msgid "Set the Destination after return"
-msgstr ""
+msgstr "Definir o Destino após o retorno"
 
 #: Customappsreg.class.php:326
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/customdests/form.php:48
 msgid "Target"
-msgstr ""
+msgstr "Objetivo"
 
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
-msgstr ""
+msgstr "O ramal inserido conflita com outro ramal no sistema"
 
 #: views/customdests/form.php:60
 msgid ""
@@ -293,10 +295,12 @@ msgid ""
 "WARNING: This destination is being used by other module objects. Changing "
 "this destination may cause unexpected issue."
 msgstr ""
+"AVISO: Este destino está sendo utilizado por outros objetos de módulo. A "
+"alteração deste destino pode causar um problema inesperado."
 
 #: views/customdests/form.php:159
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "
