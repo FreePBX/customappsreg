@@ -140,6 +140,8 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		$context = 'customdests';
 		$allDests = $this->getAllCustomDests();
 		foreach ($allDests as $dest) {
+			//Convert HTML entities to characters , Fix for (FREEPBX-14599 :Using a & character in a Custom Destination dial string doesn't work)
+			$dest['target'] = html_entity_decode($dest['target']);
 			$fakedest = "dest-".$dest['destid'];
 			$ext->add($context, $fakedest, '', new \ext_noop('Entering Custom Destination '.$dest['description']));
 			if (!$dest['destret']) {
