@@ -1,13 +1,20 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for customappsreg
+# Copyright (C) 2008-2016 Sangoma, Inc.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-04 11:34-0700\n"
-"PO-Revision-Date: 2016-06-07 03:01+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/customappsreg/es_ES/>\n"
-"Language: es_ES\n"
+"PO-Revision-Date: 2017-01-13 17:45+0200\n"
+"Last-Translator: Sven <spiderrs4@web.de>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/customappsreg/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,39 +23,37 @@ msgstr ""
 
 #: views/customdests/form.php:81
 msgid "(pick destination)"
-msgstr "(Seleccione un destino)"
+msgstr "(Ziel auswählen)"
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
-msgstr "Acciones"
+msgstr "Aktionen"
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
-msgstr "Añadir destino personalizado"
+msgstr "Benutzerdefiniertes Ziel hinzufügen"
 
 #: views/customextens/form.php:14
 msgid "Add Custom Extension"
-msgstr "Añadir extensión personalizada"
+msgstr "Benutzerdefinierte Nebenstelle hinzufügen"
 
 #: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
-msgstr "Agregar Destino"
+msgstr "Ziel hinzufügen"
 
 #: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
-msgstr "Agregar Extension"
+msgstr "Nebenstelle hinzufügen"
 
 #: customappsreg.i18n.php:6 customappsreg.i18n.php:12
 msgid "Admin"
-msgstr "Admin"
+msgstr "Administrator"
 
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
-"Breve descripción que será publicada en el registro de extensiones acerca de "
-"esta extensión"
 
 #: views/customdests/form.php:91
 msgid ""
@@ -56,27 +61,24 @@ msgid ""
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr ""
-"Seleccione un destino sin identificar en su sistema para añadirlo al "
-"registro de Destinos personalizados. Esto insertará la entrada selecciona en "
-"la lista de Destinos personalizados anterior."
 
 #: views/customextens/form.php:18
 msgid "Conflicting Extensions"
-msgstr "Extensiones en conflicto"
+msgstr ""
 
 #: customappsreg.i18n.php:4
 msgid "Custom Applications"
-msgstr "Aplicaciones Personalizadas"
+msgstr "Benutzerdefinierte Anwendungen"
 
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
-msgstr "Destino personalizado: %s"
+msgstr "Benutzerdefiniertes Ziel: %s"
 
 #: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
-msgstr "Destinos personalizados"
+msgstr "Benutzerdefinierte Ziele"
 
 #: page.customdests.php:4
 msgid ""
@@ -89,27 +91,26 @@ msgid ""
 "you to choose and insert any such destinations that the registry is not "
 "aware of into the Custom Destination field."
 msgstr ""
-"Los destinos personalizados le permiten registrar sus destinos "
-"personalizados que apunten a planes de marcación personalizados, y poder "
-"\"publicarlos\" como posibles destinos para otros módulos. Ésta es una "
-"característica avanzada y sólo debería ser usada por usuarios "
-"experimentados. Si está obteniendo avisos o errores en el panel de "
-"notificación sobre destinos personalizados que son correctos, debería "
-"incluirlos aquí. El selector de \"Destinos desconocidos\" le permitirá "
-"seleccionar e insertar esos destinos que el registro o conoce en el campo de "
-"Destino personalizado."
+"Mit benutzerdefinierten Zielen können Sie Ihre benutzerdefinierten Ziele "
+"registrieren, die auf benutzerdefinierte Wählpläne verweisen und diese Ziele "
+"auch als veröffentlichte Ziele für andere Module veröffentlichen. Dies ist "
+"eine erweiterte Funktion und sollte nur von erfahrenen Benutzern verwendet "
+"werden. Wenn Sie Warnungen oder Fehler im Benachrichtungsfenster über "
+"benutzerdefinierte Ziele erhalten, die korrekt sind, sollten Sie diese hier "
+"einfügen. Mit dem Befehl 'Unbekannte Ziele' können Sie beliebige Ziele "
+"festlegen, die der Registrierung nicht bekannt sind."
 
 #: views/customextens/form.php:35
 msgid "Custom Extension"
-msgstr "Extensión personalizada"
+msgstr "Benutzerdefinierte Nebenstelle"
 
 #: functions.inc.php:88
 msgid "Custom Extension: "
-msgstr "Extensión personalizada: "
+msgstr "Benutzerdefinierte Nebenstelle: "
 
 #: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
-msgstr "Extensiones personalizadas"
+msgstr "Benutzerdefinierte Nebenstellen"
 
 #: page.customextens.php:4
 msgid ""
@@ -121,138 +122,128 @@ msgid ""
 "that may make use of the information. You should not put extensions that you "
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
-"Las extensiones personalizadas le facilitan registrar cualquier extensión o "
-"código de característica que haya creado en un archivo personalizado, pero "
-"FreePBX desconoce de su existencia. Esto permite al Registro de extensiones "
-"ser consciente de que existe tal extensión y pueda detectar conflictos o "
-"informar de extensiones personalizadas a otros módulos para que puedan hacer "
-"uso de esa información. No debería poner aquí extensiones que cree con el "
-"módulo de Aplicaciones variasm ya que esas no son personalizadas."
+"Benutzerdefinierte Nebenstellen bieten Ihnen die Möglichkeit, beliebige "
+"benutzerdefinierte Nebenstellen oder Featurecodes zu registrieren, die Sie "
+"in einer benutzerdefinierte  Datei erstellt haben und von der FreePBX sonst "
+"nix weiß. Dies ermöglicht der Nebenstellenregistrierung ihre eigenen "
+"Nebenstellen zu kennen, damit Sie Fehler erkennen oder Rückinformationen "
+"über Ihre eigenen Nebenstellen an andere Module geben kann. Sie sollten "
+"keine Nebenstellen einsetzen, die in Misc Apps Modul erstellt wurden, da "
+"diese nicht benutzerdefiniert sind."
 
 #: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
-msgstr "Extensión duplicada; esta extensión ya está en uso"
+msgstr "DUPLIKAT-Nebenstelle: Diese Nebenstelle wird bereits verwendet."
 
 #: Customappsreg.class.php:316
 msgid "Delete"
-msgstr "Eliminar"
+msgstr "Löschen"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
-msgstr "Descripción"
+msgstr "Beschreibung"
 
 #: views/customdests/form.php:181
 msgid "Destination"
-msgstr "Destino"
+msgstr "Ziel"
 
 #: views/customdests/form.php:76
 msgid "Destination Quick Pick"
-msgstr "Selección rápida de destino"
+msgstr ""
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
-msgstr "Destinos"
+msgstr "Ziele"
 
 #: views/customdests/form.php:169
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
-"¿Termina este destino con 'Retorno'? Si es así, usted puede entonces "
-"seleccionar un destino subsiguiente después que este flujo de llamadas se "
-"haya completado."
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
-msgstr "Editar:"
+msgstr "Bearbeiten: "
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
-msgstr "Extensión"
+msgstr "Nebenstelle"
 
 #: views/customdests/form.php:225
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
-"Destino no válido; no debe estar vacía, y debe estar formateada del "
-"siguiente modo: contexto,extension,prioridad"
+"Ungültiges Ziel, darf nicht leer sein, muss formatiert werden als: context, "
+"exten, pri"
 
 #: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
-msgstr "Extensión no válida; no debe estar vacía"
+msgstr "Ungültige Nebenstelle, darf nicht leer sein"
 
 #: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
-msgstr "Descripción no válida; no debe estar vacía"
+msgstr "Ungültige Beschreibung, darf nicht leer sein"
 
 #: views/customextens/rnav.php:2
 msgid "List Custom Extensions"
-msgstr "Lista Extensiones Personalizadas"
+msgstr "Benutzerdefinierte Nebenstellen auflisten"
 
 #: views/customdests/rnav.php:2
 msgid "List Destinations"
-msgstr "Lista Destinos"
+msgstr "Nebenstellen auflisten"
 
 #: views/customdests/form.php:142
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
-"Notas más detalladas sobre este destino para ayudar a documentarlo. Este "
-"campo no se usa en ningún otro sitio."
 
 #: views/customextens/form.php:95
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
 msgstr ""
-"Notas más detalladas sobre esta extensión para ayudar a documentarla. Este "
-"campo no se usa en ningún otro sitio."
 
 #: views/customdests/form.php:161
 msgid "No"
-msgstr "No"
+msgstr "Nein"
 
 #: views/customdests/form.php:130 views/customextens/form.php:83
 msgid "Notes"
-msgstr "Notas"
+msgstr "Notizen"
 
 #: customappsreg.i18n.php:8
 msgid ""
 "Registry to add custom extensions and destinations that may be created and "
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
-"Registro para agregar extensiones personalizadas y destinos que pueden ser "
-"creados y utilizados de manera que las extensiones y los destinos de "
-"registro puede incluir estos."
 
 #: Customappsreg.class.php:321
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Zurücksetzen"
 
 #: views/customdests/form.php:154
 msgid "Return"
-msgstr "Retorno"
+msgstr "Zurück"
 
 #: views/customdests/form.php:193
 msgid "Set the Destination after return"
-msgstr "Establezca el Destino luego del retorno"
+msgstr ""
 
 #: Customappsreg.class.php:326
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Bestätigen"
 
 #: views/customdests/form.php:48
 msgid "Target"
-msgstr "Objetivo"
+msgstr "Ziel"
 
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
-"Las extensión introducida hace conflicto con otra extensión en el sistema"
 
 #: views/customdests/form.php:60
 msgid ""
@@ -260,27 +251,19 @@ msgid ""
 "exactly as you would put it in a goto statement, with context, exten, "
 "priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
-"Éste es el Destino personalizado que será publicado. Debería ser formateado "
-"exactamente igual que como se pondría en un sentencia \"goto\", con "
-"contexto, extensión y prioridad incluidas. Un ejemplo podría ser<br /"
-">mycustom-apps,s,1"
 
 #: views/customextens/form.php:47
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
-"Esta es la extensión o código de característica  que se usará en el plan de "
-"marcado que usará el registro de extensiones de FreePBX para poder usarla."
 
 #: views/customdests/form.php:11
 msgid ""
 "WARNING: This destination is being used by other module objects. Changing "
 "this destination may cause unexpected issue."
 msgstr ""
-"ADVERTENCIA: Este destino está siendo utilizado por otros objetos de módulo. "
-"El cambio de este destino puede causar problema inesperado."
 
 #: views/customdests/form.php:159
 msgid "Yes"
-msgstr "Si"
+msgstr "Ja"
