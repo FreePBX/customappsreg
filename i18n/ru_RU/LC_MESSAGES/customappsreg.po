@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 11:34-0700\n"
+"POT-Creation-Date: 2017-04-25 14:43-0400\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+#: customappsreg.i18n.php:6
 msgid "Admin"
 msgstr "Администратор"
 
@@ -79,7 +79,7 @@ msgstr "Дополнительные приложения"
 msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Дополнительные назначения"
@@ -139,7 +139,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИКАТ внутреннего номера: этот номер уже используется"
 
-#: Customappsreg.class.php:316
+#: Customappsreg.class.php:318
 msgid "Delete"
 msgstr "Удалить"
 
@@ -231,7 +231,7 @@ msgstr ""
 "Реестр особых внутренних номеров и дополнительных назначений, который может "
 "включаться в реестры внутренних номеров и назначений."
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:323
 msgid "Reset"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:328
 msgid "Submit"
 msgstr ""
 

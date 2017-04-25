@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>13.0.5</version>
+	<version>13.0.5.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*13.0.5.1* FREEPBX-14599 :Using a amper character in a Custom Destination dial string
 		*13.0.5* FREEPBX-11659 Custom Destination does not handle gosub args properly
 		*13.0.4.3* Add sliding bootnav
 		*13.0.4.3* FREEPBX-10209 htmlentities need to use UTF-8

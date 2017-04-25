@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 11:34-0700\n"
+"POT-Creation-Date: 2017-04-25 14:43-0400\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+#: customappsreg.i18n.php:6
 msgid "Admin"
 msgstr "アドミン"
 
@@ -105,7 +105,7 @@ msgstr "カスタムアプリケーション"
 msgid "Custom Destination: %s"
 msgstr "カスタム宛先： %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "カスタム宛先"
@@ -157,7 +157,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
-#: Customappsreg.class.php:316
+#: Customappsreg.class.php:318
 msgid "Delete"
 msgstr "削除"
 
@@ -249,7 +249,7 @@ msgstr ""
 "カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジス"
 "トリがこれらを含むことができるように作成され、使用されます。"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:323
 msgid "Reset"
 msgstr ""
 
@@ -261,7 +261,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:328
 msgid "Submit"
 msgstr ""
 

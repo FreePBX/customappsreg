@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-04 11:34-0700\n"
+"POT-Creation-Date: 2017-04-25 14:43-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
-#: customappsreg.i18n.php:6 customappsreg.i18n.php:12
+#: customappsreg.i18n.php:6
 msgid "Admin"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgstr "Anpassade applikationer"
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: customappsreg.i18n.php:14 functions.inc.php:18 functions.inc.php:20
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
-#: Customappsreg.class.php:316
+#: Customappsreg.class.php:318
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -236,7 +236,7 @@ msgstr ""
 "Lägg till anpassade anknytningar och destinationer i ett register som kan "
 "användas av standardanknytningar och destinationer som ett valbart alternativ"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:323
 msgid "Reset"
 msgstr ""
 
@@ -248,7 +248,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:328
 msgid "Submit"
 msgstr ""
 
