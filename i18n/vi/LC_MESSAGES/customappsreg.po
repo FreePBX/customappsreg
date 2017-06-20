@@ -10,47 +10,51 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 14:43-0400\n"
-"PO-Revision-Date: 2017-04-25 14:43-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-06-20 15:59+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/customappsreg/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/customdests/form.php:81
 msgid "(pick destination)"
-msgstr ""
+msgstr "(chọn điểm đích)"
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
-msgstr ""
+msgstr "Các thao tác"
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
-msgstr ""
+msgstr "Thêm tinh chỉnh điểm đích"
 
 #: views/customextens/form.php:14
 msgid "Add Custom Extension"
-msgstr ""
+msgstr "Thêm tinh chỉnh máy nhánh"
 
 #: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
-msgstr ""
+msgstr "Thêm điểm đích"
 
 #: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
-msgstr ""
+msgstr "Thêm máy nhánh"
 
 #: customappsreg.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Quản trị viên"
 
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
+"Mô tả ngắn gọn sẽ được xuất bản trong Đăng ký máy nhánh về máy nhánh này"
 
 #: views/customdests/form.php:91
 msgid ""
@@ -58,14 +62,17 @@ msgid ""
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr ""
+"Chọn các điểm đích không xác định trong hệ thống của bạn để thêm vào tùy "
+"chỉnh đăng ký điểm đích. Điều này sẽ chèn các mục nhập được chọn vào Tùy "
+"chỉnh điểm đích ở cửa sổ trên."
 
 #: views/customextens/form.php:18
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Các máy nhánh đang xung đột"
 
 #: customappsreg.i18n.php:4
 msgid "Custom Applications"
-msgstr ""
+msgstr "Tùy chỉnh các ứng dụng"
 
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
