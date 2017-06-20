@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 14:43-0400\n"
-"PO-Revision-Date: 2017-06-20 15:59+0200\n"
+"PO-Revision-Date: 2017-06-20 16:28+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/customappsreg/vi/>\n"
@@ -77,12 +77,12 @@ msgstr "Tùy chỉnh các ứng dụng"
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
-msgstr ""
+msgstr "Tùy chỉnh điểm đích:%s"
 
 #: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
-msgstr ""
+msgstr "Tùy chỉnh các điểm đích"
 
 #: page.customdests.php:4
 msgid ""
@@ -98,15 +98,15 @@ msgstr ""
 
 #: views/customextens/form.php:35
 msgid "Custom Extension"
-msgstr ""
+msgstr "Tùy chỉnh máy nhánh"
 
 #: functions.inc.php:88
 msgid "Custom Extension: "
-msgstr ""
+msgstr "Tùy chỉnh máy nhánh: "
 
 #: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
-msgstr ""
+msgstr "Tùy chỉnh các máy nhánh"
 
 #: page.customextens.php:4
 msgid ""
@@ -121,20 +121,20 @@ msgstr ""
 
 #: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
-msgstr ""
+msgstr "Máy nhánh kép: máy nhánh này đamg được sử dụng"
 
 #: Customappsreg.class.php:318
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: views/customdests/form.php:106 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: views/customdests/form.php:181
 msgid "Destination"
-msgstr ""
+msgstr "Điểm đích"
 
 #: views/customdests/form.php:76
 msgid "Destination Quick Pick"
