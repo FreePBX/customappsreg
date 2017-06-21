@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 14:43-0400\n"
-"PO-Revision-Date: 2017-06-20 16:28+0200\n"
+"PO-Revision-Date: 2017-06-20 20:42+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/customappsreg/vi/>\n"
@@ -95,6 +95,14 @@ msgid ""
 "you to choose and insert any such destinations that the registry is not "
 "aware of into the Custom Destination field."
 msgstr ""
+"Các điểm đích tùy chỉnh cho phép bạn đăng ký các điểm đích chỉ đến các kế "
+"hoạch quay số tùy chỉnh và cũng sẽ 'xuất bản' các điểm đích này như các điểm "
+"đích khả dụng đến các mô đun. Đây là một tính năng nâng cao và nên được sử "
+"dụng bởi những người dùng am hiểu về nó. Nếu bạn đang gặp các cảnh báo hoặc "
+"lỗi trong bảng thông báo về các điểm đích TÙY CHỈNH chính xác, bạn nên được "
+"bao gồm chúng ở đây. Bộ chọn 'Các điểm đích không xác định' sẽ cho phép bạn "
+"chọn và chèn bất cứ điểm đích nào đăng ký không nhận được vào trong trường "
+"Điểm đích tùy chỉnh."
 
 #: views/customextens/form.php:35
 msgid "Custom Extension"
@@ -118,6 +126,13 @@ msgid ""
 "that may make use of the information. You should not put extensions that you "
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
+"Các máy nhánh tùy chỉnh cung cấp cho bạn một tiện ích để đăng ký các máy "
+"nhánh tùy chỉnh hoặc các mã tính năng mà bạn đã tạo trong một tệp tuỳ chỉnh "
+"và nếu không FreePBX không biết gì về chúng. Điều này cho phép Đăng ký máy "
+"nhánh nhận biết các máy nhánh của chính bạn để nó có thể phát hiện các xung "
+"đột hoặc báo cáo lại thông tin về các máy nhánh tuỳ chỉnh của bạn đến các mô "
+"đun khác có thể sử dụng thông tin. Bạn không nên đặt các máy nhánh mà bạn "
+"tạo trong mô-đun Misc Apps vì đây không phải là tùy chỉnh."
 
 #: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
@@ -138,98 +153,109 @@ msgstr "Điểm đích"
 
 #: views/customdests/form.php:76
 msgid "Destination Quick Pick"
-msgstr ""
+msgstr "Chọn nhanh điểm đích"
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Các điểm đích"
 
 #: views/customdests/form.php:169
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
+"Điểm đích có kết thúc bằng 'Return' không? Nếu có, sau đó bạn có thể chọn "
+"một điểm đích sau khi cuộc gọi này hoàn thành."
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
-msgstr ""
+msgstr "Chỉnh sửa: "
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
-msgstr ""
+msgstr "Máy nhánh"
 
 #: views/customdests/form.php:225
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
+"Điểm đích không hợp lệ, không được để trống, phải được định dạng như: ngữ "
+"cảnh, máy nhánh, pri"
 
 #: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
-msgstr ""
+msgstr "Máy nhánh không hợp lệ, không được để trống"
 
 #: functions.inc.php:123 views/customdests/form.php:226
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
-msgstr ""
+msgstr "Mô tả được chỉ định không hợp lệ, không được để trống"
 
 #: views/customextens/rnav.php:2
 msgid "List Custom Extensions"
-msgstr ""
+msgstr "Danh sách các máy nhánh tùy chỉnh"
 
 #: views/customdests/rnav.php:2
 msgid "List Destinations"
-msgstr ""
+msgstr "Danh sách các điểm đích"
 
 #: views/customdests/form.php:142
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
+"Các lưu ý chi tiết về điểm đích này giúp ghi nó lại. Trường này sẽ không "
+"được sử dụng ở nơi khác."
 
 #: views/customextens/form.php:95
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
 msgstr ""
+"Các lưu ý chi tiết về máy nhánh sẽ giúp ghi lại nó. Trường này không được sử "
+"dụng nơi khác."
 
 #: views/customdests/form.php:161
 msgid "No"
-msgstr ""
+msgstr "Không"
 
 #: views/customdests/form.php:130 views/customextens/form.php:83
 msgid "Notes"
-msgstr ""
+msgstr "Các lưu ý"
 
 #: customappsreg.i18n.php:8
 msgid ""
 "Registry to add custom extensions and destinations that may be created and "
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
+"Đăng ký để thêm các máy nhanh tùy chỉnh và các điểm đích có thể được tạo ra "
+"và được sử dụng để Đăng ký các máy nhánh và các điểm đích có thể bao gồm các "
+"tiện ích."
 
 #: Customappsreg.class.php:323
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: views/customdests/form.php:154
 msgid "Return"
-msgstr ""
+msgstr "Quay lại"
 
 #: views/customdests/form.php:193
 msgid "Set the Destination after return"
-msgstr ""
+msgstr "Cài đặt Điểm đích sau khi quay lại"
 
 #: Customappsreg.class.php:328
 msgid "Submit"
-msgstr ""
+msgstr "Gửi đi"
 
 #: views/customdests/form.php:48
 msgid "Target"
-msgstr ""
+msgstr "Đích"
 
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
-msgstr ""
+msgstr "Máy nhánh đã nhập xung đột với máy nhánh khác trong hệ thống"
 
 #: views/customdests/form.php:60
 msgid ""
@@ -237,19 +263,27 @@ msgid ""
 "exactly as you would put it in a goto statement, with context, exten, "
 "priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
+"Đây là Điểm đích tùy chỉnh được xuất bản. Nó được định dạng chính xác như "
+"bạn đặt nó trong câu lệnh goto, với ngữ cảnh, máy nhánh, ưu tiên được bao "
+"gồm. Một ví dụ đó là <br />mycustom-app,s,1"
 
 #: views/customextens/form.php:47
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
+"Đây là máy nhánh hoặc Mã tính năng mà bạn đang sử dụng trong kế hoạch quay "
+"số mà bạn muốn FreePBX Extension Registry ( Đăng ký máy nhánh FreePBX) nhận "
+"biết."
 
 #: views/customdests/form.php:11
 msgid ""
 "WARNING: This destination is being used by other module objects. Changing "
 "this destination may cause unexpected issue."
 msgstr ""
+"CẢNH BÁO: Điểm đích này đang được một đối tượng mô đun khác sử dụng. Việc "
+"thay đổi điểm đích có thể gây nên các vấn đề ngoài ý muốn."
 
 #: views/customdests/form.php:159
 msgid "Yes"
-msgstr ""
+msgstr "Có"
