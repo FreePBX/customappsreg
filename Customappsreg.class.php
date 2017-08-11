@@ -192,11 +192,13 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			}
 			$this->setConfig($vars['destid'], $vars, "dests");
 			needreload();
+			redirect_standard();
 			return;
 		case 'add':
 			$id = $this->addCustomDest($vars);
 			needreload();
 			$_REQUEST['destid'] = $id;
+			redirect_standard();
 			return;
 		default:
 			return;

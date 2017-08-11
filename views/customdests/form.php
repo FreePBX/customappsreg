@@ -35,6 +35,24 @@ if ($destid) {
 
 <?php echo $subhead?>
 <?php echo $usage?>
+<?php
+if($allDests){
+	$dest_decs = array();
+	foreach($allDests as $tmp_dest){
+		if($destid != $tmp_dest['destid']){
+			$dest_decs[] = $tmp_dest['description'];
+	       }
+	}
+}
+?>
+<script>
+var dest_decs = [];
+<?php
+if(!empty($dest_decs)){
+	echo "dest_decs = " . json_encode($dest_decs) . ";";
+}
+?>
+</script>
 <form class="fpbx-submit" id="destsForm" action="" method="post" data-fpbx-delete="<?php echo $delURL?>" onsubmit="return checkCustomDest();">
   <input type="hidden" name="action" value="<?php echo $destid?'edit':'add'?>">
   <input type="hidden" name="itemid" value="<?php echo $destid?$destid:''?>" <?php echo $destid?'':'disabled'?>>
@@ -237,7 +255,12 @@ function checkCustomDest() {
 	}
 	if (isEmpty(theForm.description.value)) {
 		warnInvalid(theForm.description, msgInvalidDescription);
-    return false;
+    		return false;
+	}else{
+		var tmp_description = theForm.description.value.trim();
+		if($.inArray(tmp_description, dest_decs) != -1){
+			return warnInvalid( theForm.description, tmp_description  + _(" already used, please use a different description."));
+		}
 	}
 
 	return true;
