@@ -102,6 +102,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 							if (customappsreg_customextens_add($custom_exten, $description, $notes)) {
 								$_REQUEST['extdisplay'] = $custom_exten;
 								needreload();
+								redirect_standard();
 							} else {
 								$custom_exten='';
 							}
@@ -328,7 +329,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 						'value' => _('Submit')
 					)
 				);
-				if (empty($request['destid'])) {
+				if (empty($request['destid']) && empty($request['extdisplay'])) {
 					unset($buttons['delete']);
 				}
 				if(!isset($request['view'])){
