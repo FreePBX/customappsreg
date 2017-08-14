@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 14:43-0400\n"
+"POT-Creation-Date: 2017-08-14 14:47-0400\n"
 "PO-Revision-Date: 2014-02-20 20:48+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/customappsreg/"
@@ -49,7 +49,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: views/customdests/form.php:81
+#: views/customdests/form.php:99
 msgid "(pick destination)"
 msgstr "宛先をピックアップ"
 
@@ -83,7 +83,7 @@ msgid ""
 "this extension"
 msgstr "内線レジストリ内で公開される内線についての簡単な説明。"
 
-#: views/customdests/form.php:91
+#: views/customdests/form.php:109
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -157,20 +157,20 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "内線の重複： この内線は既に使用されております。"
 
-#: Customappsreg.class.php:318
+#: Customappsreg.class.php:321
 msgid "Delete"
 msgstr "削除"
 
-#: views/customdests/form.php:106 views/customextens/form.php:59
+#: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "説明"
 
-#: views/customdests/form.php:181
+#: views/customdests/form.php:199
 msgid "Destination"
 msgstr ""
 
-#: views/customdests/form.php:76
+#: views/customdests/form.php:94
 msgid "Destination Quick Pick"
 msgstr "宛先クイックピックアップ"
 
@@ -178,7 +178,7 @@ msgstr "宛先クイックピックアップ"
 msgid "Destinations"
 msgstr ""
 
-#: views/customdests/form.php:169
+#: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -192,7 +192,7 @@ msgstr "編集："
 msgid "Extension"
 msgstr ""
 
-#: views/customdests/form.php:225
+#: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -204,7 +204,7 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "無効な内線番号です、空白にすることはできません。"
 
-#: functions.inc.php:123 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "無効な説明が指定されました。空白にすることはできません。"
@@ -217,7 +217,7 @@ msgstr ""
 msgid "List Destinations"
 msgstr ""
 
-#: views/customdests/form.php:142
+#: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -233,11 +233,11 @@ msgstr ""
 "この内線についてのより詳細な説明。このフィールドは他の場所で使用されていませ"
 "ん。"
 
-#: views/customdests/form.php:161
+#: views/customdests/form.php:179
 msgid "No"
 msgstr ""
 
-#: views/customdests/form.php:130 views/customextens/form.php:83
+#: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "ノート"
 
@@ -249,23 +249,23 @@ msgstr ""
 "カスタム内線とカスタム宛先を追加するレジストリで、内線レジストリと宛先レジス"
 "トリがこれらを含むことができるように作成され、使用されます。"
 
-#: Customappsreg.class.php:323
+#: Customappsreg.class.php:326
 msgid "Reset"
 msgstr ""
 
-#: views/customdests/form.php:154
+#: views/customdests/form.php:172
 msgid "Return"
 msgstr ""
 
-#: views/customdests/form.php:193
+#: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:328
+#: Customappsreg.class.php:331
 msgid "Submit"
 msgstr ""
 
-#: views/customdests/form.php:48
+#: views/customdests/form.php:66
 msgid "Target"
 msgstr ""
 
@@ -273,7 +273,7 @@ msgstr ""
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
 
-#: views/customdests/form.php:60
+#: views/customdests/form.php:78
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -297,7 +297,7 @@ msgid ""
 "this destination may cause unexpected issue."
 msgstr ""
 
-#: views/customdests/form.php:159
+#: views/customdests/form.php:177
 msgid "Yes"
 msgstr ""
 

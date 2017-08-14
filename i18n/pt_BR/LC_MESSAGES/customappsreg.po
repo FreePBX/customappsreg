@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 14:43-0400\n"
+"POT-Creation-Date: 2017-08-14 14:47-0400\n"
 "PO-Revision-Date: 2017-03-27 14:40+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -34,7 +34,7 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/customdests/form.php:81
+#: views/customdests/form.php:99
 msgid "(pick destination)"
 msgstr "(selecionar destino)"
 
@@ -69,7 +69,7 @@ msgid ""
 msgstr ""
 "Breve descrição que será publicada no Registro de ramal sobre este ramal"
 
-#: views/customdests/form.php:91
+#: views/customdests/form.php:109
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -153,20 +153,20 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Ramal DUPLICADO: O ramal já está em uso"
 
-#: Customappsreg.class.php:318
+#: Customappsreg.class.php:321
 msgid "Delete"
 msgstr "Apagar"
 
-#: views/customdests/form.php:106 views/customextens/form.php:59
+#: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Descrição "
 
-#: views/customdests/form.php:181
+#: views/customdests/form.php:199
 msgid "Destination"
 msgstr "Destino"
 
-#: views/customdests/form.php:76
+#: views/customdests/form.php:94
 msgid "Destination Quick Pick"
 msgstr "Seleção Rápida de Destino"
 
@@ -174,7 +174,7 @@ msgstr "Seleção Rápida de Destino"
 msgid "Destinations"
 msgstr "Destinos"
 
-#: views/customdests/form.php:169
+#: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -190,7 +190,7 @@ msgstr "Editar: "
 msgid "Extension"
 msgstr "Ramal"
 
-#: views/customdests/form.php:225
+#: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -202,7 +202,7 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Ramal Inválido, não deve estar em branco"
 
-#: functions.inc.php:123 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descrição inválida especificada, não deve estar em branco"
@@ -215,7 +215,7 @@ msgstr "Lista de Ramais Personalizados"
 msgid "List Destinations"
 msgstr "Lista de Destinos"
 
-#: views/customdests/form.php:142
+#: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -231,11 +231,11 @@ msgstr ""
 "Notas mais detalhadas sobre o ramal para ajudar a documentá-lo. Este campo "
 "não é usado em mais nenhum lugar."
 
-#: views/customdests/form.php:161
+#: views/customdests/form.php:179
 msgid "No"
 msgstr "Não"
 
-#: views/customdests/form.php:130 views/customextens/form.php:83
+#: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "Notas"
 
@@ -248,23 +248,23 @@ msgstr ""
 "criados e usados de forma que o Registro de Ramais e Destinos possam incluí-"
 "los."
 
-#: Customappsreg.class.php:323
+#: Customappsreg.class.php:326
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/customdests/form.php:154
+#: views/customdests/form.php:172
 msgid "Return"
 msgstr "Retorno"
 
-#: views/customdests/form.php:193
+#: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr "Definir o Destino após o retorno"
 
-#: Customappsreg.class.php:328
+#: Customappsreg.class.php:331
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/customdests/form.php:48
+#: views/customdests/form.php:66
 msgid "Target"
 msgstr "Objetivo"
 
@@ -272,7 +272,7 @@ msgstr "Objetivo"
 msgid "The entered extension conflicts with another extension on the system"
 msgstr "O ramal inserido conflita com outro ramal no sistema"
 
-#: views/customdests/form.php:60
+#: views/customdests/form.php:78
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -298,7 +298,7 @@ msgstr ""
 "AVISO: Este destino está sendo utilizado por outros objetos de módulo. A "
 "alteração deste destino pode causar um problema inesperado."
 
-#: views/customdests/form.php:159
+#: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Sim"
 

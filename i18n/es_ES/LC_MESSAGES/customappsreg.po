@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 14:43-0400\n"
+"POT-Creation-Date: 2017-08-14 14:47-0400\n"
 "PO-Revision-Date: 2016-06-07 03:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/customdests/form.php:81
+#: views/customdests/form.php:99
 msgid "(pick destination)"
 msgstr "(Seleccione un destino)"
 
@@ -50,7 +50,7 @@ msgstr ""
 "Breve descripción que será publicada en el registro de extensiones acerca de "
 "esta extensión"
 
-#: views/customdests/form.php:91
+#: views/customdests/form.php:109
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -133,20 +133,20 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extensión duplicada; esta extensión ya está en uso"
 
-#: Customappsreg.class.php:318
+#: Customappsreg.class.php:321
 msgid "Delete"
 msgstr "Eliminar"
 
-#: views/customdests/form.php:106 views/customextens/form.php:59
+#: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Descripción"
 
-#: views/customdests/form.php:181
+#: views/customdests/form.php:199
 msgid "Destination"
 msgstr "Destino"
 
-#: views/customdests/form.php:76
+#: views/customdests/form.php:94
 msgid "Destination Quick Pick"
 msgstr "Selección rápida de destino"
 
@@ -154,7 +154,7 @@ msgstr "Selección rápida de destino"
 msgid "Destinations"
 msgstr "Destinos"
 
-#: views/customdests/form.php:169
+#: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -171,7 +171,7 @@ msgstr "Editar:"
 msgid "Extension"
 msgstr "Extensión"
 
-#: views/customdests/form.php:225
+#: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -183,7 +183,7 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Extensión no válida; no debe estar vacía"
 
-#: functions.inc.php:123 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descripción no válida; no debe estar vacía"
@@ -196,7 +196,7 @@ msgstr "Lista Extensiones Personalizadas"
 msgid "List Destinations"
 msgstr "Lista Destinos"
 
-#: views/customdests/form.php:142
+#: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -212,11 +212,11 @@ msgstr ""
 "Notas más detalladas sobre esta extensión para ayudar a documentarla. Este "
 "campo no se usa en ningún otro sitio."
 
-#: views/customdests/form.php:161
+#: views/customdests/form.php:179
 msgid "No"
 msgstr "No"
 
-#: views/customdests/form.php:130 views/customextens/form.php:83
+#: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "Notas"
 
@@ -229,23 +229,23 @@ msgstr ""
 "creados y utilizados de manera que las extensiones y los destinos de "
 "registro puede incluir estos."
 
-#: Customappsreg.class.php:323
+#: Customappsreg.class.php:326
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: views/customdests/form.php:154
+#: views/customdests/form.php:172
 msgid "Return"
 msgstr "Retorno"
 
-#: views/customdests/form.php:193
+#: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr "Establezca el Destino luego del retorno"
 
-#: Customappsreg.class.php:328
+#: Customappsreg.class.php:331
 msgid "Submit"
 msgstr "Enviar"
 
-#: views/customdests/form.php:48
+#: views/customdests/form.php:66
 msgid "Target"
 msgstr "Objetivo"
 
@@ -254,7 +254,7 @@ msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
 "Las extensión introducida hace conflicto con otra extensión en el sistema"
 
-#: views/customdests/form.php:60
+#: views/customdests/form.php:78
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -281,6 +281,6 @@ msgstr ""
 "ADVERTENCIA: Este destino está siendo utilizado por otros objetos de módulo. "
 "El cambio de este destino puede causar problema inesperado."
 
-#: views/customdests/form.php:159
+#: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Si"

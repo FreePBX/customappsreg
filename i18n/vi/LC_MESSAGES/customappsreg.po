@@ -9,19 +9,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 14:43-0400\n"
+"POT-Creation-Date: 2017-08-14 14:47-0400\n"
 "PO-Revision-Date: 2017-06-20 20:42+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/customappsreg/vi/>\n"
-"Language: vi\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"customappsreg/vi/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/customdests/form.php:81
+#: views/customdests/form.php:99
 msgid "(pick destination)"
 msgstr "(chọn điểm đích)"
 
@@ -56,7 +56,7 @@ msgid ""
 msgstr ""
 "Mô tả ngắn gọn sẽ được xuất bản trong Đăng ký máy nhánh về máy nhánh này"
 
-#: views/customdests/form.php:91
+#: views/customdests/form.php:109
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -138,20 +138,20 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Máy nhánh kép: máy nhánh này đamg được sử dụng"
 
-#: Customappsreg.class.php:318
+#: Customappsreg.class.php:321
 msgid "Delete"
 msgstr "Xóa"
 
-#: views/customdests/form.php:106 views/customextens/form.php:59
+#: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Mô tả"
 
-#: views/customdests/form.php:181
+#: views/customdests/form.php:199
 msgid "Destination"
 msgstr "Điểm đích"
 
-#: views/customdests/form.php:76
+#: views/customdests/form.php:94
 msgid "Destination Quick Pick"
 msgstr "Chọn nhanh điểm đích"
 
@@ -159,7 +159,7 @@ msgstr "Chọn nhanh điểm đích"
 msgid "Destinations"
 msgstr "Các điểm đích"
 
-#: views/customdests/form.php:169
+#: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -175,7 +175,7 @@ msgstr "Chỉnh sửa: "
 msgid "Extension"
 msgstr "Máy nhánh"
 
-#: views/customdests/form.php:225
+#: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -187,7 +187,7 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Máy nhánh không hợp lệ, không được để trống"
 
-#: functions.inc.php:123 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Mô tả được chỉ định không hợp lệ, không được để trống"
@@ -200,7 +200,7 @@ msgstr "Danh sách các máy nhánh tùy chỉnh"
 msgid "List Destinations"
 msgstr "Danh sách các điểm đích"
 
-#: views/customdests/form.php:142
+#: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -216,11 +216,11 @@ msgstr ""
 "Các lưu ý chi tiết về máy nhánh sẽ giúp ghi lại nó. Trường này không được sử "
 "dụng nơi khác."
 
-#: views/customdests/form.php:161
+#: views/customdests/form.php:179
 msgid "No"
 msgstr "Không"
 
-#: views/customdests/form.php:130 views/customextens/form.php:83
+#: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "Các lưu ý"
 
@@ -233,23 +233,23 @@ msgstr ""
 "và được sử dụng để Đăng ký các máy nhánh và các điểm đích có thể bao gồm các "
 "tiện ích."
 
-#: Customappsreg.class.php:323
+#: Customappsreg.class.php:326
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: views/customdests/form.php:154
+#: views/customdests/form.php:172
 msgid "Return"
 msgstr "Quay lại"
 
-#: views/customdests/form.php:193
+#: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr "Cài đặt Điểm đích sau khi quay lại"
 
-#: Customappsreg.class.php:328
+#: Customappsreg.class.php:331
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: views/customdests/form.php:48
+#: views/customdests/form.php:66
 msgid "Target"
 msgstr "Đích"
 
@@ -257,7 +257,7 @@ msgstr "Đích"
 msgid "The entered extension conflicts with another extension on the system"
 msgstr "Máy nhánh đã nhập xung đột với máy nhánh khác trong hệ thống"
 
-#: views/customdests/form.php:60
+#: views/customdests/form.php:78
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -284,6 +284,6 @@ msgstr ""
 "CẢNH BÁO: Điểm đích này đang được một đối tượng mô đun khác sử dụng. Việc "
 "thay đổi điểm đích có thể gây nên các vấn đề ngoài ý muốn."
 
-#: views/customdests/form.php:159
+#: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Có"

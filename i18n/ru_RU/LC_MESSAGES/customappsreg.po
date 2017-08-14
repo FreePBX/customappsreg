@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 14:43-0400\n"
+"POT-Creation-Date: 2017-08-14 14:47-0400\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,7 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/customdests/form.php:81
+#: views/customdests/form.php:99
 msgid "(pick destination)"
 msgstr "(выбрать назначение)"
 
@@ -57,7 +57,7 @@ msgstr ""
 "Короткое описание этого номера, которое будет использоваться в Регистре "
 "номеров"
 
-#: views/customdests/form.php:91
+#: views/customdests/form.php:109
 msgid ""
 "Choose un-identified destinations on your system to add to the Custom "
 "Destination Registry. This will insert the chosen entry into the Custom "
@@ -139,20 +139,20 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИКАТ внутреннего номера: этот номер уже используется"
 
-#: Customappsreg.class.php:318
+#: Customappsreg.class.php:321
 msgid "Delete"
 msgstr "Удалить"
 
-#: views/customdests/form.php:106 views/customextens/form.php:59
+#: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
 msgstr "Описание"
 
-#: views/customdests/form.php:181
+#: views/customdests/form.php:199
 msgid "Destination"
 msgstr ""
 
-#: views/customdests/form.php:76
+#: views/customdests/form.php:94
 msgid "Destination Quick Pick"
 msgstr "Назначение Бытрый Перехват"
 
@@ -160,7 +160,7 @@ msgstr "Назначение Бытрый Перехват"
 msgid "Destinations"
 msgstr ""
 
-#: views/customdests/form.php:169
+#: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
@@ -174,7 +174,7 @@ msgstr "Редактировать:"
 msgid "Extension"
 msgstr ""
 
-#: views/customdests/form.php:225
+#: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Invalid Extension, must not be blank"
 msgstr "Неверный внутренний номер, не может быть пустым"
 
-#: functions.inc.php:123 views/customdests/form.php:226
+#: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Неверное описание. Не должно быть пустым"
@@ -199,7 +199,7 @@ msgstr ""
 msgid "List Destinations"
 msgstr ""
 
-#: views/customdests/form.php:142
+#: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
@@ -215,11 +215,11 @@ msgstr ""
 "Более детальные примечания об этом номере, которое поможет документировать "
 "записи, когда их много. Это поле больше нигде не используется."
 
-#: views/customdests/form.php:161
+#: views/customdests/form.php:179
 msgid "No"
 msgstr ""
 
-#: views/customdests/form.php:130 views/customextens/form.php:83
+#: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "Примечания"
 
@@ -231,23 +231,23 @@ msgstr ""
 "Реестр особых внутренних номеров и дополнительных назначений, который может "
 "включаться в реестры внутренних номеров и назначений."
 
-#: Customappsreg.class.php:323
+#: Customappsreg.class.php:326
 msgid "Reset"
 msgstr ""
 
-#: views/customdests/form.php:154
+#: views/customdests/form.php:172
 msgid "Return"
 msgstr ""
 
-#: views/customdests/form.php:193
+#: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:328
+#: Customappsreg.class.php:331
 msgid "Submit"
 msgstr ""
 
-#: views/customdests/form.php:48
+#: views/customdests/form.php:66
 msgid "Target"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgstr ""
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
 
-#: views/customdests/form.php:60
+#: views/customdests/form.php:78
 msgid ""
 "This is the Custom Destination to be published. It should be formatted "
 "exactly as you would put it in a goto statement, with context, exten, "
@@ -279,7 +279,7 @@ msgid ""
 "this destination may cause unexpected issue."
 msgstr ""
 
-#: views/customdests/form.php:159
+#: views/customdests/form.php:177
 msgid "Yes"
 msgstr ""
 
