@@ -13,8 +13,8 @@
 
 <script type="text/javascript">
 function linkFormatter(value){
-  var html = '<a href="?display=customextens&view=form&extdisplay='+value+'"><i class="fa fa-pencil"></i></a>';
-  html += '&nbsp;<a href="?display=customextens&action=delete&extdisplay='+value+'" class="delAction"><i class="fa fa-trash"></i></a>';
+  var html = '<a href="?display=customextens&view=form&extdisplay='+encodeURIComponent(value)+'"><i class="fa fa-pencil"></i></a>';
+  html += '&nbsp;<a href="?display=customextens&action=delete&extdisplay='+encodeURIComponent(value)+'" class="delAction"><i class="fa fa-trash"></i></a>';
   return html;
 }
 </script>
