@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>13.0.5.3</version>
+	<version>13.0.5.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*13.0.5.4* FREEPBX-15468 Reset button under Custom Destination is broken. 
 		*13.0.5.3* FREEPBX-16230 Cannot edit neither delete custom extensions 
 		*13.0.5.2* FREEPBX-15473 FREEPBX-15467
 		*13.0.5.1* FREEPBX-14599 :Using a amper character in a Custom Destination dial string
