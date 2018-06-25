@@ -50,17 +50,14 @@ function customappsreg_getdestinfo($dest) {
 		} else {
 			$cd = $allDests[$matches[1]];
 			// Found it.
-			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
+			return array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
 		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
-			return $tmparr;
 		}
 	}
 	foreach ($allDests as $cd) {
 		if ($cd['target'] == $dest) {
-			// Found it.
-			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
+			return array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
 		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
-			return $tmparr;
 		}
 	}
 
@@ -141,25 +138,11 @@ function customappsreg_customextens_add($custom_exten, $description, $notes) {
 }
 
 function customappsreg_customextens_delete($custom_exten) {
-	global $db;
-
-	$sql = "DELETE FROM custom_extensions WHERE custom_exten = ".q($custom_exten);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Customappsreg()->deleteCustomExten($custom_exten);
 }
 
 function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $description, $notes) {
-	global $db;
-
-	$sql = "UPDATE custom_extensions SET ".
-		"custom_exten = ".sql_formattext($custom_exten).", ".
-		"description = ".sql_formattext($description).", ".
-		"notes = ".sql_formattext($notes)." ".
-		"WHERE custom_exten = ".sql_formattext($old_custom_exten);
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getMessage().$sql);
-	}
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Customappsreg()->editCustomExten($old_custom_exten, $custom_exten, $description, $notes);
 }

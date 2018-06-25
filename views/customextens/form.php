@@ -21,7 +21,7 @@ if (!empty($ce->conflict_url)) {
 echo $subhead;
 ?>
 
-<form name="editCustomExten" id="editCustomExten" class="fpbx-submit" action="" method="post" onsubmit="return checkCustomExten(editCustomExten);" data-fpbx-delete="<?php echo $delURL?>">
+<form name="editCustomExten" id="editCustomExten" class="fpbx-submit" action="?display=customextens" method="post" onsubmit="return checkCustomExten(editCustomExten);" data-fpbx-delete="<?php echo $delURL?>">
 	<input type="hidden" name="extdisplay" value="<?php echo $custom_exten; ?>">
 	<input type="hidden" name="old_custom_exten" value="<?php echo $custom_exten; ?>">
 	<input type="hidden" name="action" value="<?php echo ($custom_exten != '' ? 'edit' : 'add'); ?>">

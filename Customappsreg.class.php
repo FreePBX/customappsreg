@@ -1,62 +1,23 @@
 <?php
 // vim: set ai ts=4 sw=4 ft=php:
 namespace FreePBX\modules;
-
-class Customappsreg extends \FreePBX_Helpers implements \BMO {
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+use Exception;
+class Customappsreg extends FreePBX_Helpers implements BMO {
 
 	private $allDests = false;
 
-	public function install() {
-		// Check for old Destinations table
-		$db = $this->Database();
-		$sql = "SELECT * FROM `custom_destinations` LIMIT 1";
-		try {
-			$res = $db->query($sql);
-			// If we made it here, the table exists, and needs to be converted.
-			$this->convertDestDatabase();
-		} catch (\Exception $e) {
-			if ($e->getCode() != "42S02") { // 42S02 == table doesn't exist. Which is correct
-				// We don't know what it is, let someone else deal with it.
-				throw $e;
-			}
-		}
-		// Create custom_extensions table
-		$sql = "SELECT * FROM `custom_extensions` LIMIT 1";
-		try {
-			$res = $db->query($sql);
-			// If we made it here, the table exists, nothing needs to be done
-		} catch (\Exception $e) {
-			if ($e->getCode() == "42S02") { // 42S02 == table doesn't exist.
-				$sql = "CREATE TABLE `custom_extensions` (
-					`custom_exten` varchar(80) NOT NULL default '',
-					`description` varchar(40) NOT NULL default '',
-					`notes` varchar(255) NOT NULL default '',
-					PRIMARY KEY  (`custom_exten`)
-				)";
-				$res = $db->query($sql);
-			} else {
-				// We don't know what the error is, pass it up.
-				throw $e;
-			}
-		}
-	}
+    public function install() {}
+    public function uninstall(){}
 
 	public function getRightNav($request) {
 		$dir = basename($request['display']);
 		if(isset($request['view']) && $request['view'] == "form") {
 			return load_view(__DIR__."/views/".$dir."/rnav.php",array());
-		} else {
-			return '';
 		}
-	}
-
-	public function uninstall() {
-	}
-
-	public function backup(){
-	}
-
-	public function restore($backup){
+		return '';
 	}
 
 	// This is where we handle our POSTs
@@ -75,17 +36,14 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 				} else {
 					$postarr['dest'] = "";
 				}
-
-				if ($page == "customdests") {
-					$this->handleDestsPost($postarr);
-				} else {
-					//$this->handleExtenPost($postarr);
-				}
+				$this->handleDestsPost($postarr);
 			break;
 			case 'customextens':
 				$type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
 				$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
-				if (isset($_REQUEST['delete'])) $action = 'delete';
+				if (isset($_REQUEST['delete'])){
+                    $action = 'delete';
+                }
 				$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['old_custom_exten']) :  '';
 				$custom_exten     = isset($_REQUEST['extdisplay']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['extdisplay']) :  '';
 				$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description'],ENT_COMPAT | ENT_HTML401, "UTF-8") :  '';
@@ -100,9 +58,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 							$custom_exten='';
 						} else {
 							if (customappsreg_customextens_add($custom_exten, $description, $notes)) {
-								$_REQUEST['extdisplay'] = $custom_exten;
 								needreload();
-								redirect_standard();
 							} else {
 								$custom_exten='';
 							}
@@ -117,13 +73,13 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 						}
 					}
 					if (empty($this->conflict_url)) {
-						if (customappsreg_customextens_edit($old_custom_exten, $custom_exten, $description, $notes)) {
+						if ($this->editCustomExten($old_custom_exten, $custom_exten, $description, $notes)) {
 							needreload();
 						}
 					}
 				break;
 				case 'delete':
-					customappsreg_customextens_delete($custom_exten);
+					$this->deleteCustomExten($custom_exten);
 					needreload();
 				break;
 			}
@@ -188,17 +144,14 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			return;
 		case 'edit':
 			if (empty($vars['target'])) {
-				throw new \Exception("Blank target? How did that happen?");
+				throw new Exception("Blank target? How did that happen?");
 			}
 			$this->setConfig($vars['destid'], $vars, "dests");
 			needreload();
-			redirect_standard();
 			return;
 		case 'add':
-			$id = $this->addCustomDest($vars);
+			$this->addCustomDest($vars);
 			needreload();
-			$_REQUEST['destid'] = $id;
-			redirect_standard();
 			return;
 		default:
 			return;
@@ -228,10 +181,7 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		$this->allDests = false;
 
 		// Save the new current ID
-		$currentid = $this->setConfig("currentid", $currentid);
-
-		// Finally, hand the new ID back, in case anyone wants it.
-		return $currentid;
+		return $this->setConfig("currentid", $currentid);
 	}
 
 	public function getCustomDest($destid) {
@@ -246,13 +196,29 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 			}
 		}
 		return $this->allDests;
-	}
+    }
+    
+    public function editCustomExten($old_custom_exten, $custom_exten, $description, $notes){
+        if($old_custom_exten !== $custom_exten){
+            $this->deleteCustomExten($old_custom_exten);
+        }
+        $sql = "INSERT INTO custom_extensions (custom_exten, description, notes) VALUES (:custom_exten, :description, :notes)";
+        $sql .= " ON DUPLICATE KEY UPDATE custom_exten = VALUES(custom_exten), description = VALUES(description), notes= VALUES(notes)";
+        $this->FreePBX->Database->prepare($sql)->execute([':custom_exten' => $custom_exten, ':description' => $description, ':notes' => $notes]);    
+        return $this;
+    }
+    
+    public function deleteCustomExten($id){
+        $sql = "DELETE FROM custom_extensions WHERE custom_exten = :custom_exten LIMIT 1";
+        $this->FreePBX->Database->prepare($sql)->execute([':custom_exten' => $id]);
+        return $this;
+    }
+
 	public function getAllCustomExtens() {
-		$dbh = \FreePBX::Database();
 		$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";
-		$stmt = $dbh->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
-		$results = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if($results) {
 			return $results;
 		}
@@ -282,35 +248,27 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 		return array_keys($results);
 	}
 
-	public function convertDestDatabase() {
-		$db = \FreePBX::Database();
-		$res = $db->query("SELECT * FROM `custom_destinations`")->fetchAll(\PDO::FETCH_ASSOC);
-		foreach ($res as $row) {
-			$tmparr = array("target" => $row['custom_dest'], "notes" => $row['notes'],
-				"description" => $row['description'], "destret" => false);
-			$this->addCustomDest($tmparr);
-		}
-		// We're done. Delete it, now!
-		$res = $db->query("DROP TABLE `custom_destinations`");
-	}
-
 	public function getDestTarget($destid = false) {
 		if (!$destid) {
-			throw new \Exception("No destid provided");
+			throw new Exception("No destid provided");
 		}
 
 		$dest = $this->getCustomDest($destid);
 		if (!$dest) {
-			throw new \Exception("Invalid destid provided");
+			throw new Exception("Invalid destid provided");
 		}
 		if ($dest['destret']) {
 			return "customdests,dest-".$dest['destid'].",1";
 		} else {
 			return $dest['target'];
 		}
-	}
+    }
+
 	public function getActionBar($request) {
-		$buttons = array();
+        $buttons = array();
+        if (!isset($_GET['view'])) {
+            return $buttons;
+        }
 		switch($request['display']) {
 			case 'customdests':
 			case 'customextens':
@@ -334,42 +292,27 @@ class Customappsreg extends \FreePBX_Helpers implements \BMO {
 				if (empty($request['destid']) && empty($request['extdisplay'])) {
 					unset($buttons['delete']);
 				}
-				if(!isset($request['view'])){
-					$buttons = array();
-				}
+
 			break;
 		}
 		return $buttons;
 	}
-	public function ajaxRequest($req, &$setting) {
-		switch ($req) {
-		   case 'getJSON':
-		       return true;
-		   break;
-		   default:
-		       return false;
-		   break;
-		}
-	}
+	public function ajaxRequest($command, &$setting) {
+		if($command === 'getJSON'){
+            return true;
+        }
+        return false;
+    }
+    
 	public function ajaxHandler(){
-		switch ($_REQUEST['command']) {
-		  case 'getJSON':
-		      switch ($_REQUEST['jdata']) {
-		        case 'destgrid':
-		          return array_values($this->getAllCustomDests());
-		        break;
-						case 'extensgrid':
-							return array_values($this->getAllCustomExtens());
-						break;
-		        default:
-	            return false;
-	          break;
-		       }
-		  break;
-
-		  default:
-		    return false;
-		  break;
-		}
+        if ('getJSON' === $_REQUEST['command']) {
+            if ('destgrid' === $_REQUEST['jdata']) {
+                return array_values($this->getAllCustomDests());
+            }
+            if ('extengrid' === $_REQUEST['jdata']) {
+                return array_values($this->getAllCustomExtens());
+            }
+            return false;
+        }
 	}
 }
