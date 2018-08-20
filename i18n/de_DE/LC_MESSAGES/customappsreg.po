@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2018-07-18 19:13+0000\n"
 "Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
 "Language-Team: German <http://*/projects/freepbx/customappsreg/de/>\n"
@@ -69,7 +69,7 @@ msgstr "Widersprüchliche Erweiterungen"
 msgid "Custom Applications"
 msgstr "Benutzerdefinierte Anwendungen"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Benutzerdefiniertes Ziel: %s"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Benutzerdefinierte Nebenstelle"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Benutzerdefinierte Nebenstelle: "
 
@@ -130,11 +130,11 @@ msgstr ""
 "keine Nebenstellen einsetzen, die in Misc Apps Modul erstellt wurden, da "
 "diese nicht benutzerdefiniert sind."
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUPLIKAT-Nebenstelle: Diese Nebenstelle wird bereits verwendet."
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Löschen"
 
@@ -177,11 +177,11 @@ msgstr ""
 "Ungültiges Ziel, darf nicht leer sein, muss formatiert werden als: context, "
 "exten, pri"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Ungültige Nebenstelle, darf nicht leer sein"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Ungültige Beschreibung, darf nicht leer sein"
@@ -220,7 +220,7 @@ msgid ""
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -232,7 +232,7 @@ msgstr "Zurück"
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr "Bestätigen"
 

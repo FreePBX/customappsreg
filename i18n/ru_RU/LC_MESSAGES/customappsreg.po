@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -74,7 +74,7 @@ msgstr "Конфликтующие номера"
 msgid "Custom Applications"
 msgstr "Дополнительные приложения"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Особый Номер"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Особый номер: "
 
@@ -135,11 +135,11 @@ msgstr ""
 "информацию. Вы не должны создавать эти особые номера в модуле Misc Apps так "
 "как они будут другими."
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИКАТ внутреннего номера: этот номер уже используется"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Удалить"
 
@@ -182,11 +182,11 @@ msgstr ""
 "Неверное назначение, не должно быть пустым, и должно быть в формате: "
 "контекст, экстеншен, приоритет"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Неверный внутренний номер, не может быть пустым"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Неверное описание. Не должно быть пустым"
@@ -231,7 +231,7 @@ msgstr ""
 "Реестр особых внутренних номеров и дополнительных назначений, который может "
 "включаться в реестры внутренних номеров и назначений."
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-08 22:10-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgid "Custom Applications"
 msgstr ""
 
 #: functions.inc.php:53
-#: functions.inc.php:61
+#: functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr ""
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr ""
 
@@ -119,11 +119,11 @@ msgid ""
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr ""
 
@@ -169,12 +169,12 @@ msgid ""
 "pri"
 msgstr ""
 
-#: functions.inc.php:119
+#: functions.inc.php:116
 #: views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: functions.inc.php:123
+#: functions.inc.php:120
 #: views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
@@ -215,7 +215,7 @@ msgid ""
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr ""
 

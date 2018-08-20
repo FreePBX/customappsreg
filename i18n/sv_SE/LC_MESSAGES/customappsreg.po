@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -83,7 +83,7 @@ msgstr "Konfliktande anknytningar"
 msgid "Custom Applications"
 msgstr "Anpassade applikationer"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Anpassad anknytning"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
@@ -141,11 +141,11 @@ msgstr ""
 "informationen. Du ska inte lägga till anknytningar här som du skapar i "
 "Övriga Applikationer då dom inte räknas som anpassade"
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Ta bort"
 
@@ -188,11 +188,11 @@ msgstr ""
 "Ogiltig destination, den kan inte vara tom och måste vara formaterad som: "
 "context,exten,pri"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Ogiltig anknytning, den kan inte vara tom"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Ogiltig beskrivning, den kan inte vara tom"
@@ -237,7 +237,7 @@ msgstr ""
 "Lägg till anpassade anknytningar och destinationer i ett register som kan "
 "användas av standardanknytningar och destinationer som ett valbart alternativ"
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr ""
 
@@ -249,7 +249,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2018-07-04 07:16+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/customappsreg/bg/>\n"
@@ -75,7 +75,7 @@ msgstr "Вътрешни Линии в Конфликт"
 msgid "Custom Applications"
 msgstr "Custom Приложения"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Custom Направление: %s"
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Custom Вътрешна Линия"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Custom Вътрешна Линия: "
 
@@ -136,11 +136,11 @@ msgstr ""
 "вътрешните линии които сте създали в Модул Други Направления, тъй като те не "
 "са custom."
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -185,11 +185,11 @@ msgstr ""
 "Неправилно Направление, не може да е празно, трябва да е форматирано така: "
 "context,exten,pri"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Неправилна Вътрешна Линия, полето не може да е празно"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Неправилно описание, не може да е празно"
@@ -233,7 +233,7 @@ msgstr ""
 "могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
 "Направления да ги използва."
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -245,7 +245,7 @@ msgstr "Обратно"
 msgid "Set the Destination after return"
 msgstr "Задайте Направление след връщане"
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr "Приеми"
 

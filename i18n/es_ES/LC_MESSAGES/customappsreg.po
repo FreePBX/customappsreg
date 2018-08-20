@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2016-06-07 03:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -68,7 +68,7 @@ msgstr "Extensiones en conflicto"
 msgid "Custom Applications"
 msgstr "Aplicaciones Personalizadas"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino personalizado: %s"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Extensión personalizada"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Extensión personalizada: "
 
@@ -129,11 +129,11 @@ msgstr ""
 "uso de esa información. No debería poner aquí extensiones que cree con el "
 "módulo de Aplicaciones variasm ya que esas no son personalizadas."
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extensión duplicada; esta extensión ya está en uso"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -179,11 +179,11 @@ msgstr ""
 "Destino no válido; no debe estar vacía, y debe estar formateada del "
 "siguiente modo: contexto,extension,prioridad"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Extensión no válida; no debe estar vacía"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descripción no válida; no debe estar vacía"
@@ -229,7 +229,7 @@ msgstr ""
 "creados y utilizados de manera que las extensiones y los destinos de "
 "registro puede incluir estos."
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -241,7 +241,7 @@ msgstr "Retorno"
 msgid "Set the Destination after return"
 msgstr "Establezca el Destino luego del retorno"
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr "Enviar"
 

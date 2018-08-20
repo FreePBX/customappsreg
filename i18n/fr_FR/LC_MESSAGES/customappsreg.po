@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
+"POT-Creation-Date: 2018-08-20 12:45-0400\n"
 "PO-Revision-Date: 2017-03-17 00:21+0200\n"
 "Last-Translator: Nicolas <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -86,7 +86,7 @@ msgstr "Postes Conflictuels"
 msgid "Custom Applications"
 msgstr "Applications Personnalisées"
 
-#: functions.inc.php:53 functions.inc.php:61
+#: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destination personnalisée : %s"
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Poste personnalisé"
 
-#: functions.inc.php:88
+#: functions.inc.php:85
 msgid "Custom Extension: "
 msgstr "Poste personnalisée : "
 
@@ -149,11 +149,11 @@ msgstr ""
 "utiliser. Vous ne devriez pas mettre de poste que vous avez créé dans le "
 "Module Misc Apps car ils ne sont pas personnalisés."
 
-#: functions.inc.php:134
+#: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Poste DUPLIQUÉ : Cet poste est déjà utilisé"
 
-#: Customappsreg.class.php:321
+#: Customappsreg.class.php:279
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -199,11 +199,11 @@ msgstr ""
 "Destination invalide. Elle ne doit pas être vide et doit être formatté comme "
 "suit : contexte,poste,priorité"
 
-#: functions.inc.php:119 views/customextens/form.php:106
+#: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Poste invalide, ne doit pas être vide"
 
-#: functions.inc.php:123 views/customdests/form.php:244
+#: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Description spécifiée invalide, elle ne doit pas être vide"
@@ -249,7 +249,7 @@ msgstr ""
 "et utilisées afin que ce Registre des Extensions et des Destinations peuvent "
 "inclure celles ci."
 
-#: Customappsreg.class.php:326
+#: Customappsreg.class.php:284
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -261,7 +261,7 @@ msgstr "Entrer"
 msgid "Set the Destination after return"
 msgstr "Définis la destination après le retour"
 
-#: Customappsreg.class.php:331
+#: Customappsreg.class.php:289
 msgid "Submit"
 msgstr "Soumettre"
 
