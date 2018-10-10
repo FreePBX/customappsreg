@@ -11,8 +11,8 @@
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
 	<menuitems>
-		<customextens>Custom Extensions</customextens>
-		<customdests>Custom Destinations</customdests>
+		<customextens needsenginedb="yes">Custom Extensions</customextens>
+		<customdests needsenginedb="yes">Custom Destinations</customdests>
 	</menuitems>
 	<popovers>
 		<customappsreg>
