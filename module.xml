@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>15.0.2</version>
+	<version>15.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -11,8 +11,8 @@
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
 	<menuitems>
-		<customextens>Custom Extensions</customextens>
-		<customdests>Custom Destinations</customdests>
+		<customextens needsenginedb="yes">Custom Extensions</customextens>
+		<customdests needsenginedb="yes">Custom Destinations</customdests>
 	</menuitems>
 	<popovers>
 		<customappsreg>
@@ -27,6 +27,7 @@
         </table>
     </database>
 	<changelog>
+		*15.0.3* Fixing FREEPBX-15555 Exception Asterisk is not connected error 
 		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* Backup 15
 	</changelog>
