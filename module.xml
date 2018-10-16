@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>15.0.3</version>
+	<version>15.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -27,6 +27,7 @@
         </table>
     </database>
 	<changelog>
+		*15.0.4* FREEPBX-18354 Fix parameter name 
 		*15.0.3* Fixing FREEPBX-15555 Exception Asterisk is not connected error 
 		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* Backup 15
