@@ -309,7 +309,7 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
             if ('destgrid' === $_REQUEST['jdata']) {
                 return array_values($this->getAllCustomDests());
             }
-            if ('extengrid' === $_REQUEST['jdata']) {
+            if ('extensgrid' === $_REQUEST['jdata']) {
                 return array_values($this->getAllCustomExtens());
             }
             return false;
