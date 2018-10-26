@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:45-0400\n"
+"POT-Creation-Date: 2018-10-26 19:28-0400\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -129,7 +129,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
-#: Customappsreg.class.php:279
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "删除"
 
@@ -213,7 +213,7 @@ msgid ""
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
 
@@ -225,7 +225,7 @@ msgstr ""
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr ""
 

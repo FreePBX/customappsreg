@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:45-0400\n"
+"POT-Creation-Date: 2018-10-26 19:28-0400\n"
 "PO-Revision-Date: 2017-06-20 20:42+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -138,7 +138,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Máy nhánh kép: máy nhánh này đamg được sử dụng"
 
-#: Customappsreg.class.php:279
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "Xóa"
 
@@ -233,7 +233,7 @@ msgstr ""
 "và được sử dụng để Đăng ký các máy nhánh và các điểm đích có thể bao gồm các "
 "tiện ích."
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -245,7 +245,7 @@ msgstr "Quay lại"
 msgid "Set the Destination after return"
 msgstr "Cài đặt Điểm đích sau khi quay lại"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr "Gửi đi"
 

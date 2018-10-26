@@ -1,52 +1,30 @@
-# This file is part of FreePBX.
-#
-# For licensing information, please see the file named LICENSE located in the module directory
-#
-# FreePBX language template for customappsreg
-# Copyright (C) 2008-2016 Sangoma, Inc.
-#
-msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:45-0400\n"
-"PO-Revision-Date: 2018-07-18 19:13+0000\n"
-"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
-"Language-Team: German <http://*/projects/freepbx/customappsreg/de/>\n"
-"Language: de_DE\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
-
 #: views/customdests/form.php:99
 msgid "(pick destination)"
-msgstr "(Ziel auswählen)"
+msgstr ""
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
-msgstr "Aktionen"
+msgstr ""
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
-msgstr "Benutzerdefiniertes Ziel hinzufügen"
+msgstr ""
 
 #: views/customextens/form.php:14
 msgid "Add Custom Extension"
-msgstr "Benutzerdefinierte Nebenstelle hinzufügen"
+msgstr ""
 
 #: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
-msgstr "Ziel hinzufügen"
+msgstr ""
 
 #: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
-msgstr "Nebenstelle hinzufügen"
+msgstr ""
 
 #: customappsreg.i18n.php:6
 msgid "Admin"
-msgstr "Administrator"
+msgstr ""
 
 #: views/customextens/form.php:71
 msgid ""
@@ -63,21 +41,21 @@ msgstr ""
 
 #: views/customextens/form.php:18
 msgid "Conflicting Extensions"
-msgstr "Widersprüchliche Erweiterungen"
+msgstr ""
 
 #: customappsreg.i18n.php:4
 msgid "Custom Applications"
-msgstr "Benutzerdefinierte Anwendungen"
+msgstr ""
 
 #: functions.inc.php:53 functions.inc.php:59
 #, php-format
 msgid "Custom Destination: %s"
-msgstr "Benutzerdefiniertes Ziel: %s"
+msgstr ""
 
 #: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
-msgstr "Benutzerdefinierte Ziele"
+msgstr ""
 
 #: page.customdests.php:4
 msgid ""
@@ -90,26 +68,18 @@ msgid ""
 "you to choose and insert any such destinations that the registry is not "
 "aware of into the Custom Destination field."
 msgstr ""
-"Mit benutzerdefinierten Zielen können Sie Ihre benutzerdefinierten Ziele "
-"registrieren, die auf benutzerdefinierte Wählpläne verweisen und diese Ziele "
-"auch als veröffentlichte Ziele für andere Module veröffentlichen. Dies ist "
-"eine erweiterte Funktion und sollte nur von erfahrenen Benutzern verwendet "
-"werden. Wenn Sie Warnungen oder Fehler im Benachrichtungsfenster über "
-"benutzerdefinierte Ziele erhalten, die korrekt sind, sollten Sie diese hier "
-"einfügen. Mit dem Befehl 'Unbekannte Ziele' können Sie beliebige Ziele "
-"festlegen, die der Registrierung nicht bekannt sind."
 
 #: views/customextens/form.php:35
 msgid "Custom Extension"
-msgstr "Benutzerdefinierte Nebenstelle"
+msgstr ""
 
 #: functions.inc.php:85
 msgid "Custom Extension: "
-msgstr "Benutzerdefinierte Nebenstelle: "
+msgstr ""
 
 #: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
-msgstr "Benutzerdefinierte Nebenstellen"
+msgstr ""
 
 #: page.customextens.php:4
 msgid ""
@@ -121,31 +91,23 @@ msgid ""
 "that may make use of the information. You should not put extensions that you "
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
-"Benutzerdefinierte Nebenstellen bieten Ihnen die Möglichkeit, beliebige "
-"benutzerdefinierte Nebenstellen oder Featurecodes zu registrieren, die Sie "
-"in einer benutzerdefinierte  Datei erstellt haben und von der FreePBX sonst "
-"nix weiß. Dies ermöglicht der Nebenstellenregistrierung ihre eigenen "
-"Nebenstellen zu kennen, damit Sie Fehler erkennen oder Rückinformationen "
-"über Ihre eigenen Nebenstellen an andere Module geben kann. Sie sollten "
-"keine Nebenstellen einsetzen, die in Misc Apps Modul erstellt wurden, da "
-"diese nicht benutzerdefiniert sind."
 
 #: functions.inc.php:131
 msgid "DUPLICATE Extension: This extension already in use"
-msgstr "DUPLIKAT-Nebenstelle: Diese Nebenstelle wird bereits verwendet."
+msgstr ""
 
-#: Customappsreg.class.php:279
+#: Customappsreg.class.php:293
 msgid "Delete"
-msgstr "Löschen"
+msgstr ""
 
 #: views/customdests/form.php:124 views/customextens/form.php:59
 #: views/customextens/grid.php:8 views/customextens/rnav.php:9
 msgid "Description"
-msgstr "Beschreibung"
+msgstr ""
 
 #: views/customdests/form.php:199
 msgid "Destination"
-msgstr "Ziel"
+msgstr ""
 
 #: views/customdests/form.php:94
 msgid "Destination Quick Pick"
@@ -153,7 +115,7 @@ msgstr ""
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
-msgstr "Ziele"
+msgstr ""
 
 #: views/customdests/form.php:187
 msgid ""
@@ -163,36 +125,34 @@ msgstr ""
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
-msgstr "Bearbeiten: "
+msgstr ""
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
-msgstr "Nebenstelle"
+msgstr ""
 
 #: views/customdests/form.php:243
 msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
-"Ungültiges Ziel, darf nicht leer sein, muss formatiert werden als: context, "
-"exten, pri"
 
 #: functions.inc.php:116 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
-msgstr "Ungültige Nebenstelle, darf nicht leer sein"
+msgstr ""
 
 #: functions.inc.php:120 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
-msgstr "Ungültige Beschreibung, darf nicht leer sein"
+msgstr ""
 
 #: views/customextens/rnav.php:2
 msgid "List Custom Extensions"
-msgstr "Benutzerdefinierte Nebenstellen auflisten"
+msgstr ""
 
 #: views/customdests/rnav.php:2
 msgid "List Destinations"
-msgstr "Nebenstellen auflisten"
+msgstr ""
 
 #: views/customdests/form.php:160
 msgid ""
@@ -208,11 +168,11 @@ msgstr ""
 
 #: views/customdests/form.php:179
 msgid "No"
-msgstr "Nein"
+msgstr ""
 
 #: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
-msgstr "Notizen"
+msgstr ""
 
 #: customappsreg.i18n.php:8
 msgid ""
@@ -220,25 +180,25 @@ msgid ""
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:298
 msgid "Reset"
-msgstr "Zurücksetzen"
+msgstr ""
 
 #: views/customdests/form.php:172
 msgid "Return"
-msgstr "Zurück"
+msgstr ""
 
 #: views/customdests/form.php:211
 msgid "Set the Destination after return"
 msgstr ""
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:303
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr ""
 
 #: views/customdests/form.php:66
 msgid "Target"
-msgstr "Ziel"
+msgstr ""
 
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
@@ -265,4 +225,4 @@ msgstr ""
 
 #: views/customdests/form.php:177
 msgid "Yes"
-msgstr "Ja"
+msgstr ""

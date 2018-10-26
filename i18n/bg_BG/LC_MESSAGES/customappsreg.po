@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:45-0400\n"
+"POT-Creation-Date: 2018-10-26 19:28-0400\n"
 "PO-Revision-Date: 2018-07-04 07:16+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/customappsreg/bg/>\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "ДУБЛИРАНА Вътрешна Линия: Тази вътрешна линия вече се използва"
 
-#: Customappsreg.class.php:279
+#: Customappsreg.class.php:293
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -233,7 +233,7 @@ msgstr ""
 "могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
 "Направления да ги използва."
 
-#: Customappsreg.class.php:284
+#: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -245,7 +245,7 @@ msgstr "Обратно"
 msgid "Set the Destination after return"
 msgstr "Задайте Направление след връщане"
 
-#: Customappsreg.class.php:289
+#: Customappsreg.class.php:303
 msgid "Submit"
 msgstr "Приеми"
 
