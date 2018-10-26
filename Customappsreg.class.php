@@ -9,8 +9,13 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 
 	private $allDests = false;
 
-    public function install() {}
-    public function uninstall(){}
+	public function install() {}
+	public function uninstall(){}
+
+	public function __construct($freepbx = null){
+		$this->FreePBX = $freepbx;
+		$this->Database = $freepbx->Database;
+	}
 
 	public function getRightNav($request) {
 		$dir = basename($request['display']);
@@ -18,6 +23,15 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 			return load_view(__DIR__."/views/".$dir."/rnav.php",array());
 		}
 		return '';
+	}
+
+	public function setDatabase($pdo){
+		$this->Database = $pdo;
+		return $this;
+	}
+	
+	public function resetDatabase(){
+		$this->Database = $this->FreePBX->Database;
 	}
 
 	// This is where we handle our POSTs
@@ -42,8 +56,8 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 				$type   = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
 				$action = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 				if (isset($_REQUEST['delete'])){
-                    $action = 'delete';
-                }
+					$action = 'delete';
+				}
 				$old_custom_exten = isset($_REQUEST['old_custom_exten']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['old_custom_exten']) :  '';
 				$custom_exten     = isset($_REQUEST['extdisplay']) ? preg_replace("/[^0-9*#]/" ,"",$_REQUEST['extdisplay']) :  '';
 				$description     = isset($_REQUEST['description']) ? htmlentities($_REQUEST['description'],ENT_COMPAT | ENT_HTML401, "UTF-8") :  '';
@@ -196,27 +210,27 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 			}
 		}
 		return $this->allDests;
-    }
-    
-    public function editCustomExten($old_custom_exten, $custom_exten, $description, $notes){
-        if($old_custom_exten !== $custom_exten){
-            $this->deleteCustomExten($old_custom_exten);
-        }
-        $sql = "INSERT INTO custom_extensions (custom_exten, description, notes) VALUES (:custom_exten, :description, :notes)";
-        $sql .= " ON DUPLICATE KEY UPDATE custom_exten = VALUES(custom_exten), description = VALUES(description), notes= VALUES(notes)";
-        $this->FreePBX->Database->prepare($sql)->execute([':custom_exten' => $custom_exten, ':description' => $description, ':notes' => $notes]);    
-        return $this;
-    }
-    
-    public function deleteCustomExten($id){
-        $sql = "DELETE FROM custom_extensions WHERE custom_exten = :custom_exten LIMIT 1";
-        $this->FreePBX->Database->prepare($sql)->execute([':custom_exten' => $id]);
-        return $this;
-    }
+	}
+	
+	public function editCustomExten($old_custom_exten, $custom_exten, $description, $notes){
+		if($old_custom_exten !== $custom_exten){
+			$this->deleteCustomExten($old_custom_exten);
+		}
+		$sql = "INSERT INTO custom_extensions (custom_exten, description, notes) VALUES (:custom_exten, :description, :notes)";
+		$sql .= " ON DUPLICATE KEY UPDATE custom_exten = VALUES(custom_exten), description = VALUES(description), notes= VALUES(notes)";
+		$this->Database->prepare($sql)->execute([':custom_exten' => $custom_exten, ':description' => $description, ':notes' => $notes]);    
+		return $this;
+	}
+	
+	public function deleteCustomExten($id){
+		$sql = "DELETE FROM custom_extensions WHERE custom_exten = :custom_exten LIMIT 1";
+		$this->Database->prepare($sql)->execute([':custom_exten' => $id]);
+		return $this;
+	}
 
 	public function getAllCustomExtens() {
 		$sql = "SELECT custom_exten, description, notes FROM custom_extensions ORDER BY custom_exten";
-		$stmt = $this->FreePBX->Database->prepare($sql);
+		$stmt = $this->Database->prepare($sql);
 		$stmt->execute();
 		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if($results) {
@@ -262,13 +276,13 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 		} else {
 			return $dest['target'];
 		}
-    }
+	}
 
 	public function getActionBar($request) {
-        $buttons = array();
-        if (!isset($_GET['view'])) {
-            return $buttons;
-        }
+		$buttons = array();
+		if (!isset($_GET['view'])) {
+			return $buttons;
+		}
 		switch($request['display']) {
 			case 'customdests':
 			case 'customextens':
@@ -299,20 +313,20 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 	}
 	public function ajaxRequest($command, &$setting) {
 		if($command === 'getJSON'){
-            return true;
-        }
-        return false;
-    }
-    
+			return true;
+		}
+		return false;
+	}
+	
 	public function ajaxHandler(){
-        if ('getJSON' === $_REQUEST['command']) {
-            if ('destgrid' === $_REQUEST['jdata']) {
-                return array_values($this->getAllCustomDests());
-            }
-            if ('extensgrid' === $_REQUEST['jdata']) {
-                return array_values($this->getAllCustomExtens());
-            }
-            return false;
-        }
+		if ('getJSON' === $_REQUEST['command']) {
+			if ('destgrid' === $_REQUEST['jdata']) {
+				return array_values($this->getAllCustomDests());
+			}
+			if ('extensgrid' === $_REQUEST['jdata']) {
+				return array_values($this->getAllCustomExtens());
+			}
+			return false;
+		}
 	}
 }
