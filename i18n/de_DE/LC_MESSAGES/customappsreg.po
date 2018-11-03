@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-07 17:33-0500\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-11-04 17:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/customappsreg/de/>\n"
 "Language: de_DE\n"
@@ -53,6 +53,8 @@ msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
+"Eine kurze Beschreibung dieser Nebenstelle, die im Nebenstellenverzeichnis "
+"veröffentlicht wird"
 
 #: views/customdests/form.php:109
 msgid ""
@@ -149,7 +151,7 @@ msgstr "Ziel"
 
 #: views/customdests/form.php:94
 msgid "Destination Quick Pick"
-msgstr ""
+msgstr "Ziel-Schnellauswahl"
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
@@ -160,6 +162,8 @@ msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
+"Endet dieses Ziel mit „Zurückkehren“? Falls ja, können Sie ein nachfolgendes "
+"Ziel wählen, nachdem dieser Anruffluss abgeschlossen ist."
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
@@ -199,12 +203,16 @@ msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
+"Genauere Angaben zu diesem Ziel. Dieses Feld dient der Dokumentation und "
+"wird nirgendwo anders verwendet."
 
 #: views/customextens/form.php:95
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
 msgstr ""
+"Genauere Angaben zu dieser Nebenstelle. Dieses Feld dient der Dokumentation "
+"und wird nirgendwo anders verwendet."
 
 #: views/customdests/form.php:179
 msgid "No"
@@ -230,7 +238,7 @@ msgstr "Zurück"
 
 #: views/customdests/form.php:211
 msgid "Set the Destination after return"
-msgstr ""
+msgstr "Ziel nach Rückkehr einstellen"
 
 #: Customappsreg.class.php:331
 msgid "Submit"
@@ -243,6 +251,8 @@ msgstr "Ziel"
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
+"Die eingegebene Nebenstelle verursacht einen Konflikt mit einer anderen "
+"Nebenstelle im System"
 
 #: views/customdests/form.php:78
 msgid ""
