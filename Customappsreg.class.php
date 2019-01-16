@@ -89,6 +89,7 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 					if (empty($this->conflict_url)) {
 						if ($this->editCustomExten($old_custom_exten, $custom_exten, $description, $notes)) {
 							needreload();
+							redirect_standard();
 						}
 					}
 				break;
