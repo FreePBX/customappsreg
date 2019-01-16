@@ -162,4 +162,5 @@ function customappsreg_customextens_edit($old_custom_exten, $custom_exten,  $des
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
 	}
+	return true;
 }
