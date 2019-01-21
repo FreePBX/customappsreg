@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>13.0.5.5</version>
+	<version>13.0.5.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,6 +20,7 @@
 		</customappsreg>
  	</popovers>
 	<changelog>
+		*13.0.5.6* FREEPBX-18915 After editing a Custom Extension entry, page is not redirecting to list Custom Extensions page 
 		*13.0.5.5* FREEPBX-15555 Exception Asterisk is not connected error in some modules listed in description 
 		*13.0.5.4* FREEPBX-15468 Reset button under Custom Destination is broken. 
 		*13.0.5.3* FREEPBX-16230 Cannot edit neither delete custom extensions 
