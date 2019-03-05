@@ -10,22 +10,7 @@ class Restore Extends Base\RestoreBase{
 		}
 	}
 
-	public function processLegacy($pdo, $data, $tables, $unknownTables, $tmpfiledir){
-		$tables = array_flip($tables + $unknownTables);
-		if (!isset($tables['custom_extensions'])) {
-			return $this;
-		}
-		$ca = $this->FreePBX->Customappsreg;
-		$ca->setDatabase($pdo);
-		$configs = [
-			'extensions' => $ca->getAllCustomExtens(),
-			'destinations' => $ca->getAll('dests'),
-		];
-		$ca->resetDatabase();
-		foreach ($configs['extensions'] as $extension) {
-			$ca->editCustomExten($extension['custom_exten'], $extension['custom_exten'], $extension['description'], $extension['notes']);
-		}
-		$this->transformLegacyKV($pdo, 'customappsreg', $this->FreePBX)
-		->transformNamespacedKV($pdo, 'customappsreg', $this->FreePBX);
+	public function processLegacy($pdo, $data, $tables, $unknownTables){
+		$this->restoreLegacyDatabaseKvstore($pdo);
 	}
 }
