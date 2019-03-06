@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>15.0.9</version>
+	<version>15.0.10</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -27,13 +27,14 @@
         </table>
     </database>
 	<changelog>
-		*15.0.9* Fixing legacy restore 
-		*15.0.8* Fixing legacy restore 
-		*15.0.7* backup and restore 
-		*15.0.6* FREEPBX-18915 After editing a Custom Extension entry, page is not redirecting to list Custom Extensions page 
+		*15.0.10* Fixing legacy restore
+		*15.0.9* Fixing legacy restore
+		*15.0.8* Fixing legacy restore
+		*15.0.7* backup and restore
+		*15.0.6* FREEPBX-18915 After editing a Custom Extension entry, page is not redirecting to list Custom Extensions page
 		*15.0.5* Add backup and restore
-		*15.0.4* FREEPBX-18354 Fix parameter name 
-		*15.0.3* Fixing FREEPBX-15555 Exception Asterisk is not connected error 
+		*15.0.4* FREEPBX-18354 Fix parameter name
+		*15.0.3* Fixing FREEPBX-15555 Exception Asterisk is not connected error
 		*15.0.2* Packaging of ver 15.0.2
 		*15.0.1* Backup 15
 	</changelog>
