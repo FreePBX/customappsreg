@@ -56,8 +56,10 @@ function customappsreg_getdestinfo($dest) {
 	}
 	foreach ($allDests as $cd) {
 		if ($cd['target'] == $dest) {
-			return array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
+			// Found it.
+			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
+		             'edit_url' => "config.php?display=customdests&view=form&destid=".$cd['destid']);
+			return $tmparr;
 		}
 	}
 
