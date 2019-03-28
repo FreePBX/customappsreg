@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-06 14:07-0500\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgid "Custom Applications"
 msgstr ""
 
 #: functions.inc.php:53
-#: functions.inc.php:59
+#: functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr ""
@@ -99,7 +99,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr ""
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr ""
 
@@ -119,7 +119,7 @@ msgid ""
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr ""
 
@@ -169,12 +169,12 @@ msgid ""
 "pri"
 msgstr ""
 
-#: functions.inc.php:116
+#: functions.inc.php:118
 #: views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr ""
 
-#: functions.inc.php:120
+#: functions.inc.php:122
 #: views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"

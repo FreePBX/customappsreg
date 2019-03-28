@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-26 19:28-0400\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -83,7 +83,7 @@ msgstr "Konfliktande anknytningar"
 msgid "Custom Applications"
 msgstr "Anpassade applikationer"
 
-#: functions.inc.php:53 functions.inc.php:59
+#: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Anpassad anknytning"
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
@@ -141,7 +141,7 @@ msgstr ""
 "informationen. Du ska inte lägga till anknytningar här som du skapar i "
 "Övriga Applikationer då dom inte räknas som anpassade"
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUBLETT av anknytning: Denna anknytning används redan"
 
@@ -188,11 +188,11 @@ msgstr ""
 "Ogiltig destination, den kan inte vara tom och måste vara formaterad som: "
 "context,exten,pri"
 
-#: functions.inc.php:116 views/customextens/form.php:106
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Ogiltig anknytning, den kan inte vara tom"
 
-#: functions.inc.php:120 views/customdests/form.php:244
+#: functions.inc.php:122 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Ogiltig beskrivning, den kan inte vara tom"

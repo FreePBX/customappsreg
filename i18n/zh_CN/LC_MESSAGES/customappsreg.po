@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-26 19:28-0400\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -70,7 +70,7 @@ msgstr "分机冲突"
 msgid "Custom Applications"
 msgstr ""
 
-#: functions.inc.php:53 functions.inc.php:59
+#: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
@@ -101,7 +101,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "自定义分机"
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "自定义分机："
 
@@ -125,7 +125,7 @@ msgstr ""
 "报告你自定义的分机号。请你不要在此处添加你在Misc Apps模块中创建的分机，因为那"
 "些不算自定义的分机。"
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "重复的分机号：此分机已被使用"
 
@@ -170,11 +170,11 @@ msgid ""
 "pri"
 msgstr "无效的目的地，不可以为空，格式必须为：context,exten,pri"
 
-#: functions.inc.php:116 views/customextens/form.php:106
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "无效的分机号，不能为空"
 
-#: functions.inc.php:120 views/customdests/form.php:244
+#: functions.inc.php:122 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "指定了无效的描述，不能为空"

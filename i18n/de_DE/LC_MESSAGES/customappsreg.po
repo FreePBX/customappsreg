@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-04 19:11-0500\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/customappsreg/de/>\n"
@@ -71,7 +71,7 @@ msgstr "Nebenstellenkonflikt"
 msgid "Custom Applications"
 msgstr "Benutzerdefinierte Anwendungen"
 
-#: functions.inc.php:53 functions.inc.php:59
+#: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Benutzerdefiniertes Ziel: %s"
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Benutzerdefinierte Nebenstelle"
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Benutzerdefinierte Nebenstelle: "
 
@@ -132,7 +132,7 @@ msgstr ""
 "keine Nebenstellen einsetzen, die in Misc Apps Modul erstellt wurden, da "
 "diese nicht benutzerdefiniert sind."
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "DUPLIKAT-Nebenstelle: Diese Nebenstelle wird bereits verwendet."
 
@@ -181,11 +181,11 @@ msgstr ""
 "Ungültiges Ziel, darf nicht leer sein, muss formatiert werden als: context, "
 "exten, pri"
 
-#: functions.inc.php:116 views/customextens/form.php:106
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Ungültige Nebenstelle, darf nicht leer sein"
 
-#: functions.inc.php:120 views/customdests/form.php:244
+#: functions.inc.php:122 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Ungültige Beschreibung, darf nicht leer sein"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-26 19:28-0400\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: 2016-06-07 03:01+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -68,7 +68,7 @@ msgstr "Extensiones en conflicto"
 msgid "Custom Applications"
 msgstr "Aplicaciones Personalizadas"
 
-#: functions.inc.php:53 functions.inc.php:59
+#: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino personalizado: %s"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "Extensión personalizada"
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "Extensión personalizada: "
 
@@ -129,7 +129,7 @@ msgstr ""
 "uso de esa información. No debería poner aquí extensiones que cree con el "
 "módulo de Aplicaciones variasm ya que esas no son personalizadas."
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "Extensión duplicada; esta extensión ya está en uso"
 
@@ -179,11 +179,11 @@ msgstr ""
 "Destino no válido; no debe estar vacía, y debe estar formateada del "
 "siguiente modo: contexto,extension,prioridad"
 
-#: functions.inc.php:116 views/customextens/form.php:106
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "Extensión no válida; no debe estar vacía"
 
-#: functions.inc.php:120 views/customdests/form.php:244
+#: functions.inc.php:122 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "Descripción no válida; no debe estar vacía"

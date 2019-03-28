@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-26 19:28-0400\n"
+"POT-Creation-Date: 2019-03-28 08:13+0530\n"
 "PO-Revision-Date: 2016-04-06 21:25+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -70,7 +70,7 @@ msgstr "داخلی های متضاد"
 msgid "Custom Applications"
 msgstr "درخواست های سفارشی"
 
-#: functions.inc.php:53 functions.inc.php:59
+#: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "مقصد شخصی ：%s"
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Custom Extension"
 msgstr "داخلی شخصی"
 
-#: functions.inc.php:85
+#: functions.inc.php:87
 msgid "Custom Extension: "
 msgstr "داخلی شخصی ： "
 
@@ -130,7 +130,7 @@ msgstr ""
 "that may make use of the information. You should not put extensions that you "
 "create in the Misc Apps Module as those are not custom ."
 
-#: functions.inc.php:131
+#: functions.inc.php:133
 msgid "DUPLICATE Extension: This extension already in use"
 msgstr "داخلی تکراری：این داخلی موجود است"
 
@@ -175,11 +175,11 @@ msgid ""
 "pri"
 msgstr "مقصد نامعتبر, نباید خالی باشد, باید با این فرمت باشد： context,exten"
 
-#: functions.inc.php:116 views/customextens/form.php:106
+#: functions.inc.php:118 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
 msgstr "داخلی نامعتبر, نباید خالی باشد"
 
-#: functions.inc.php:120 views/customdests/form.php:244
+#: functions.inc.php:122 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
 msgstr "شرح نامعتبر, نباید خالی باشد"
