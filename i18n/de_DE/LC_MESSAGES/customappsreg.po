@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-07 17:33-0500\n"
-"PO-Revision-Date: 2018-11-04 17:00+0000\n"
+"PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/customappsreg/de/>\n"
 "Language: de_DE\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: views/customextens/form.php:18
 msgid "Conflicting Extensions"
-msgstr "Widersprüchliche Erweiterungen"
+msgstr "Nebenstellenkonflikt"
 
 #: customappsreg.i18n.php:4
 msgid "Custom Applications"
