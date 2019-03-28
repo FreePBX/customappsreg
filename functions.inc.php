@@ -59,7 +59,7 @@ function customappsreg_getdestinfo($dest) {
 		if ($cd['target'] == $dest) {
 			// Found it.
 			$tmparr = array('description' => sprintf(_("Custom Destination: %s"), $cd['description']),
-		             'edit_url' => "config.php?display=customdests&destid=".$cd['destid']);
+		             'edit_url' => "config.php?display=customdests&view=form&destid=".$cd['destid']);
 			return $tmparr;
 		}
 	}
