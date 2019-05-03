@@ -55,7 +55,7 @@ if(!empty($dest_decs)){
 </script>
 <form class="fpbx-submit" id="destsForm" name="destsForm" action="?display=customdests" method="post" data-fpbx-delete="<?php echo $delURL?>" onsubmit="return checkCustomDest();">
   <input type="hidden" name="action" value="<?php echo $destid?'edit':'add'?>">
-  <input type="hidden" name="itemid" value="<?php echo $destid?$destid:''?>" <?php echo $destid?'':'disabled'?>>
+  <input type="hidden" name="destid" value="<?php echo $destid?$destid:''?>" <?php echo $destid?'':'disabled'?>>
   <!--Target-->
   <div class="element-container">
     <div class="row">
