@@ -10,6 +10,7 @@
 	<description>
 		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
 	</description>
+	<more-info>https://wiki.freepbx.org/display/FPG/Custom+Extensions+Module</more-info>
 	<menuitems>
 		<customextens needsenginedb="yes">Custom Extensions</customextens>
 		<customdests needsenginedb="yes">Custom Destinations</customdests>
