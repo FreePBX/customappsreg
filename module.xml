@@ -2,7 +2,7 @@
 	<rawname>customappsreg</rawname>
 	<repo>standard</repo>
 	<name>Custom Applications</name>
-	<version>16.0.2</version>
+	<version>16.0.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -28,6 +28,7 @@
         </table>
     </database>
 	<changelog>
+		*16.0.3* Packaging of ver 16.0.3
 		*16.0.2* Packaging of ver 16.0.2
 		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
