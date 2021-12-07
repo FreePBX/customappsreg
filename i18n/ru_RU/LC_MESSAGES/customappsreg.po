@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-07 17:33-0500\n"
-"PO-Revision-Date: 2021-11-24 11:00+0000\n"
+"PO-Revision-Date: 2021-12-08 06:03+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "customappsreg/ru/>\n"
@@ -27,7 +27,7 @@ msgstr "(выбрать назначение)"
 
 #: views/customdests/grid.php:11 views/customextens/grid.php:9
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
@@ -172,7 +172,7 @@ msgstr "Редактировать:"
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
-msgstr ""
+msgstr "Внутренний номер"
 
 #: views/customdests/form.php:243
 msgid ""
@@ -233,11 +233,11 @@ msgstr ""
 
 #: Customappsreg.class.php:326
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/customdests/form.php:172
 msgid "Return"
-msgstr ""
+msgstr "Возврат"
 
 #: views/customdests/form.php:211
 msgid "Set the Destination after return"
