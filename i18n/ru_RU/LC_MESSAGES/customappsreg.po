@@ -1,15 +1,13 @@
-# Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
-#
-# Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# This file is part of FreePBX.
+# For licensing information, please see the file named LICENSE located in the module directory
+# FreePBX language template for customappsreg
+# Copyright (C) 2008-2019 Sangoma Technologies, Inc.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.3\n"
+"Project-Id-Version: Custom Application\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-07 17:33-0500\n"
-"PO-Revision-Date: 2021-12-08 06:03+0000\n"
+"POT-Creation-Date: 2019-03-28 08:08+0530\n"
+"PO-Revision-Date: 2022-04-19 05:08+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "customappsreg/ru/>\n"
@@ -31,19 +29,19 @@ msgstr "Действия"
 
 #: views/customdests/form.php:32
 msgid "Add Custom Destination"
-msgstr "Добавить специальное назначение"
+msgstr "Добавить пользовательское назначение"
 
 #: views/customextens/form.php:14
 msgid "Add Custom Extension"
-msgstr "Добавить Особый номер"
+msgstr "Добавить пользовательский внутр.номер"
 
 #: views/customdests/grid.php:5 views/customdests/rnav.php:3
 msgid "Add Destination"
-msgstr ""
+msgstr "Добавить назначение"
 
 #: views/customextens/grid.php:2 views/customextens/rnav.php:3
 msgid "Add Extension"
-msgstr ""
+msgstr "Добавить внутренний номер"
 
 #: customappsreg.i18n.php:6
 msgid "Admin"
@@ -54,8 +52,8 @@ msgid ""
 "Brief description that will be published in the Extension Registry about "
 "this extension"
 msgstr ""
-"Короткое описание этого номера, которое будет использоваться в Регистре "
-"номеров"
+"Краткое описание, которое будет использоваться в Реестре номеров для этого "
+"номера"
 
 #: views/customdests/form.php:109
 msgid ""
@@ -63,26 +61,27 @@ msgid ""
 "Destination Registry. This will insert the chosen entry into the Custom "
 "Destination box above."
 msgstr ""
-"Выберите свободный номер назначения для добавления в реестр дополнительных "
-"назначений. Выбранный номер будет включен в список дополнительных назначений."
+"Выберите неидентифицированные назначения вашей системы чтобы добавить в "
+"Реестр пользовательских назначений. Это позволит вставить выбранную запись в "
+"поле Пользовательские назначения выше."
 
 #: views/customextens/form.php:18
 msgid "Conflicting Extensions"
-msgstr "Конфликтующие номера"
+msgstr "Конфликтующие внутренние номера"
 
 #: customappsreg.i18n.php:4
 msgid "Custom Applications"
-msgstr "Дополнительные приложения"
+msgstr "Пользовательские приложения"
 
 #: functions.inc.php:53 functions.inc.php:61
 #, php-format
 msgid "Custom Destination: %s"
-msgstr "Дополнительное назначение :%s"
+msgstr "Пользовательское назначение: %s"
 
 #: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
 #: page.customdests.php:18
 msgid "Custom Destinations"
-msgstr "Дополнительные назначения"
+msgstr "Пользовательские назначения"
 
 #: page.customdests.php:4
 msgid ""
@@ -95,27 +94,27 @@ msgid ""
 "you to choose and insert any such destinations that the registry is not "
 "aware of into the Custom Destination field."
 msgstr ""
-"Специальное назначение даёт возможность регистрировать специальные сценарии, "
-"которые встраиваются в ваш диал план и становятся доступными для "
-"перенаправления на них из других модулей. Это такая очень продвинутая опция, "
-"и может использоваться только опытными пользователями, которые понимают что "
-"они хотят сделать. Если видны предупреждения или сообщения в панели "
-"состояния системы по поводу CUSTOM направлений, то всё в порядке, вы должны "
-"ими просто пользоваться. Выбор терминации звонка в сценариях входящей "
-"маршрутизации будет выглядеть как 'Custom Applications' где созданный "
-"контекст можно выбрать в 'Установить направление'."
+"Пользовательские назначения позволяют регистрировать специальные сценарии, "
+"которые встраиваются в ваш диалплан и становятся доступными для "
+"перенаправления на них из других модулей. Это расширенная функция, и должна "
+"использоваться только опытными пользователями, понимающими что они хотят "
+"сделать. Если вы получаете предупреждения или ошибки в панели состояния "
+"системы по поводу CUSTOM направлений, которые являются правильными - вы "
+"должны включить их здесь. Выбор \"Неизвестные назначения\" позволит вам "
+"выбрать и вставить любые такие назначения, о которых не знает реестр, в поле "
+"\"Пользовательское назначение\"."
 
 #: views/customextens/form.php:35
 msgid "Custom Extension"
-msgstr "Особый Номер"
+msgstr "Пользовательский внутр.номер"
 
 #: functions.inc.php:88
 msgid "Custom Extension: "
-msgstr "Особый номер: "
+msgstr "Пользовательский внутр.номер: "
 
 #: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
-msgstr "Особые внутренние номера"
+msgstr "Пользовательские номера"
 
 #: page.customextens.php:4
 msgid ""
@@ -127,13 +126,13 @@ msgid ""
 "that may make use of the information. You should not put extensions that you "
 "create in the Misc Apps Module as those are not custom."
 msgstr ""
-"Особые номера помогают регистрировать какие-либо специальные номера "
-"донабора, которые создаются в custom файлах, а FreePBX не имеет понятия о "
-"них. Это даёт возможность содержать регистр внутренних номеров таким "
-"образом, чтобы предотвращать конфликты с одинаковыми номерами (или кодами "
-"донабора) и сообщать о них в другие модули, которые могут использовать эту "
-"информацию. Вы не должны создавать эти особые номера в модуле Misc Apps так "
-"как они будут другими."
+"Пользовательские номера позволяют регистрировать любые пользовательские "
+"номера или сервисные коды, создаваемые в пользовательском файле и "
+"неизвестные FreePBX. Это даёт возможность содержать реестр внутренних "
+"номеров таким образом, чтобы предотвращать конфликты с одинаковыми номерами ("
+"или сервисными кодами) и сообщать о них в другие модули, которые могут "
+"использовать эту информацию. Вы не должны создавать эти особые номера в "
+"модуле Misc Apps так как они не являются пользовательскими."
 
 #: functions.inc.php:134
 msgid "DUPLICATE Extension: This extension already in use"
@@ -154,21 +153,23 @@ msgstr "Назначение"
 
 #: views/customdests/form.php:94
 msgid "Destination Quick Pick"
-msgstr "Назначение Бытрый Перехват"
+msgstr "Назначение быстрого выбора"
 
 #: views/customdests/grid.php:10 views/customdests/rnav.php:8
 msgid "Destinations"
-msgstr ""
+msgstr "Назначения"
 
 #: views/customdests/form.php:187
 msgid ""
 "Does this destination end with 'Return'? If so, you can then select a "
 "subsequent destination after this call flow is complete."
 msgstr ""
+"Заканчивается ли это назначение шагом \"Возврат\"? Если да, то можно выбрать "
+"последующее назначение после завершения вызова."
 
 #: views/customdests/form.php:30 views/customextens/form.php:11
 msgid "Edit: "
-msgstr "Редактировать:"
+msgstr "Редактировать: "
 
 #: views/customextens/grid.php:7 views/customextens/rnav.php:8
 msgid "Extension"
@@ -179,45 +180,45 @@ msgid ""
 "Invalid Destination, must not be blank, must be formatted as: context,exten,"
 "pri"
 msgstr ""
-"Неверное назначение, не должно быть пустым, и должно быть в формате: "
-"контекст, экстеншен, приоритет"
+"Неверное назначение - оно не должно быть пустым и должно быть в формате: "
+"контекст,внутр.номер,приоритет"
 
 #: functions.inc.php:119 views/customextens/form.php:106
 msgid "Invalid Extension, must not be blank"
-msgstr "Неверный внутренний номер, не может быть пустым"
+msgstr "Неверный внутренний номер, не должен быть пустым"
 
 #: functions.inc.php:123 views/customdests/form.php:244
 #: views/customextens/form.php:107
 msgid "Invalid description specified, must not be blank"
-msgstr "Неверное описание. Не должно быть пустым"
+msgstr "Указано неверное описание, не должно быть пустым"
 
 #: views/customextens/rnav.php:2
 msgid "List Custom Extensions"
-msgstr ""
+msgstr "Список пользовательских внутренних номеров"
 
 #: views/customdests/rnav.php:2
 msgid "List Destinations"
-msgstr ""
+msgstr "Список назначений"
 
 #: views/customdests/form.php:160
 msgid ""
 "More detailed notes about this destination to help document it. This field "
 "is not used elsewhere."
 msgstr ""
-"Более детальные замечания, которые помогут документировать эти назначения, "
-"когда их много. Это поле больше нигде не используется."
+"Более подробные замечания об этом назначении помогут задокументировать его. "
+"Это поле больше нигде не используется."
 
 #: views/customextens/form.php:95
 msgid ""
 "More detailed notes about this extension to help document it. This field is "
 "not used elsewhere."
 msgstr ""
-"Более детальные примечания об этом номере, которое поможет документировать "
-"записи, когда их много. Это поле больше нигде не используется."
+"Более подробные замечания об этом внутр.номере помогут задокументировать "
+"его. Это поле больше нигде не используется."
 
 #: views/customdests/form.php:179
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
@@ -228,8 +229,9 @@ msgid ""
 "Registry to add custom extensions and destinations that may be created and "
 "used so that the Extensions and Destinations Registry can include these."
 msgstr ""
-"Реестр особых внутренних номеров и дополнительных назначений, который может "
-"включаться в реестры внутренних номеров и назначений."
+"Реестр для добавления пользовательских номеров и назначений, которые могут "
+"быть созданы и использованы таким образом, чтобы реестр номеров и назначений "
+"мог включать их."
 
 #: Customappsreg.class.php:326
 msgid "Reset"
@@ -241,19 +243,20 @@ msgstr "Возврат"
 
 #: views/customdests/form.php:211
 msgid "Set the Destination after return"
-msgstr ""
+msgstr "Задайте назначение после возврата"
 
 #: Customappsreg.class.php:331
 msgid "Submit"
-msgstr "Применить"
+msgstr "Принять"
 
 #: views/customdests/form.php:66
 msgid "Target"
-msgstr ""
+msgstr "Цель"
 
 #: views/customextens/form.php:122
 msgid "The entered extension conflicts with another extension on the system"
 msgstr ""
+"Введённый внутренний номер конфликтует с другим внутренним номером в системе"
 
 #: views/customdests/form.php:78
 msgid ""
@@ -261,27 +264,30 @@ msgid ""
 "exactly as you would put it in a goto statement, with context, exten, "
 "priority all included. An example might look like:<br />mycustom-app,s,1"
 msgstr ""
-"Это объявление использования Специального назначения. При создании "
-"необходимо указывать контекст, внутренний номер и приоритет. Например:<br /"
-">mycustom-app,s,1"
+"Это объявление использования пользовательского назначения. Оно должно быть "
+"отформатировано так, как вы бы поместили его в оператор goto, с включенным "
+"контекстом, расширением, приоритетом. Пример может выглядеть следующим "
+"образом: <br />my custom-app,s,1"
 
 #: views/customextens/form.php:47
 msgid ""
 "This is the Extension or Feature Code you are using in your dialplan that "
 "you want the FreePBX Extension Registry to be aware of."
 msgstr ""
-"Это Особый номер или код донабора, который будет использоваться в вашем диал "
-"плане, для учета его в общем Регистре номеров FreePBX."
+"Это внутренний номер или сервисный код, который будет использоваться в вашем "
+"диалплане, для учета его в общем реестре номеров FreePBX."
 
 #: views/customdests/form.php:11
 msgid ""
 "WARNING: This destination is being used by other module objects. Changing "
 "this destination may cause unexpected issue."
 msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: Это назначение используется другими объектами модуля. "
+"Изменение это назначения может вызвать нежелательные последствия."
 
 #: views/customdests/form.php:177
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "
