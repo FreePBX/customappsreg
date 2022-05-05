@@ -60,8 +60,8 @@ if(!empty($dest_decs)){
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="target"><?php echo _("Target") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="target"></i>
@@ -88,8 +88,8 @@ if ($unknown) {
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="insdest"><?php echo _("Destination Quick Pick") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="insdest"></i>
@@ -118,8 +118,8 @@ if ($unknown) {
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="description"><?php echo _("Description") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
@@ -142,8 +142,8 @@ if ($unknown) {
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="notes"><?php echo _("Notes") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="notes"></i>
@@ -166,8 +166,8 @@ if ($unknown) {
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="destret"><?php echo _("Return") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="destret"></i>
@@ -193,8 +193,8 @@ if ($unknown) {
   <div class="element-container <?php echo ($current['destret']?"":"hidden")?>" id="hasreturn">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="goto0"><?php echo _("Destination") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>

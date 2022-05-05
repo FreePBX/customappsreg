@@ -29,8 +29,8 @@ echo $subhead;
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="extdisplay"><?php echo _("Custom Extension") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="extdisplay"></i>
@@ -53,8 +53,8 @@ echo $subhead;
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="description"><?php echo _("Description") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
@@ -77,8 +77,8 @@ echo $subhead;
   <div class="element-container">
     <div class="row">
       <div class="col-md-12">
-        <div class="row">
-          <div class="form-group">
+        <div class="">
+          <div class="row form-group">
             <div class="col-md-3">
               <label class="control-label" for="notes"><?php echo _("Notes") ?></label>
               <i class="fa fa-question-circle fpbx-help-icon" data-for="notes"></i>
