@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 08:13+0530\n"
+"POT-Creation-Date: 2022-05-09 02:01+0000\n"
 "PO-Revision-Date: 2015-04-23 16:23+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,10 +45,6 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
-#: customappsreg.i18n.php:6
-msgid "Admin"
-msgstr "Администратор"
-
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -70,17 +66,12 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Конфликтующие номера"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Дополнительные приложения"
-
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Дополнительное назначение :%s"
 
-#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
-#: page.customdests.php:18
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Дополнительные назначения"
 
@@ -113,7 +104,7 @@ msgstr "Особый Номер"
 msgid "Custom Extension: "
 msgstr "Особый номер: "
 
-#: customappsreg.i18n.php:10 page.customextens.php:18
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Особые внутренние номера"
 
@@ -223,14 +214,6 @@ msgstr ""
 msgid "Notes"
 msgstr "Примечания"
 
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Реестр особых внутренних номеров и дополнительных назначений, который может "
-"включаться в реестры внутренних номеров и назначений."
-
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
@@ -282,6 +265,20 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr ""
+
+#~ msgid "Admin"
+#~ msgstr "Администратор"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Дополнительные приложения"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Реестр особых внутренних номеров и дополнительных назначений, который "
+#~ "может включаться в реестры внутренних номеров и назначений."
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

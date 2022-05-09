@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 08:13+0530\n"
+"POT-Creation-Date: 2022-05-09 02:01+0000\n"
 "PO-Revision-Date: 2017-06-20 20:42+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -45,10 +45,6 @@ msgstr "Thêm điểm đích"
 msgid "Add Extension"
 msgstr "Thêm máy nhánh"
 
-#: customappsreg.i18n.php:6
-msgid "Admin"
-msgstr "Quản trị viên"
-
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -70,17 +66,12 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Tùy chỉnh các ứng dụng"
-
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Tùy chỉnh điểm đích:%s"
 
-#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
-#: page.customdests.php:18
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Tùy chỉnh các điểm đích"
 
@@ -112,7 +103,7 @@ msgstr "Tùy chỉnh máy nhánh"
 msgid "Custom Extension: "
 msgstr "Tùy chỉnh máy nhánh: "
 
-#: customappsreg.i18n.php:10 page.customextens.php:18
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Tùy chỉnh các máy nhánh"
 
@@ -224,15 +215,6 @@ msgstr "Không"
 msgid "Notes"
 msgstr "Các lưu ý"
 
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Đăng ký để thêm các máy nhanh tùy chỉnh và các điểm đích có thể được tạo ra "
-"và được sử dụng để Đăng ký các máy nhánh và các điểm đích có thể bao gồm các "
-"tiện ích."
-
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Cài đặt lại"
@@ -287,3 +269,18 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Có"
+
+#~ msgid "Admin"
+#~ msgstr "Quản trị viên"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Tùy chỉnh các ứng dụng"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Đăng ký để thêm các máy nhanh tùy chỉnh và các điểm đích có thể được tạo "
+#~ "ra và được sử dụng để Đăng ký các máy nhánh và các điểm đích có thể bao "
+#~ "gồm các tiện ích."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 08:13+0530\n"
+"POT-Creation-Date: 2022-05-09 02:01+0000\n"
 "PO-Revision-Date: 2018-07-04 07:16+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/customappsreg/bg/>\n"
@@ -45,10 +45,6 @@ msgstr "Добави Направление"
 msgid "Add Extension"
 msgstr "Добави Вътрешна Линия"
 
-#: customappsreg.i18n.php:6
-msgid "Admin"
-msgstr "Админ"
-
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -71,17 +67,12 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: customappsreg.i18n.php:4
-msgid "Custom Applications"
-msgstr "Custom Приложения"
-
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Custom Направление: %s"
 
-#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
-#: page.customdests.php:18
+#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Custom Направления"
 
@@ -113,7 +104,7 @@ msgstr "Custom Вътрешна Линия"
 msgid "Custom Extension: "
 msgstr "Custom Вътрешна Линия: "
 
-#: customappsreg.i18n.php:10 page.customextens.php:18
+#: page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Custom Вътрешни Линии"
 
@@ -224,15 +215,6 @@ msgstr "Не"
 msgid "Notes"
 msgstr "Бележки"
 
-#: customappsreg.i18n.php:8
-msgid ""
-"Registry to add custom extensions and destinations that may be created and "
-"used so that the Extensions and Destinations Registry can include these."
-msgstr ""
-"Предоставя възможност за добавяне на вътрешни линии и направления, които "
-"могат да се създават и използват така, че Регистратора на Вътрешни Линии и "
-"Направления да ги използва."
-
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Изчисти"
@@ -287,6 +269,21 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Да"
+
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid "Custom Applications"
+#~ msgstr "Custom Приложения"
+
+#~ msgid ""
+#~ "Registry to add custom extensions and destinations that may be created "
+#~ "and used so that the Extensions and Destinations Registry can include "
+#~ "these."
+#~ msgstr ""
+#~ "Предоставя възможност за добавяне на вътрешни линии и направления, които "
+#~ "могат да се създават и използват така, че Регистратора на Вътрешни Линии "
+#~ "и Направления да ги използва."
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "
