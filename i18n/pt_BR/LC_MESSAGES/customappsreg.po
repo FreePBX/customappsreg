@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: freePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:01+0000\n"
+"POT-Creation-Date: 2023-07-13 12:08+0000\n"
 "PO-Revision-Date: 2017-03-27 14:40+0200\n"
 "Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -58,6 +58,10 @@ msgstr "Adicionar Destino"
 msgid "Add Extension"
 msgstr "Adicionar Ramal"
 
+#: customappsreg.i18n.php:6
+msgid "Admin"
+msgstr "Admin"
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -79,12 +83,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Aplicações Personalizadas"
+
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destino Personalizado: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Destinos Personalizados"
 
@@ -117,7 +126,7 @@ msgstr "Ramal Personalizado"
 msgid "Custom Extension: "
 msgstr "Ramal Personalizado: "
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Ramais Personalizados"
 
@@ -230,6 +239,15 @@ msgstr "Não"
 msgid "Notes"
 msgstr "Notas"
 
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"Registro para adicionar ramais e destinos personalizados que podem ser "
+"criados e usados de forma que o Registro de Ramais e Destinos possam incluí-"
+"los."
+
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Reiniciar"
@@ -283,21 +301,6 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Sim"
-
-#~ msgid "Admin"
-#~ msgstr "Admin"
-
-#~ msgid "Custom Applications"
-#~ msgstr "Aplicações Personalizadas"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Registro para adicionar ramais e destinos personalizados que podem ser "
-#~ "criados e usados de forma que o Registro de Ramais e Destinos possam "
-#~ "incluí-los."
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "

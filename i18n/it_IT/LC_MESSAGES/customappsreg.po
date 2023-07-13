@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:01+0000\n"
+"POT-Creation-Date: 2023-07-13 12:08+0000\n"
 "PO-Revision-Date: 2018-05-29 08:01+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/customappsreg/it/>\n"
@@ -37,6 +37,10 @@ msgstr "Aggiungere destinazione"
 msgid "Add Extension"
 msgstr "Aggiungere estensione"
 
+#: customappsreg.i18n.php:6
+msgid "Admin"
+msgstr "Amministratore"
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -59,12 +63,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Estensioni in conflitto"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Applicazioni personalizzate"
+
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Destinazione personalizzata: %s1"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Destinazioni personalizzate"
 
@@ -97,7 +106,7 @@ msgstr "Estensione personalizzata"
 msgid "Custom Extension: "
 msgstr "Estensione personalizzata: "
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Estensioni personalizzate"
 
@@ -210,6 +219,15 @@ msgstr "No"
 msgid "Notes"
 msgstr "Note"
 
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"Registro per aggiungere estensioni e destinazioni personalizzate che possono "
+"essere create e utilizzate in modo che il registro delle estensioni e delle "
+"destinazioni possa includerle."
+
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr "Elimina"
@@ -266,18 +284,3 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr "Si"
-
-#~ msgid "Admin"
-#~ msgstr "Amministratore"
-
-#~ msgid "Custom Applications"
-#~ msgstr "Applicazioni personalizzate"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Registro per aggiungere estensioni e destinazioni personalizzate che "
-#~ "possono essere create e utilizzate in modo che il registro delle "
-#~ "estensioni e delle destinazioni possa includerle."

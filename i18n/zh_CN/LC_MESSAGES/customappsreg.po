@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:01+0000\n"
+"POT-Creation-Date: 2023-07-13 12:08+0000\n"
 "PO-Revision-Date: 2009-01-30 17:41+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -43,6 +43,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -62,12 +66,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "分机冲突"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr ""
+
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "自定义目的地：%s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "自定义目的地"
 
@@ -96,7 +105,7 @@ msgstr "自定义分机"
 msgid "Custom Extension: "
 msgstr "自定义分机："
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "自定义分机"
 
@@ -197,6 +206,12 @@ msgstr ""
 #: views/customdests/form.php:148 views/customextens/form.php:83
 msgid "Notes"
 msgstr "备注"
+
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
 
 #: Customappsreg.class.php:298
 msgid "Reset"

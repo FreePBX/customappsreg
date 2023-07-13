@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX customappsreg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 02:01+0000\n"
+"POT-Creation-Date: 2023-07-13 12:08+0000\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -55,6 +55,10 @@ msgstr ""
 msgid "Add Extension"
 msgstr ""
 
+#: customappsreg.i18n.php:6
+msgid "Admin"
+msgstr ""
+
 #: views/customextens/form.php:71
 msgid ""
 "Brief description that will be published in the Extension Registry about "
@@ -75,12 +79,17 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Konfliktande anknytningar"
 
+#: customappsreg.i18n.php:4
+msgid "Custom Applications"
+msgstr "Anpassade applikationer"
+
 #: functions.inc.php:53 functions.inc.php:60
 #, php-format
 msgid "Custom Destination: %s"
 msgstr "Anpassad destination: %s"
 
-#: functions.inc.php:18 functions.inc.php:20 page.customdests.php:18
+#: customappsreg.i18n.php:12 functions.inc.php:18 functions.inc.php:20
+#: page.customdests.php:18
 msgid "Custom Destinations"
 msgstr "Anpassade destinationer"
 
@@ -110,7 +119,7 @@ msgstr "Anpassad anknytning"
 msgid "Custom Extension: "
 msgstr "Anpassad anknytning:"
 
-#: page.customextens.php:18
+#: customappsreg.i18n.php:10 page.customextens.php:18
 msgid "Custom Extensions"
 msgstr "Anpassade anknytningar"
 
@@ -220,6 +229,14 @@ msgstr ""
 msgid "Notes"
 msgstr "Notering"
 
+#: customappsreg.i18n.php:8
+msgid ""
+"Registry to add custom extensions and destinations that may be created and "
+"used so that the Extensions and Destinations Registry can include these."
+msgstr ""
+"Lägg till anpassade anknytningar och destinationer i ett register som kan "
+"användas av standardanknytningar och destinationer som ett valbart alternativ"
+
 #: Customappsreg.class.php:298
 msgid "Reset"
 msgstr ""
@@ -271,18 +288,6 @@ msgstr ""
 #: views/customdests/form.php:177
 msgid "Yes"
 msgstr ""
-
-#~ msgid "Custom Applications"
-#~ msgstr "Anpassade applikationer"
-
-#~ msgid ""
-#~ "Registry to add custom extensions and destinations that may be created "
-#~ "and used so that the Extensions and Destinations Registry can include "
-#~ "these."
-#~ msgstr ""
-#~ "Lägg till anpassade anknytningar och destinationer i ett register som kan "
-#~ "användas av standardanknytningar och destinationer som ett valbart "
-#~ "alternativ"
 
 #~ msgid ""
 #~ "READONLY WARNING: Because this destination is being used by other module "
