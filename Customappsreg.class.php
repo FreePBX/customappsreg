@@ -45,7 +45,7 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 					$postarr[$v] = $this->getReq($v);
 				}
 				// Do we have a dest?
-				if (isset($_REQUEST['goto0'])) {
+				if (isset($_REQUEST['goto0']) && !empty($_REQUEST['goto0'])) {
 					$postarr['dest'] = $_REQUEST[$_REQUEST['goto0']."0"];
 				} else {
 					$postarr['dest'] = "";
