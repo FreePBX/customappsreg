@@ -115,11 +115,11 @@ function customappsreg_customextens_add($custom_exten, $description, $notes) {
 	global $db;
 
 	if ($custom_exten == '') {
-		echo "<script>javascript:alert('"._('Invalid Extension, must not be blank')."')</script>";
+		echo "<script>alert('".addslashes(_('Invalid Extension, must not be blank'))."');</script>";
 		return false;
 	}
 	if (trim($description) == '') {
-		echo "<script>javascript:alert('"._('Invalid description specified, must not be blank')."')</script>";
+		echo "<script>alert('".addslashes(_('Invalid description specified, must not be blank'))."');</script>";
 		return false;
 	}
 
@@ -130,7 +130,7 @@ function customappsreg_customextens_add($custom_exten, $description, $notes) {
 	$results = $db->query($sql);
 	if (DB::IsError($results)) {
 		if ($results->getCode() == DB_ERROR_ALREADY_EXISTS) {
-			echo "<script>javascript:alert('"._('DUPLICATE Extension: This extension already in use')."')</script>";
+			echo "<script>alert('".addslashes(_('DUPLICATE Extension: This extension already in use'))."');</script>";
 			return false;
 		} else {
 			die_freepbx($results->getMessage()."<br><br>".$sql);
