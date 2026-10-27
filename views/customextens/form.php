@@ -16,7 +16,7 @@ if ($custom_exten != '') {
 }
 if (!empty($ce->conflict_url)) {
 	echo "<h5>"._("Conflicting Extensions")."</h5>";
-	echo implode('<br .>',$conflict_url);
+	echo implode('<br>', $ce->conflict_url);
 }
 echo $subhead;
 ?>
@@ -112,12 +112,20 @@ function checkCustomExten() {
 	if (isEmpty($('#extdisplay').val())) {
 		return warnInvalid($('#extdisplay'), msgInvalidCustomExten);
 	}
+	if (!/^[0-9*#]+$/.test($('#extdisplay').val().trim())) {
+		return warnInvalid($('#extdisplay'), msgInvalidCustomExten);
+	}
 	if (isEmpty($('#description').val())) {
-		return warnInvalid($('#extdisplay'), msgInvalidDescription);
+		return warnInvalid($('#description'), msgInvalidDescription);
 	}
 
 	return true;
 }
+$("#editCustomExten").on("submit", function(event) {
+	if (checkCustomExten() === false) {
+		event.preventDefault();
+	}
+});
 $("#extdisplay").blur(function(){
   var msgDuplicateExten = "<?php echo _('The entered extension conflicts with another extension on the system'); ?>";
   var val = $("#extdisplay").val().trim();

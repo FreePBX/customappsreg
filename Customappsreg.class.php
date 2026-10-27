@@ -67,8 +67,8 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 					case 'add':
 						$this->conflict_url = array();
 						$this->usage_arr = framework_check_extension_usage($custom_exten);
-						if (!empty($usage_arr)) {
-							$this->conflict_url = framework_display_extension_usage_alert($usage_arr);
+						if (!empty($this->usage_arr)) {
+							$this->conflict_url = framework_display_extension_usage_alert($this->usage_arr);
 							$custom_exten='';
 						} else {
 							if (customappsreg_customextens_add($custom_exten, $description, $notes)) {
@@ -82,8 +82,8 @@ class Customappsreg extends FreePBX_Helpers implements BMO {
 					$this->conflict_url = array();
 					if ($old_custom_exten != $custom_exten) {
 						$this->usage_arr = framework_check_extension_usage($custom_exten);
-						if (!empty($usage_arr)) {
-							$this->conflict_url = framework_display_extension_usage_alert($usage_arr);
+						if (!empty($this->usage_arr)) {
+							$this->conflict_url = framework_display_extension_usage_alert($this->usage_arr);
 						}
 					}
 					if (empty($this->conflict_url)) {

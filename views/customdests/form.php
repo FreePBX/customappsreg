@@ -133,7 +133,7 @@ if ($unknown) {
     </div>
     <div class="row">
       <div class="col-md-12">
-        <span id="description-help" class="help-block fpbx-help-block"><?php echo _("")?></span>
+        <span id="description-help" class="help-block fpbx-help-block"><?php echo _("Brief description that will be published to modules when showing destinations. Example: My Weather App")?></span>
       </div>
     </div>
   </div>
